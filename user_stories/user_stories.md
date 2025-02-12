@@ -478,3 +478,44 @@ As a **role** I can **capability** so that **received benefit**
 ---
 
  ⭐⭐⭐⭐⭐
+
+ 
+### **MUST HAVE**  
+1. view products list  
+2. view product details  
+3. **select product size and quantity**  
+4. view shopping cart  
+5. enter payment information  
+6. secure payment information  
+7. view order confirmation  
+
+---
+
+### **SHOULD HAVE**  
+8. identify deals and offers  
+9. register for account  
+10. login and logout  
+11. recover password  
+12. sort product list  
+13. search for product  
+
+---
+
+### **COULD HAVE**  
+14. view purchase total  
+15. adjust cart quantity  
+16. sort specific category  
+17. sort multiple categories  
+18. view search results  
+
+---
+
+### **WON'T HAVE**  
+19. email confirmation after registration  
+20. personalized user profile  
+21. receive email confirmation after checkout  
+22. add product  
+23. edit product  
+24. delete product  
+
+ 
