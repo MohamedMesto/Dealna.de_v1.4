@@ -483,7 +483,7 @@ As a **role** I can **capability** so that **received benefit**
 ### **MUST HAVE**  
 1. view products list  
 2. view product details  
-3. **select product size and quantity**  
+3. select product size and quantity 
 4. view shopping cart  
 5. enter payment information  
 6. secure payment information  
