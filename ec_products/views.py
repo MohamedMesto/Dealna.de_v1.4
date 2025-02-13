@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import EC_Product
+from .models import EC_Product,EC_Category
 
 # Create your views here.
 
@@ -10,8 +10,14 @@ def all_ec_products(request):
 
     ec_products = EC_Product.objects.all()
     query = None
+    ec_categories = None
 
     if request.GET:
+        if 'ec_category' in request.GET:
+            ec_categories = request.GET['ec_category'].split(',')
+            ec_products = ec_products.filter(ec_category__name__in=ec_categories)
+            ec_categories = EC_Category.objects.filter(name__in=ec_categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -21,15 +27,12 @@ def all_ec_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             ec_products = ec_products.filter(queries)
 
-
-
-
-
-
-
     context = {
         'ec_products': ec_products,
+        'search_term': query,
+        'current_ec_categories': ec_categories,
     }
+
 
     return render(request, 'ec_products/ec_products.html', context)
 
