@@ -38,6 +38,8 @@
                                 <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                                 <option value="ec_category_asc" {% if current_sorting == 'ec_category_asc' %}selected{% endif %}>Category (A-Z)</option>
                                 <option value="ec_category_desc" {% if current_sorting == 'ec_category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                <option value="sku_asc" {% if current_sorting == 'sku_asc' %}selected{% endif %}>Sku (A-Z)</option>
+                                <option value="sku_desc" {% if current_sorting == 'sku_desc' %}selected{% endif %}>Sku (Z-A)</option>
                             </select>
                         </div>
                     </div>
@@ -112,4 +114,49 @@
             </div>
         </div>
     </div>
+    <div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                // Split the selected value into parts
+                var parts = selectedVal.split("_");
+
+                // Extract sort and direction
+                var sort = parts.slice(0, -1).join("_");  // Joins all parts except the last one
+                var direction = parts[parts.length - 1];  // Last part is the direction
+
+                // Update the URL with the new sort and direction parameters
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                // Redirect to the updated URL
+                window.location.replace(currentUrl);
+            } else {
+                // If "reset" is selected, remove sort and direction parameters
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                // Redirect to the updated URL
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 {% endblock %}

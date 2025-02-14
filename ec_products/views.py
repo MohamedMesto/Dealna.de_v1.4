@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import EC_Product,EC_Category
+
 
 # Create your views here.
 
@@ -28,9 +30,7 @@ def all_ec_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             ec_products = ec_products.order_by(sortkey)
-
-
-
+            
         if 'ec_category' in request.GET:
             ec_categories = request.GET['ec_category'].split(',')
             ec_products = ec_products.filter(ec_category__name__in=ec_categories)
@@ -46,7 +46,7 @@ def all_ec_products(request):
             ec_products = ec_products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    
+
     context = {
         'ec_products': ec_products,
         'search_term': query,
