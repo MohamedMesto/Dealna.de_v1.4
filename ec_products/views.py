@@ -11,8 +11,26 @@ def all_ec_products(request):
     ec_products = EC_Product.objects.all()
     query = None
     ec_categories = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                ec_products = ec_products.annotate(lower_name=Lower('name'))
+            if sortkey == 'ec_category':
+                sortkey = 'ec_category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            ec_products = ec_products.order_by(sortkey)
+
+
+
         if 'ec_category' in request.GET:
             ec_categories = request.GET['ec_category'].split(',')
             ec_products = ec_products.filter(ec_category__name__in=ec_categories)
@@ -27,10 +45,13 @@ def all_ec_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             ec_products = ec_products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+    
     context = {
         'ec_products': ec_products,
         'search_term': query,
         'current_ec_categories': ec_categories,
+        'current_sorting': current_sorting,
     }
 
 
