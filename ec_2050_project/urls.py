@@ -22,4 +22,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('ec_home.urls')),
     path('ec_products/', include('ec_products.urls')),
+    path('ec_bag/', include('ec_bag.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
