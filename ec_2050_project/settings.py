@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +24,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^*q34#5@azm24qkjoh^gj1t4n-_y+=%pp76l%+d77)h19av!p+'
+#SECRET_KEY = 'django-insecure-^*q34#5@azm24qkjoh^gj1t4n-_y+=%pp76l%+d77)h19av!p+'
+
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+
+# Stripe
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
+
+#STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+#STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -130,7 +145,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -149,7 +163,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -162,6 +175,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+
 
 
 # Static files (CSS, JavaScript, Images)
