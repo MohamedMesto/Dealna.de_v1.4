@@ -8,6 +8,12 @@ from ec_products.models import EC_Product
 
 
 class EC_Order(models.Model):
+
+
+    class Meta:
+        verbose_name_plural = 'EC_Orders'
+
+
     ec_order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
