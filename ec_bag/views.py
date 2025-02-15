@@ -21,6 +21,6 @@ def add_to_ec_bag(request, item_id):
         ec_bag[item_id] = quantity
 
     request.session['ec_bag'] = ec_bag
-    print(request.session['ec_bag'])
+    # print(request.session['ec_bag'])
     return redirect(redirect_url)
     
