@@ -2,49 +2,78 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if ec_product.image %}
-                        <a href="{{ ec_product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ ec_product.image.url }}" alt="{{ ec_product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ ec_product.name }}">
-                        </a>
-                    {% endif %}
-                </div>
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if ec_product.image %}
+                <a href="{{ ec_product.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ ec_product.image.url }}" alt="{{ ec_product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ ec_product.name }}">
+                </a>
+                {% endif %}
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ ec_product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ ec_product.price }}</p>
-                    {% if ec_product.ec_category %}
-                    <p class="small mt-1 mb-0">
-                        <a class="text-muted" href="{% url 'ec_products' %}?ec_category={{ ec_product.ec_category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ ec_product.ec_category.friendly_name }}
-                        </a>
-                    </p>
-                    {% endif %}
-                    {% if ec_product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ ec_product.rating }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
-                    {% endif %}
-                    <p class="mt-3">{{ ec_product.description }}</p>
-                </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <p class="mb-0">{{ ec_product.name }}</p>
+                <p class="lead mb-0 text-left font-weight-bold">${{ ec_product.price }}</p>
+                {% if ec_product.ec_category %}
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted" href="{% url 'ec_products' %}?ec_category={{ ec_product.ec_category.name }}">
+                        <i class="fas fa-tag mr-1"></i>{{ ec_product.ec_category.friendly_name }}
+                    </a>
+                </p>
+                {% endif %}
+                {% if ec_product.rating %}
+                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ ec_product.rating }} / 5</small>
+                {% else %}
+                <small class="text-muted">No Rating</small>
+                {% endif %}
+                <p class="mt-3">{{ ec_product.description }}</p>
+
+
+                <form class="form" action="{% url 'add_to_ec_bag' ec_product.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ ec_product.id }}"
+                                        id="id_qty_{{ ec_product.id }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="{% url 'ec_products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                value="Add to ec_bag">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
