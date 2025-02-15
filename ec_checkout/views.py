@@ -13,5 +13,7 @@ def ec_checkout(request):
     template = 'ec_checkout/ec_checkout.html'
     context = {
         'ec_order_form': ec_order_form,
+        'stripe_public_key': 'pk_test_51Qssd1Qfo7m0m0E99UQVWBcPAzWUNzwTIsIlSXPi4W2BQOHIHOk8K2ipqyWTWj4TlpBuNvfVRvasx4I2XikuKjMA00xyhq6okC',
+        'client_secret': 'test client secret',
     }
     return render(request, template, context)
