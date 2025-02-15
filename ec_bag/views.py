@@ -1,7 +1,8 @@
  
 
 from django.shortcuts import render, redirect, HttpResponse,reverse
- 
+from django.contrib import messages
+from ec_products.models import EC_Product
 
 # from django.urls import reverse
 
@@ -16,6 +17,7 @@ def view_ec_bag(request):
 def add_to_ec_bag(request, item_id):
     """ Add a quantity of the specified ec_product to the shopping ec_bag """
 
+    ec_product = EC_Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -36,6 +38,7 @@ def add_to_ec_bag(request, item_id):
             ec_bag[item_id] += quantity
         else:
             ec_bag[item_id] = quantity
+            messages.success(request, f'Added {ec_product.name} to your bag')
 
     request.session['ec_bag'] = ec_bag
     # print(request.session['ec_bag'])
