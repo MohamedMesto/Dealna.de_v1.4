@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount', # Optional -- requires install using `django-allauth[socialaccount]`.
     'ec_home',
     'ec_products',
-    'ec_bag'
+    'ec_bag',
+    'ec_checkout',
     ]
 
 MIDDLEWARE = [
