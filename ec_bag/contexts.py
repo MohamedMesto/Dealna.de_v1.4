@@ -27,7 +27,7 @@ def ec_bag_contents(request):
                 ec_product_count += quantity
                 ec_bag_items.append({
                     'item_id': item_id,
-                    'quantity': item_data,
+                    'quantity': quantity,
                     'ec_product': ec_product,
                     'size': size,
                 })
