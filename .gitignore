@@ -5,10 +5,4 @@ env.py
 ec_products/fixtures
 
 
-core.Microsoft*
-core.mongo*
-core.python*
-*.py[cod]
-node_modules/
-.github/
-cloudinary_python.txt
+ 
