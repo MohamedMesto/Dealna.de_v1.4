@@ -1,8 +1,8 @@
-[<img src="assets/images/readme_images/un2050_logo.png" alt="Un2050 logo" width="400"/>](https://Un2050-v1-3-e08d6b94e893.herokuapp.com/)
+[<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://Un2050-v1-3-e08d6b94e893.herokuapp.com/)
 
  
 
-
+ 
 ---
 [![alt text](assets/images/readme_images/main1.png)](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/)
 
