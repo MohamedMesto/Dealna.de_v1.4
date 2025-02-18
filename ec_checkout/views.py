@@ -1,24 +1,40 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import EC_OrderForm
 from .models import EC_Order, EC_OrderLineItem
 from ec_products.models import EC_Product
-import os
 from ec_bag.contexts import ec_bag_contents
 
 import stripe
+import json
+import os
 
+@require_POST
+def cache_checkout_data(request):
+    try:
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.PaymentIntent.modify(pid, metadata={
+            'ec_bag': json.dumps(request.session.get('ec_bag', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user,
+        })
+        return HttpResponse(status=200)
+    except Exception as e:
+        messages.error(request, 'Sorry, your payment cannot be \
+            processed right now. Please try again later.')
+        return HttpResponse(content=e, status=400)
+    
 def ec_checkout(request):
-
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
         ec_bag = request.session.get('ec_bag', {})
     
-     
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -60,8 +76,6 @@ def ec_checkout(request):
                     ec_order.delete()
                     return redirect(reverse('view_ec_bag'))
 
-        
-
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[ec_order.ec_order_number]))
         else:
@@ -82,8 +96,6 @@ def ec_checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-
-
         ec_order_form = EC_OrderForm()
 
     if not stripe_public_key:
@@ -93,12 +105,10 @@ def ec_checkout(request):
     template = 'ec_checkout/ec_checkout.html'
     context = {
         'ec_order_form': ec_order_form,
-
         'stripe_public_key': stripe_public_key,
        ## 'client_secret': intent.stripe_secret_key,
         'client_secret': intent.client_secret,
     }
-    
     return render(request, template, context)
 
 
@@ -111,10 +121,13 @@ def checkout_success(request, ec_order_number):
     messages.success(request, f'EC_Order successfully processed! \
         Your ec_order number is {ec_order_number}. A confirmation \
         email will be sent to {ec_order.email}.')
+    
     if 'ec_bag' in request.session:
         del request.session['ec_bag']
+        
     template = 'ec_checkout/checkout_success.html'
     context = {
         'ec_order': ec_order,
     }
+
     return render(request, template, context)
