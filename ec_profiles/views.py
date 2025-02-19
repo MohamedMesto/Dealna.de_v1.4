@@ -1,3 +1,6 @@
 from django.shortcuts import render
-
-# Create your views here.
+def ec_profile(request):
+    """ Display the user's profile. """
+    template = 'ec_profiles/ec_profile.html'
+    context = {}
+    return render(request, template, context)

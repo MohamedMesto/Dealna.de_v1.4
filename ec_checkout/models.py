@@ -7,6 +7,8 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from ec_products.models import EC_Product
+from ec_profiles.models import EC_UserProfile
+
 
 
 class EC_Order(models.Model):
@@ -17,6 +19,7 @@ class EC_Order(models.Model):
 
 
     ec_order_number = models.CharField(max_length=32, null=False, editable=False)
+    ec_user_profile = models.ForeignKey(EC_UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='ec_orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
