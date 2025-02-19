@@ -48,15 +48,19 @@ def ec_checkout(request):
         }
         ec_order_form = EC_OrderForm(form_data)
         if ec_order_form.is_valid():
-            ec_order = ec_order_form.save()
+            ec_order = ec_order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            ec_order.stripe_pid = pid
+            ec_order.original_ec_bag = json.dumps(ec_bag)
+            ec_order.save()
             for item_id, item_data in ec_bag.items():
                 try:
                     ec_product = EC_Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         ec_order_line_item = EC_OrderLineItem(
-                            ec_order=ec_order,
-                            ec_product=ec_product,
-                            quantity=item_data,
+                        ec_order=ec_order,
+                        ec_product=ec_product,
+                        quantity=item_data,
                         )
                         ec_order_line_item.save()
                     else:
@@ -124,7 +128,7 @@ def checkout_success(request, ec_order_number):
     
     if 'ec_bag' in request.session:
         del request.session['ec_bag']
-        
+
     template = 'ec_checkout/checkout_success.html'
     context = {
         'ec_order': ec_order,
