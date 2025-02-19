@@ -27,4 +27,4 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     if created:
         EC_UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
-    instance.ec_userprofile.save()
+    instance.ec_userprofile.save()  
