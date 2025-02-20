@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import EC_Product,EC_Category
+from .forms import EC_ProductForm
 
 
 # Create your views here.
@@ -54,9 +55,7 @@ def all_ec_products(request):
         'current_sorting': current_sorting,
     }
 
-
     return render(request, 'ec_products/ec_products.html', context)
-
 
 def ec_product_detail(request, ec_product_id):
     """ A view to show individual product details """
@@ -66,5 +65,14 @@ def ec_product_detail(request, ec_product_id):
     context = {
         'ec_product': ec_product,
     }
-
     return render(request, 'ec_products/ec_product_detail.html', context)
+
+def add_product(request):
+    """ Add a product to the store """
+    form = EC_ProductForm()
+    template = 'ec_products/add_ec_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
