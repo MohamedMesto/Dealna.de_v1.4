@@ -3,6 +3,7 @@ import stripe
 
 from .models import EC_Order, EC_OrderLineItem
 from ec_products.models import EC_Product
+from ec_profiles.models import EC_UserProfile
 import json
 import time
 
@@ -38,6 +39,20 @@ class StripeWH_Handler:
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2) # updated
 
+         # Update ec_profile information if save_info was checked
+        ec_profile = None
+        username = intent.metadata.username
+        if username != 'AnonymousUser':
+            ec_profile = EC_UserProfile.objects.get(user__username=username)
+            if save_info:
+                ec_profile.default_phone_number = shipping_details.phone
+                ec_profile.default_country = shipping_details.address.country
+                ec_profile.default_postcode = shipping_details.address.postal_code
+                ec_profile.default_town_or_city = shipping_details.address.city
+                ec_profile.default_street_address1 = shipping_details.address.line1
+                ec_profile.default_street_address2 = shipping_details.address.line2
+                ec_profile.default_county = shipping_details.address.state
+                ec_profile.save()
         
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
@@ -75,6 +90,7 @@ class StripeWH_Handler:
             try:
                 ec_order = EC_Order.objects.create(
                     full_name=shipping_details.name,
+                    user_profile=ec_profile,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
