@@ -1,0 +1,1 @@
+Boutique Ado Confirmation for Order Number {{ ec_order.ec_order_number }}

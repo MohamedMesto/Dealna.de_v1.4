@@ -1,4 +1,7 @@
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 import stripe
 from .models import EC_Order, EC_OrderLineItem
 from ec_products.models import EC_Product
@@ -12,6 +15,25 @@ class StripeWH_Handler:
 
     def __init__(self, request):
         self.request = request
+
+    def _send_confirmation_email(self, ec_order):
+        """Send the user a confirmation email"""
+        cust_email = ec_order.email
+        subject = render_to_string(
+            'ec_checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'ec_order': ec_order})
+        body = render_to_string(
+            'ec_checkout/confirmation_emails/confirmation_email_body.txt',
+            {'ec_order': ec_order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+        
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        )        
+
+
 
     def handle_event(self, event):
         """
@@ -83,6 +105,7 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
         if ec_order_exists:
+            self._send_confirmation_email(ec_order)
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified ec_order already in database',
                 status=200)
@@ -127,6 +150,7 @@ class StripeWH_Handler:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
+        self._send_confirmation_email(ec_order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}| SUCCESS: Created order in webhook',
             status=200)

@@ -1,0 +1,24 @@
+
+Hello {{ ec_order.full_name }}!
+
+This is a confirmation of your order at Loqta2050.com For E-Commerce. Your order information is below:
+
+Order Number: {{ ec_order.ec_order_number }}
+Order Date: {{ ec_order.date }}
+
+Order Total: ${{ ec_order.ec_order_total }}
+Delivery: ${{ ec_order.delivery_cost }}
+Grand Total: ${{ ec_order.grand_total }}
+
+Your order will be shipped to {{ ec_order.street_address1 }} in {{ ec_order.town_or_city }}, {{ ec_order.country }}.
+
+We've got your phone number on file as {{ ec_order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Loqta2050.com Team
+un2050.de Team
