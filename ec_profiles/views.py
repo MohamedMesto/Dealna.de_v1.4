@@ -5,6 +5,9 @@ from django.contrib import messages
 from .models import EC_UserProfile
 from .forms import EC_UserProfileForm
 
+
+from ec_checkout.models import EC_Order
+
 def ec_profile(request):
     """ Display the user's ec_profile. """
     ec_profile = get_object_or_404(EC_UserProfile, user=request.user)
@@ -24,4 +27,20 @@ def ec_profile(request):
         'ec_orders': ec_orders,
         'on_profile_page': True
     }
+    return render(request, template, context)
+
+def ec_order_history(request, ec_order_number):
+    ec_order = get_object_or_404(EC_Order, ec_order_number=ec_order_number)
+
+    messages.info(request, (
+        f'This is a past confirmation for ec_order number {ec_order_number}. '
+        'A confirmation email was sent on the ec_order date.'
+    ))
+
+    template = 'ec_checkout/checkout_success.html'
+    context = {
+        'ec_order': ec_order,
+        'from_ec_profile': True,
+    }
+
     return render(request, template, context)

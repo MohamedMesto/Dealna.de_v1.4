@@ -6,6 +6,8 @@ from django.conf import settings
 from .forms import EC_OrderForm
 from .models import EC_Order, EC_OrderLineItem
 from ec_products.models import EC_Product
+from ec_profiles.forms import EC_UserProfileForm
+from ec_profiles.models import EC_UserProfile
 from ec_bag.contexts import ec_bag_contents
 
 import stripe
@@ -99,8 +101,26 @@ def ec_checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
+       
+        if request.user.is_authenticated:
+            try:
+                ec_profile = EC_UserProfile.objects.get(user=request.user)
+                ec_order_form = EC_OrderForm(initial={
+                    'full_name': ec_profile.user.get_full_name(),
+                    'email': ec_profile.user.email,
+                    'phone_number': ec_profile.default_phone_number,
+                    'country': ec_profile.default_country,
+                    'postcode': ec_profile.default_postcode,
+                    'town_or_city': ec_profile.default_town_or_city,
+                    'street_address1': ec_profile.default_street_address1,
+                    'street_address2': ec_profile.default_street_address2,
+                    'county': ec_profile.default_county,
+                })
+            except EC_UserProfile.DoesNotExist:
+                ec_order_form = EC_OrderForm()
+        else:
+            ec_order_form = EC_OrderForm()
 
-        ec_order_form = EC_OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -122,6 +142,29 @@ def checkout_success(request, ec_order_number):
     """
     save_info = request.session.get('save_info')
     ec_order = get_object_or_404(EC_Order, ec_order_number=ec_order_number)
+
+    if request.user.is_authenticated:
+        ec_profile = EC_UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the ec_order
+        ec_order.ec_user_profile = ec_profile
+        ec_order.save()
+
+        # Save the user's info
+        if save_info:
+            ec_profile_data = {
+                'default_phone_number': ec_order.phone_number,
+                'default_country': ec_order.country,
+                'default_postcode': ec_order.postcode,
+                'default_town_or_city': ec_order.town_or_city,
+                'default_street_address1': ec_order.street_address1,
+                'default_street_address2': ec_order.street_address2,
+                'default_county': ec_order.county,
+            }
+            user_profile_form = EC_UserProfileForm(ec_profile_data, instance=ec_profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+
+
     messages.success(request, f'EC_Order successfully processed! \
         Your ec_order number is {ec_order_number}. A confirmation \
         email will be sent to {ec_order.email}.')

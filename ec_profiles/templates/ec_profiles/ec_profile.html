@@ -3,6 +3,7 @@
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'ec_profiles/css/ec_profile.css' %}">
 {% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,6 +11,7 @@
         </div>
     </div>
 {% endblock %}
+
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
@@ -31,7 +33,45 @@
             </div>
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>
-                {{ orders }}
+
+                
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Order Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for ec_order in ec_orders %}
+                                <tr>
+                                    <td>
+                                        <a href="{% url 'ec_order_history' ec_order.ec_order_number %}"
+                                        title="{{ ec_order.ec_order_number }}">
+                                            {{ ec_order.ec_order_number|truncatechars:6 }}
+                                        </a>
+                                    </td>
+                                    <td>{{ ec_order.date }}</td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            {% for item in ec_order.lineitems.all %}
+                                                <li class="small">
+                                                    {% if item.ec_product.has_sizes %}
+                                                        Size {{ item.ec_product.size|upper }}
+                                                    {% endif %}{{ item.ec_product.name }} x{{ item.quantity }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td>${{ ec_order.grand_total }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 {% endblock %}

@@ -9,7 +9,7 @@ class EC_OrderLineItemAdminInline(admin.TabularInline):
     readonly_fields = ('lineitem_total',)
 class EC_OrderAdmin(admin.ModelAdmin):
     inlines = (EC_OrderLineItemAdminInline,)
-    readonly_fields = ('ec_order_number', 'date',
+    readonly_fields = ('ec_order_number','ec_user_profile', 'date',
                        'delivery_cost', 'ec_order_total',
                        'grand_total', 'original_ec_bag',
                        'stripe_pid')
