@@ -87,3 +87,26 @@ def add_ec_product(request):
     }
 
     return render(request, template, context)
+
+def edit_ec_product(request, ec_product_id):
+    """ Edit a ec_product in the store """
+    ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
+    if request.method == 'POST':
+        form = EC_ProductForm(request.POST, request.FILES, instance=ec_product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated ec_product!')
+            return redirect(reverse('ec_product_detail', args=[ec_product.id]))
+        else:
+            messages.error(request, 'Failed to update ec_product. Please ensure the form is valid.')
+    else:
+        form = EC_ProductForm(instance=ec_product)
+        messages.info(request, f'You are editing {ec_product.name}')
+
+    template = 'ec_products/edit_ec_product.html'
+    context = {
+        'form': form,
+        'ec_product': ec_product,
+    }
+
+    return render(request, template, context)
