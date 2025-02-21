@@ -73,9 +73,9 @@ def add_ec_product(request):
     if request.method == 'POST':
         form = EC_ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            ec_product=form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_ec_product'))
+            return redirect(reverse('ec_product_detail', args=[ec_product.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -110,3 +110,13 @@ def edit_ec_product(request, ec_product_id):
     }
 
     return render(request, template, context)
+
+
+
+
+def delete_ec_product(request, ec_product_id):
+    """ Delete a ec_product from the store """
+    ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
+    ec_product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('ec_products'))
