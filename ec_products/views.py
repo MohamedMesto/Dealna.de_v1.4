@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import EC_Product,EC_Category
@@ -67,8 +68,16 @@ def ec_product_detail(request, ec_product_id):
     }
     return render(request, 'ec_products/ec_product_detail.html', context)
 
+
+@login_required
 def add_ec_product(request):
     """ Add a product to the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+
     
     if request.method == 'POST':
         form = EC_ProductForm(request.POST, request.FILES)
@@ -88,8 +97,14 @@ def add_ec_product(request):
 
     return render(request, template, context)
 
+@login_required
 def edit_ec_product(request, ec_product_id):
     """ Edit a ec_product in the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
     if request.method == 'POST':
         form = EC_ProductForm(request.POST, request.FILES, instance=ec_product)
@@ -113,9 +128,14 @@ def edit_ec_product(request, ec_product_id):
 
 
 
-
+@login_required
 def delete_ec_product(request, ec_product_id):
     """ Delete a ec_product from the store """
+    
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
     ec_product.delete()
     messages.success(request, 'Product deleted!')

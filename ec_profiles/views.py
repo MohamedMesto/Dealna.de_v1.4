@@ -5,9 +5,11 @@ from django.contrib import messages
 from .models import EC_UserProfile
 from .forms import EC_UserProfileForm
 
+from django.contrib.auth.decorators import login_required
 
 from ec_checkout.models import EC_Order
 
+@login_required
 def ec_profile(request):
     """ Display the user's ec_profile. """
     ec_profile = get_object_or_404(EC_UserProfile, user=request.user)
