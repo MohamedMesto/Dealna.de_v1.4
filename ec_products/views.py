@@ -67,9 +67,20 @@ def ec_product_detail(request, ec_product_id):
     }
     return render(request, 'ec_products/ec_product_detail.html', context)
 
-def add_product(request):
+def add_ec_product(request):
     """ Add a product to the store """
-    form = EC_ProductForm()
+    
+    if request.method == 'POST':
+        form = EC_ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_ec_product'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = EC_ProductForm()
+        
     template = 'ec_products/add_ec_product.html'
     context = {
         'form': form,

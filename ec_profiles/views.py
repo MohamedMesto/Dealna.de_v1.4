@@ -15,11 +15,12 @@ def ec_profile(request):
         form = EC_UserProfileForm(request.POST, instance=ec_profile)
         if form.is_valid():
                 form.save()
-        messages.success(request, 'Profile updated successfully')
-
-    form = EC_UserProfileForm(instance=ec_profile)
+                messages.success(request, 'Profile updated successfully')
+        else:
+            messages.error(request, 'Update failed. Please ensure the form is valid.')
+    else:
+        form = EC_UserProfileForm(instance=ec_profile)
     ec_orders = ec_profile.ec_orders.all()
-
 
     template = 'ec_profiles/ec_profile.html'
     context = {
