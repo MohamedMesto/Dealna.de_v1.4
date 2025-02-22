@@ -62,8 +62,8 @@ else:
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
+                    
 ALLOWED_HOSTS = ['https://ec-platform-2050-v1-18754d95dbf1.herokuapp.com/',
                  '127.0.0.1', 
                  'localhost', # listen for stripe webhooks
