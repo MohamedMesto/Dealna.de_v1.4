@@ -19,8 +19,7 @@ if os.path.isfile('env.py'):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -63,11 +62,9 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-                    
-ALLOWED_HOSTS = [
-                 '127.0.0.1', 
+                      
+ALLOWED_HOSTS = ['ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
-                 'ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  ]
 
 
@@ -188,7 +185,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+ 
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'CET'  # Only for standard time (UTC+1) - 'Europe/Stockholm'
 
 USE_I18N = True
 
