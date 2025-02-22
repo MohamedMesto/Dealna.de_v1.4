@@ -1,4 +1,4 @@
-[<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://Un2050-v1-3-e08d6b94e893.herokuapp.com/)
+[<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
  
 
