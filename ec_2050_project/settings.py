@@ -28,16 +28,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-^*q34#5@azm24qkjoh^gj1t4n-_y+=%pp76l%+d77)h19av!p+'
 
-
-SECRET_KEY = os.environ.get("SECRET_KEY")
-
+ 
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
 #STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
-STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
-STRIPE_WH_SECRET = os.environ.get("STRIPE_WH_SECRET")
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'EC_platform_2050@Loqta2050.com'
 
 #STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
@@ -68,7 +67,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = [
                  '127.0.0.1', 
                  'localhost', # listen for stripe webhooks
-                 'https://ec-platform-2050-v1-1e860717f359.herokuapp.com/', # herokuapp App
+                 'ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  ]
 
 
