@@ -4,14 +4,14 @@
 
  
 ---
-[![alt text](assets/images/readme_images/main1.png)](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/)
+[![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
 
-[![alt text](assets/images/readme_images/main3.png)](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/)
+[![alt text](assets/images/readme_images/main3.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
-[![alt text](assets/images/readme_images/main4.png)](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/)
+[![alt text](assets/images/readme_images/main4.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 ---
 # **_Un2050.de News Site V1.3_**
 
@@ -44,12 +44,12 @@ The **UN2050 News Site V1.3** reflects the iterative evolution of a robust platf
 
 In an era of rapid information exchange, **UN2050 News Site V1.3** stands out as a reliable and engaging news source. It goes beyond simply reporting; it fosters awareness, inspires dialogue, and creates connections among its audience. The live site invites you to explore this vibrant news hub and be part of a growing community of informed individuals.
 
-**You can view the live site here - [UN2050 News Site V1.3](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/).**  
+**You can view the live site here - [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
 
 
 
 
-[![devices](assets/images/readme_images/un2050_devices.png)](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/)
+[![devices](assets/images/readme_images/un2050_devices.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
 
@@ -284,7 +284,7 @@ Whether you're a casual reader, an active participant, or a site admin, **Un2050
    - Registered users can log in to comment on articles and participate in discussions.  
    - Features such as “Share” and “Like” buttons are integrated for social sharing and engagement.  
 
-The **UN2050 News Site V1.3** is accessible at [UN2050 News Site V1.3](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **UN2050 News Site V1.3** is accessible at [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 [Back to top](<#contents>)  
 
@@ -815,5 +815,5 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [UN2050 News Site V1.3](https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/).
+You can view the live site here also: [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
 
