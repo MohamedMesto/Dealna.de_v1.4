@@ -13,38 +13,49 @@
 
 [![alt text](assets/images/readme_images/main4.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 ---
-# **_Un2050.de News Site V1.3_**
+ 
+# **_Loqta2050.com E-Commerce V1.0_**
 
-## UN2050 News Site V1.3 (Stay Informed, Stay Empowered) - Portfolio Project 4 - Full Stack Toolkit project.
+## Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
-**UN2050 News Site V1.3:** A Gateway to Global News and Insightful Commentary  
+**Loqta2050 E-Commerce V1.0:** A Gateway to Seamless Online Shopping  
 
-The **UN2050 News Site** is designed to keep users informed and engaged with the latest happenings around the world. Powered by Django, this dynamic platform delivers a seamless experience for accessing news across diverse categories, reflecting a commitment to accuracy, reliability, and user engagement.
+The **Loqta2050 E-Commerce Platform** is designed to provide users with a modern, intuitive, and secure online shopping experience. Powered by Django, this dynamic platform delivers a seamless experience for browsing, purchasing, and managing products across diverse categories, reflecting a commitment to quality, reliability, and user satisfaction.
 
-### A Platform for Knowledge and Connection  
+### A Platform for Smart Shopping  
 
-At its core, **UN2050 News Site V1.3** offers users a curated selection of articles covering a wide array of topics, from politics and technology to environment and lifestyle. The intuitive navigation and categorization make it easy for readers to discover content tailored to their interests. Each article includes engaging headlines, detailed descriptions, and author insights, creating a sense of connection between the writers and the audience.
+At its core, **Loqta2050 E-Commerce V1.0** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
 
 ### A User-Centric Experience  
 
 The platform is designed with usability in mind, featuring:  
-- **Dynamic Categorization:** Quickly locate articles in trending topics or specific categories.  
-- **Interactive Features:** Registered users can log in to comment, like, and share articles, fostering a sense of community among readers.  
+- **Dynamic Product Listings:** Easily browse products by category, price, or rating.  
+- **Secure Checkout:** A seamless and secure payment process ensures a hassle-free shopping experience.  
+- **Personalized Profiles:** Registered users can view order history, save payment information, and track deliveries.  
 - **Mobile Responsiveness:** The site ensures accessibility across devices, making it convenient for users on the go.  
 
-### A Tool for Critical Thinking and Awareness  
+### A Tool for Informed Decisions  
 
-By presenting diverse perspectives on current events, **UN2050 News Site** empowers users to think critically about the world around them. Whether delving into investigative reports or exploring lifestyle tips, readers are encouraged to engage with the content actively, broadening their understanding and fostering a global perspective.
+By presenting detailed product information, customer reviews, and competitive pricing, **Loqta2050 E-Commerce V1.0** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
 
 ### Continuous Innovation and Growth  
 
-The **UN2050 News Site V1.3** reflects the iterative evolution of a robust platform. Features such as the comments section, user-friendly contact forms, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this site a go-to destination for news enthusiasts worldwide.
+The **Loqta2050 E-Commerce V1.0** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
 
 ### Conclusion  
 
-In an era of rapid information exchange, **UN2050 News Site V1.3** stands out as a reliable and engaging news source. It goes beyond simply reporting; it fosters awareness, inspires dialogue, and creates connections among its audience. The live site invites you to explore this vibrant news hub and be part of a growing community of informed individuals.
+In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
+**You can view the live site here - [Loqta2050 E-Commerce V1.0](https://loqta2050.com).**  
+
+---
+
+[![devices](assets/images/readme_images/loqta2050_devices.png)](https://loqta2050.com)
+
+---
+
+
+**You can view the live site here - [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
 
 
 
@@ -55,11 +66,11 @@ In an era of rapid information exchange, **UN2050 News Site V1.3** stands out as
 
 # Contents
 
-- [**_Un2050.de News Site V1.3_**](#un2050de-news-site-v13)
-  - [UN2050 News Site V1.3 (Stay Informed, Stay Empowered) - Portfolio Project 4 - Full Stack Toolkit project.](#un2050-news-site-v13-stay-informed-stay-empowered---portfolio-project-4---full-stack-toolkit-project)
-    - [A Platform for Knowledge and Connection](#a-platform-for-knowledge-and-connection)
+- [**_Loqta2050.com E-Commerce V1.0_**](#loqta2050com-e-commerce-v10)
+  - [Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#loqta2050-e-commerce-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
+    - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)
-    - [A Tool for Critical Thinking and Awareness](#a-tool-for-critical-thinking-and-awareness)
+    - [A Tool for Informed Decisions](#a-tool-for-informed-decisions)
     - [Continuous Innovation and Growth](#continuous-innovation-and-growth)
     - [Conclusion](#conclusion)
 - [Contents](#contents)
@@ -69,6 +80,8 @@ In an era of rapid information exchange, **UN2050 News Site V1.3** stands out as
     - [**As a Site User**:](#as-a-site-user)
     - [**As a Site Admin**:](#as-a-site-admin)
     - [**As a Site Owner**:](#as-a-site-owner)
+    - [**As a Site Admin**:](#as-a-site-admin-1)
+    - [**As a Site Owner**:](#as-a-site-owner-1)
   - [Site Structure](#site-structure)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
@@ -131,70 +144,209 @@ Whether you're a casual reader, an active participant, or a site admin, **Un2050
 
 ## User Stories:
 
-![userstory.png](assets/images/readme_images/userstory.png)
-
-
-
+![userstory2.png](assets/images/readme_images/userstory.png)
+ 
+ 
+ 
 ## **User Stories**
 
 ### **As a Site User**:  
 
-1. **View News Stories and Comments**  
-   - *I want to view news stories and comments on different topics so I can stay informed and engaged.*  
+1. **View Products List**  
+   - *As a Shopper, I want to view a list of products so that I can select some to purchase and identify the price, description, and product rating.*  
    - **Acceptance Criteria**:  
-     - AC1: A user can see a list of posts.  
-     - AC2: A user can view all comments on a specific post by clicking on the comment thread.
+     - The product list displays prices, descriptions, and ratings.  
+     - Users can click on products to view more details.  
+     - The list is paginated for easy navigation.
 
-2. **Register and Log In**  
-   - *I want to register and log in to the platform so I can contribute by posting news stories and leaving comments.*  
+2. **View Product Details**  
+   - *As a Shopper, I want to view individual product details so that I can see the product image and available sizes.*  
    - **Acceptance Criteria**:  
-     - AC1: A user can register an account using their email.  
-     - AC2: A registered user can log in.  
-     - AC3: Logged-in users can comment on posts.  
+     - Product details page includes images, sizes, and descriptions.  
+     - Users can zoom in on images.  
+     - Available sizes are clearly marked.
 
-3. **Upvote or Downvote Posts**  
-   - *I want to upvote or downvote posts so I can show my opinion on the content.*
-
-4. **Filter Posts by Categories**  
-   - *I want to filter posts by categories so I can quickly find stories that interest me.*
-
-5. **View Time and Date of Posts**  
-   - *I want to view the time and date of each post so I can know when the story was published.*
-
-6. **View Comments on a Post**  
-   - *I can view comments on an individual post so that I can read the conversation.*  
+3. **Identify Deals and Offers**  
+   - *As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on products I'd like to purchase.*  
    - **Acceptance Criteria**:  
-     - AC1: Admins can view one or more comments.  
-     - AC2: Users can click on a comment thread to read the conversation.
+     - Deals and special offers are highlighted on the homepage.  
+     - Clearance items are marked with discounted prices.  
+     - Users can filter products by deals and offers.
 
-7. **Leave Comments on a Post**  
-   - *I can leave comments on a post so that I can be involved in the conversation.*  
+4. **View Purchase Total**  
+   - *As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid spending too much.*  
    - **Acceptance Criteria**:  
-     - AC1: Approved comments are visible.  
-     - AC2: Users can reply to comments, forming conversation threads.  
-     - AC3: Conversations are threaded when multiple comments exist.
+     - The shopping cart displays the total cost.  
+     - Users can view the total before proceeding to checkout.  
+     - The total updates automatically when items are added or removed.
 
-8. **Modify or Delete My Comments**  
-   - *I can modify or delete my comment on a post so that I can stay involved in the conversation.*  
+5. **Register for Account**  
+   - *As a Site User, I want to easily register for an account so that I can have a personal account and view my profile.*  
    - **Acceptance Criteria**:  
-     - AC1: Logged-in users can edit their comments.  
-     - AC2: Logged-in users can delete their comments.
+     - Registration form is simple and easy to complete.  
+     - Users receive a confirmation email after registration.  
+     - Users can log in immediately after registration.
 
-9. **View Full Post**  
-   - *I can click on a post so that I can read the full text.*  
+6. **Login and Logout**  
+   - *As a Site User, I want to easily log in or log out so that I can access my personal account information.*  
    - **Acceptance Criteria**:  
-     - AC1: Clicking on a post title opens a detailed view of the post.
+     - Login and logout buttons are easily accessible.  
+     - Users are redirected to their profile after logging in.  
+     - Session expires after a period of inactivity.
 
-10. **Paginated List of Posts**  
-    - *I can view a paginated list of posts so that I can select which post I want to view.*  
+7. **Recover Password**  
+   - *As a Site User, I want to easily recover my password in case I forget it so that I can recover access to my account.*  
+   - **Acceptance Criteria**:  
+     - Password recovery option is available on the login page.  
+     - Users receive a password reset link via email.  
+     - Users can set a new password after clicking the link.
+
+8. **Email Confirmation After Registration**  
+   - *As a Site User, I want to receive an email confirmation after registering so that I can verify that my account registration was successful.*  
+   - **Acceptance Criteria**:  
+     - Confirmation email is sent immediately after registration.  
+     - Email contains a link to verify the account.  
+     - Users cannot log in until the account is verified.
+
+9. **Personalized User Profile**  
+   - *As a Site User, I want to have a personalized user profile so that I can view my personal order history, order confirmations, and save my payment information.*  
+   - **Acceptance Criteria**:  
+     - Profile page displays order history and confirmations.  
+     - Users can save and update payment information.  
+     - Profile information is secure and private.
+
+10. **Sort Product List**  
+    - *As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.*  
     - **Acceptance Criteria**:  
-      - AC1: Multiple posts are listed when available in the database.  
-      - AC2: The main page displays a paginated list of post titles.
+      - Sorting options include price, rating, and category.  
+      - Products are dynamically sorted based on user selection.  
+      - Default sorting is by relevance.
 
-11. **Read About the Site**  
-    - *I can click on the About link so that I can read about the site.*  
+11. **Sort Specific Category**  
+    - *As a Shopper, I want to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.*  
     - **Acceptance Criteria**:  
-      - AC1: Clicking the About link displays the site’s information.
+      - Users can select a category and apply sorting options.  
+      - Sorting options include price, rating, and name.  
+      - Products within the category are displayed accordingly.
+
+12. **Sort Multiple Categories**  
+    - *As a Shopper, I want to sort multiple categories of products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware."*  
+    - **Acceptance Criteria**:  
+      - Users can select multiple categories and apply sorting.  
+      - Sorting options include price and rating.  
+      - Products from selected categories are displayed together.
+
+13. **Search for Product**  
+    - *As a Shopper, I want to search for a product by name or description so that I can find a specific product I'd like to purchase.*  
+    - **Acceptance Criteria**:  
+      - Search bar is easily accessible on all pages.  
+      - Search results include products matching the name or description.  
+      - Users can refine search results with filters.
+
+14. **View Search Results**  
+    - *As a Shopper, I want to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.*  
+    - **Acceptance Criteria**:  
+      - Search results display the search term and number of matches.  
+      - Users can see a preview of products in the search results.  
+      - No results message is displayed if no matches are found.
+
+15. **Select Product Size and Quantity**  
+    - *As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity, or size.*  
+    - **Acceptance Criteria**:  
+      - Size and quantity options are clearly displayed.  
+      - Users can adjust quantity before adding to the cart.  
+      - Out-of-stock sizes are marked as unavailable.
+
+16. **View Shopping Cart**  
+    - *As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.*  
+    - **Acceptance Criteria**:  
+      - Shopping cart displays all selected items and their details.  
+      - Total cost is clearly displayed.  
+      - Users can remove items from the cart.
+
+17. **Adjust Cart Quantity**  
+    - *As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.*  
+    - **Acceptance Criteria**:  
+      - Quantity can be adjusted directly in the cart.  
+      - Total cost updates automatically when quantity is changed.  
+      - Users can save changes before proceeding to checkout.
+
+18. **Enter Payment Information**  
+    - *As a Shopper, I want to easily enter my payment information so that I can check out quickly and with no hassles.*  
+    - **Acceptance Criteria**:  
+      - Payment information form is simple and secure.  
+      - Users can save payment information for future purchases.  
+      - Multiple payment options are available.
+
+19. **Secure Payment Information**  
+    - *As a Shopper, I want to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.*  
+    - **Acceptance Criteria**:  
+      - Site uses SSL encryption for secure transactions.  
+      - Payment information is stored securely.  
+      - Users are notified of any security measures.
+
+20. **View Order Confirmation**  
+    - *As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.*  
+    - **Acceptance Criteria**:  
+      - Order confirmation page displays all purchase details.  
+      - Users can print or save the confirmation.  
+      - Confirmation email is sent immediately after purchase.
+
+21. **Receive Email Confirmation After Checkout**  
+    - *As a Shopper, I want to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.*  
+    - **Acceptance Criteria**:  
+      - Confirmation email is sent immediately after checkout.  
+      - Email includes order details and a summary.  
+      - Users can contact support from the email if needed.
+
+---
+
+### **As a Site Admin**:  
+
+1. **Add Product**  
+   - *As a Store Owner, I want to add a product so that I can add new items to my store.*  
+   - **Acceptance Criteria**:  
+     - Product addition form is easy to use.  
+     - New products are immediately available in the store.  
+     - Users can add images, descriptions, and prices.
+
+2. **Edit Product**  
+   - *As a Store Owner, I want to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.*  
+   - **Acceptance Criteria**:  
+     - Product details can be edited from the admin panel.  
+     - Changes are reflected immediately in the store.  
+     - Users can preview changes before saving.
+
+3. **Delete Product**  
+   - *As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale.*  
+   - **Acceptance Criteria**:  
+     - Products can be deleted from the admin panel.  
+     - Deleted products are removed from the store immediately.  
+     - Users are prompted to confirm before deletion.
+
+---
+
+### **As a Site Owner**:  
+
+1. **Mark Collaboration Requests as Read**  
+   - *I can mark collaboration requests as "read" so that I can see how many I still need to process.*  
+   - **Acceptance Criteria**:  
+     - Collaboration requests have a "read/unread" status flag in the database.  
+     - Status can be toggled via the admin panel.  
+     - Read requests are visually distinct from unread ones.
+
+2. **Store Collaboration Requests in the Database**  
+   - *I can store collaboration requests in the database so that I can review them.*  
+   - **Acceptance Criteria**:  
+     - Submitted requests are saved with details and metadata (e.g., date, status).  
+     - Requests are retrievable through the admin interface.
+
+3. **Add Contact Form for Collaboration Requests**  
+   - *I can fill in a contact form so that I can submit a request for collaboration.*  
+   - **Acceptance Criteria**:  
+     - The website includes a contact form for collaboration requests.  
+     - The form collects necessary details (name, email, message).  
+     - Successful submissions display a confirmation message.
 
 ---
 
@@ -256,7 +408,7 @@ Whether you're a casual reader, an active participant, or a site admin, **Un2050
 
 ## Site Structure
 
-**UN2050 News Site V1.3** is designed as a modern news platform with various sections accessible from the navigation bar. Here's an overview of its structure:
+**Loqta2050.com For E-Commerce V1.0** is designed as a modern news platform with various sections accessible from the navigation bar. Here's an overview of its structure:
 
 1. **Home Page:**  
    - A dynamic and welcoming page showcasing the latest news articles and featured stories.  
@@ -284,7 +436,7 @@ Whether you're a casual reader, an active participant, or a site admin, **Un2050
    - Registered users can log in to comment on articles and participate in discussions.  
    - Features such as “Share” and “Like” buttons are integrated for social sharing and engagement.  
 
-The **UN2050 News Site V1.3** is accessible at [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **Loqta2050.com For E-Commerce V1.0** is accessible at [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 [Back to top](<#contents>)  
 
@@ -815,5 +967,5 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [UN2050 News Site V1.3]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
+You can view the live site here also: [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
 

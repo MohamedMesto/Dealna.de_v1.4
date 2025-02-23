@@ -26,10 +26,10 @@ body {
 .main-logo-link {
     width: fit-content;
 }
-
+ 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #de8c1c;
+    color: black;
     min-width: 260px;
 }
 
@@ -68,8 +68,9 @@ body {
     border: 1px solid black !important;
 }
 
+/* delivery-banner  bg*/
 .bg-black {
-    background: #000 !important;
+    background: #025081 !important; 
 }
 
 
