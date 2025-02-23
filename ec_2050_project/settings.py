@@ -44,11 +44,11 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = os.environ.get('DEVELOPMENT')
+# DEBUG = os.environ.get('DEVELOPMENT')
 
 # DEBUG=False
-
-                      
+DEBUG=True
+                    
 ALLOWED_HOSTS = ['ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
                  '127.0.0.1',

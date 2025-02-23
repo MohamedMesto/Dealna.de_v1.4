@@ -1,17 +1,19 @@
 [<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
  
-
- 
+  
 ---
 [![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
-
-
+ 
 [![alt text](assets/images/readme_images/main3.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
-
-
+ 
 [![alt text](assets/images/readme_images/main4.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+
+
+[![alt text](assets/images/readme_images/main5.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+
+
 ---
  
 # **_Loqta2050.com E-Commerce V1.0_**
@@ -50,7 +52,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 
 ---
 
-[![devices](assets/images/readme_images/loqta2050_devices.png)](https://loqta2050.com)
+[![devices](assets/images/readme_images/devices_ec_platform_v1.png)](https://loqta2050.com)
 
 ---
 
