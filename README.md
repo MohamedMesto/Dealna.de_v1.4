@@ -106,6 +106,11 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
   - [**Email Marketing Integration**](#email-marketing-integration)
     - [**Mailchimp**](#mailchimp)
     - [**Screenshot of Mailchimp Pricing**](#screenshot-of-mailchimp-pricing)
+  - [**Compliance and Trust**](#compliance-and-trust)
+    - [**Händlerbund Membership**](#händlerbund-membership)
+    - [**Trusted Shops Seal**](#trusted-shops-seal)
+    - [**European Compliance**](#european-compliance)
+    - [**Screenshot of Trusted Shops Seal**](#screenshot-of-trusted-shops-seal)
   - [Testing:](#testing)
     - [Chrome Test](#chrome-test)
     - [Lighthouse Testing](#lighthouse-testing)
@@ -569,6 +574,33 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
  
 ---
  
+ 
+
+## **Compliance and Trust**
+
+### **Händlerbund Membership**  
+We are proud members of **[Händlerbund](https://www.haendlerbund.de/de)**, the largest association for e-commerce and online retailers in Europe. This membership ensures that our platform, **EC Platform 2050 V1**, adheres to the highest standards of legal compliance and consumer protection.  
+
+### **Trusted Shops Seal**  
+Our website has been awarded the **Trusted Shops** seal, a mark of trust and reliability in e-commerce. This certification demonstrates our commitment to:  
+- Transparent business practices.  
+- Secure payment processing.  
+- Reliable customer service.  
+- Compliance with European consumer protection laws.  
+
+### **European Compliance**  
+We strictly follow all European regulations, including:  
+- **GDPR (General Data Protection Regulation):** Ensuring the privacy and security of user data.  
+- **Consumer Rights Directive:** Providing clear information about products, prices, and return policies.  
+- **E-Commerce Directive:** Ensuring transparency in online transactions and contracts.  
+
+### **Screenshot of Trusted Shops Seal**  
+Below is a screenshot of the **Trusted Shops** seal displayed on our website [loqta2050.com](https://loqta2050.com/):  
+
+![Trusted Shops Seal](assets/images/readme_images/trusted_shops_seal.png)  
+
+---
+
 
 ## Testing:
 
