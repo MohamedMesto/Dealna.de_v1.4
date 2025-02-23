@@ -150,6 +150,7 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 
 **Facebook Business Page for EC Platform 2050 V1**  
 As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **EC Platform 2050 V1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [EC Platform 2050 V1 Facebook Page](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif).  
+
 [![EC Platform 2050 V1 Facebook Page](assets/images/readme_images/loqta2050_fb.jpg)](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif)
 
 --- 
@@ -217,7 +218,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
 
-
+ 
 ## Site Structure
 
 **EC Platform 2050 V1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an overview of its structure:
@@ -274,7 +275,7 @@ The **Loqta2050.com For E-Commerce V1.0** is accessible at [Loqta2050.com For E-
 ### Colour Scheme
  
 
-The color scheme of Word Adventure is designed for clarity and user engagement. The interface uses a dark background (#121213) to reduce eye strain and make key elements stand out. Green (#538D4E) highlights correct letters, while orange (#B59F3B) indicates misplaced letters, providing immediate feedback. The New Game and Backspace buttons are highlighted in red (#C50E1F) for visibility, ensuring easy access to these essential controls. The overall color palette creates a visually appealing, focused gameplay experience.
+The color scheme of EC Platform 2050 V1 is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of #04668C (a deep blue) for headings and key elements, complemented by #A7C3D1 (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, #DE8C1C (a warm orange) is used for buttons and interactive elements. The text is displayed in #000000 (black) for readability, while #FFFFFF (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
 
 [Back to top](<#contents>)
 
