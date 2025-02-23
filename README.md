@@ -62,7 +62,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 
 
 
-[![devices](assets/images/readme_images/un2050_devices.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
 
