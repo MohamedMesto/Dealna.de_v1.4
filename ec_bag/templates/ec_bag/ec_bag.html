@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col">
             {% if ec_bag_items %}
-            
+
             <div class="d-block d-md-none">
                 <div class="row">
                     <div class="col">
@@ -37,27 +37,31 @@
                     </div>
                 </div>
                 {% for item in ec_bag_items %}
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-2">
-                            {% include "ec_bag/ec_product-image.html" %}
-                        </div>
-                        <div class="col-12 col-sm-6 mb-2">
-                            {% include "ec_bag/ec_product-info.html" %}
-                        </div>
-                        <div class="col-12 col-sm-6 order-sm-last">
-                            <p class="my-0">Price Each: ${{ item.ec_product.price }}</p>
-                            <p><strong>Subtotal: </strong>${{ item.ec_product.price | calc_subtotal:item.quantity }}</p>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            {% include "ec_bag/quantity-form.html" %}
-                        </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-2">
+                        {% include "ec_bag/ec_product-image.html" %}
                     </div>
-                    <div class="row"><div class="col"><hr></div></div>
+                    <div class="col-12 col-sm-6 mb-2">
+                        {% include "ec_bag/ec_product-info.html" %}
+                    </div>
+                    <div class="col-12 col-sm-6 order-sm-last">
+                        <p class="my-0">Price Each: ${{ item.ec_product.price }}</p>
+                        <p><strong>Subtotal: </strong>${{ item.ec_product.price | calc_subtotal:item.quantity }}</p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        {% include "ec_bag/quantity-form.html" %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
                 {% endfor %}
                 <div class="btt-button shadow-sm rounded-0 border border-black">
                     <a class="btt-link d-flex h-100">
                         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-                    </a>	
+                    </a>
                 </div>
             </div>
             <div class="table-responsive rounded d-none d-md-block">
@@ -119,28 +123,28 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
     })
 </script>
 {% include 'ec_products/includes/quantity_input_script.html' %}
 <script type="text/javascript">
     // Update quantity on click
-    $('.update-link').click(function(e) {
+    $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('ec_product_size');
         var url = `/ec_bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'ec_product_size': size};
+        var data = { 'csrfmiddlewaretoken': csrfToken, 'ec_product_size': size };
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function () {
+                location.reload();
+            });
     })
 </script>
 {% endblock %}
