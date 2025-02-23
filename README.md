@@ -104,19 +104,20 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
     - [**Example Relationships**](#example-relationships)
     - [**Database Schema Diagram**](#database-schema-diagram)
   - [Testing:](#testing)
-  - [Chrome Test](#chrome-test)
-  - [Lighthouse Testing](#lighthouse-testing)
-  - [Performance](#performance)
-    - [Desktop lighthouse Performance](#desktop-lighthouse-performance)
-    - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
-  - [Accessibility Testing](#accessibility-testing)
-      - [Lighthouse Accessibility Testing](#lighthouse-accessibility-testing)
-      - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
+    - [Chrome Test](#chrome-test)
+    - [Lighthouse Testing](#lighthouse-testing)
+    - [Performance](#performance)
+      - [Desktop lighthouse Performance](#desktop-lighthouse-performance)
+      - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
+    - [Accessibility Testing](#accessibility-testing)
+        - [Lighthouse Accessibility Testing](#lighthouse-accessibility-testing)
+        - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     - [Fixing Accessibility issues:](#fixing-accessibility-issues)
     - [Adobe Color Accessibility Tool](#adobe-color-accessibility-tool)
-  - [Responsive Testing](#responsive-testing)
-      - [The Responsive Design Checker](#the-responsive-design-checker)
-      - [The Viewport Resizer](#the-viewport-resizer)
+  - [**Responsive Testing**](#responsive-testing)
+    - [**Testing Tools**](#testing-tools)
+    - [**Issues with Online Tools**](#issues-with-online-tools)
+    - [**Key Findings**](#key-findings)
     - [Manual Testing:](#manual-testing)
     - [Automated Unit Testing:](#automated-unit-testing)
     - [Running Tests:](#running-tests)
@@ -549,7 +550,7 @@ User
 
 ## Testing:
 
-## Chrome Test
+### Chrome Test
 
 
 
@@ -570,16 +571,16 @@ User
 ![Chrome_test2](assets/images/readme_images/Chrome_test2.png)
 
 
-## Lighthouse Testing
+### Lighthouse Testing
 
-## Performance
+### Performance
 The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and it tests it under mobile and desktop criteria.
 
-### Desktop lighthouse Performance
+#### Desktop lighthouse Performance
 ![Lighthouse testing](assets/images/readme_images/lighthouse_performance1.png)
  
 
-### Mobile lighthouse Performance
+#### Mobile lighthouse Performance
 ![Lighthouse testing](assets/images/readme_images/lighthouse_performance2.png)
  
  
@@ -587,15 +588,15 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
-## Accessibility Testing 
+### Accessibility Testing 
 
-#### Lighthouse Accessibility Testing 
+##### Lighthouse Accessibility Testing 
 ![Lighthouse Accessibility Testing](assets/images/readme_images/lighthouse_accessibility.png)
 
 
  
 
-#### WAVE Web Accessibility Evaluation Tool
+##### WAVE Web Accessibility Evaluation Tool
 
 [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was used to check the colour contrast on the website for accessibility purposes which it passed. 
 
@@ -641,26 +642,45 @@ The [Adobe Color Accessibility Tool](https://color.adobe.com/create/color-access
 
  ![adobe_color_accessibility_validator1](assets/images/readme_images/adobe_color_accessibility_validator3.png)
 
+Here’s the updated **Responsive Testing** section, addressing the issue with **The Responsive Design Checker** and **The Viewport Resizer**:
 
-## Responsive Testing
+---
 
-#### The Responsive Design Checker
+## **Responsive Testing**
 
-Responsiveness was tested via a few different mediums manually, including Chrome Devtools, [The Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en) chrome extension and [The Responsive Design Checker](https://responsivedesignchecker.com/) website.
+Responsiveness was tested manually using **Chrome DevTools** and by physically testing the website on various devices, including:  
+- **Desktop** (1920x1080, 1440x900, 1366x768)  
+- **Laptop** (1280x800)  
+- **Tablet** (iPad Air, iPad Mini, Samsung Galaxy Tab)  
+- **Mobile** (iPhone 12, iPhone SE, Samsung Galaxy S20, Google Pixel 5)  
 
-#### The Viewport Resizer 
-![viewport_resizer1](assets/images/readme_images/viewport_resizer1.png)
+### **Testing Tools**  
+1. **Chrome DevTools**  
+   - Used to simulate different screen sizes and resolutions.  
+   - Tested breakpoints for responsiveness, including:  
+     - Extra small devices (portrait phones, <576px)  
+     - Small devices (landscape phones, ≥576px)  
+     - Medium devices (tablets, ≥768px)  
+     - Large devices (desktops, ≥992px)  
+     - Extra large devices (large desktops, ≥1200px)  
 
-![viewport_resizer2](assets/images/readme_images/viewport_resizer2.png)
+2. **Physical Device Testing**  
+   - The website was tested on actual devices to ensure responsiveness and usability across different screen sizes and operating systems.  
 
-![viewport_resizer3](assets/images/readme_images/viewport_resizer3.png)
-
-![viewport_resizer4](assets/images/readme_images/viewport_resizer4.png)
-
-![viewport_resizer5](assets/images/readme_images/viewport_resizer5.png)
+### **Issues with Online Tools**  
+- **[The Responsive Design Checker](https://responsivedesignchecker.com/):** Unable to test due to access restrictions on the website.  
+- **[The Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en):** Unable to test due to access restrictions on the website.  
 
  
+---
 
+### **Key Findings**  
+- The website is fully responsive and adapts seamlessly to different screen sizes.  
+- All interactive elements (e.g., buttons, forms, navigation menus) function correctly across devices.  
+- Images and text scale appropriately without breaking the layout.  
+
+---
+ 
 
 
 
