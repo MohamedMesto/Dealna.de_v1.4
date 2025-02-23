@@ -88,10 +88,10 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
   - [Site Structure](#site-structure)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
-    - [Typography](#typography)
-  - [Features:](#features)
-    - [Existing Features:](#existing-features)
-    - [Future Features:](#future-features)
+    - [**Typography**](#typography)
+  - [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Future Features**](#future-features)
   - [Technologies Used](#technologies-used)
   - [Data Model:](#data-model)
   - [Testing:](#testing)
@@ -289,105 +289,94 @@ The color scheme of EC Platform 2050 V1 is designed to create a modern, engaging
 
  
 [Back to top](<#contents>)
+ 
+ 
+ Got it! If the **About Us** page is not currently implemented and is planned as a future feature, I’ll adjust the content accordingly. Here’s the updated version:
 
-### Typography
+---
+Here’s the updated content with image links for both **mobile devices** and **notebooks/desktops** for each feature point. I’ve included placeholders for the image links, which you can replace with actual screenshots from your project.
 
+---
 
-The typography of Word Adventure is crafted for simplicity and readability. A clean sans-serif font is used throughout the interface, ensuring a modern and approachable feel. The text appears in contrasting colors—typically light text on a dark background (#121213)—to reduce eye strain and enhance focus. This choice not only supports a smooth gameplay experience but also allows players to focus entirely on guessing the correct word. The well-defined typography aligns with the game’s intuitive and user-friendly design.
+### **Typography**
 
-[Back to top](<#contents>)
+The typography of **EC Platform 2050 V1** is designed for clarity, readability, and a modern aesthetic. A clean sans-serif font is used throughout the website, ensuring a professional and approachable feel. The text is displayed in **#000000** (black) for primary content and **#FFFFFF** (white) for text on darker backgrounds, ensuring high contrast and reducing eye strain. Headings and key elements are emphasized using **#04668C** (deep blue), while interactive elements like buttons are highlighted with **#DE8C1C** (warm orange). This typography choice enhances the user experience, making the platform intuitive and easy to navigate.
 
-## Features: 
+---
 
-### Existing Features:
+## **Features**
 
-The **Un2050 News Site** offers several features to enhance user experience:
+### **Existing Features**
 
-   
-2. **Multimedia Support**: 
-   The ability for users to include images or videos in their posts to enhance the richness of shared content.
+The **EC Platform 2050 V1** offers a range of features designed to enhance the user experience and streamline the shopping process:
 
 1. **Navigation**  
+   - The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **Account**, and **Cart**.  
+   - **Responsive Design:** The navigation bar adapts seamlessly to different screen sizes, ensuring a smooth user experience across devices.  
+     - **Notebook/Desktop View:** ![Desktop Navbar](assets/images/readme_images/navbar_desktop.png)  
+     - **Mobile View:** ![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)  
  
-
-   The navigation menu is featured at the top of the page and contains links to the main content sections:
-   - **Responsive Design:** Three variations of the navigation bar are provided for different screen sizes. Each variation maintains consistent color and design styles, while the structure adapts to ensure a smooth user experience across devices.
- - 
-   ![Desktop Navbar](assets/images/readme_images/navbar_desktop.png)
-
-   
-   ![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)
-
-2. **User Registration and Authentication**: 
-   Users can create accounts, log in, and log out securely. Once logged in, users can create and comment on posts.
-![Create Post](assets/images/readme_images/signin.png)
+2. **User Registration and Authentication**  
+   - Users can create accounts, log in, and log out securely. Registered users can access personalized features such as order history and saved payment information.  
+     - **Notebook/Desktop View:** ![Sign In](assets/images/readme_images/signin.png)  
+     - **Mobile View:** ![Sign In Mobile](assets/images/readme_images/signin_mobile.png)  
+     - **Notebook/Desktop View:** ![Sign Up](assets/images/readme_images/signin2.png)  
+     - **Mobile View:** ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)  
  
-![Create Post](assets/images/readme_images/signin2.png)
-3. **Post Creation and Voting**: 
-   - Users can submit news stories on different topics.
-   - Other users can upvote or downvote these posts based on their preferences.
-
-   ![Create Post](assets/images/readme_images/create_post.png)
+3. **Product Browsing and Filtering**  
+   - Users can browse products by category, sort by price, rating, or name, and filter by deals or special offers.  
+   - Each product page includes detailed information, images, available sizes, and user reviews.  
+     - **Notebook/Desktop View:** ![Product Page](assets/images/readme_images/product_page.png)  
+     - **Mobile View:** ![Product Page Mobile](assets/images/readme_images/product_page_mobile.png)  
  
-
-    ![alt text](assets/images/readme_images/Django_administration.png)
-
-
-
-
-
-4. **Commenting System**: 
-   Users can comment on posts, fostering discussions on different news stories.
-   
+4. **Shopping Cart and Checkout**  
+   - Users can add products to their cart, adjust quantities, and proceed to a secure checkout process.  
+   - The cart displays the total cost and allows users to review their order before payment.  
+     - **Notebook/Desktop View:** ![Shopping Cart](assets/images/readme_images/cart.png)  
+     - **Mobile View:** ![Shopping Cart Mobile](assets/images/readme_images/cart_mobile.png)  
+     - **Notebook/Desktop View:** ![Checkout](assets/images/readme_images/checkout.png)  
+     - **Mobile View:** ![Checkout Mobile](assets/images/readme_images/checkout_mobile.png)  
  
+5. **Order Confirmation and Email Notifications**  
+   - After placing an order, users receive an on-screen confirmation and an email with order details.  
+     - **Notebook/Desktop View:** ![Order Confirmation](assets/images/readme_images/order_confirmation.png)  
+     - **Mobile View:** ![Order Confirmation Mobile](assets/images/readme_images/order_confirmation_mobile.png)  
 
-![Commenting](assets/images/readme_images/commenting1.png)
+6. **Admin Dashboard**  
+   - Admin users can manage products, view orders, and update inventory through a dedicated dashboard.  
+     - **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/admin_dashboard.png)  
+     - **Mobile View:** ![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)  
+
+---
  
-![Commenting](assets/images/readme_images/commenting3.png)
+### **Future Features**
 
-![Commenting](assets/images/readme_images/commenting4.png)
- 
+1. **About Us Page**  
+   - Provide information about the platform's mission, vision, and values, as well as the team behind **EC Platform 2050 V1**.  
 
-1. **Time and Date of Posting**: 
-   Each post displays the date and time it was published to provide context to the news stories.
-   
-   ![Date and Time](assets/images/readme_images/date_time.png)
+2. **Wishlist Functionality**  
+   - Allow users to save products to a wishlist for future purchase.  
 
-2. **User-friendly Interface**: 
-   Un2050 provides a simple and intuitive interface for users to navigate posts, leave comments, and upvote/downvote stories. 
+3. **Advanced Search and Filtering**  
+   - Implement more advanced search and filtering options, such as price range, brand, and customer ratings.  
 
-3. **Admin Moderation Tools**: 
-   Admin users have access to moderation tools, allowing them to approve, delete, or edit user content when necessary.
+4. **Product Reviews and Ratings**  
+   - Enable users to leave reviews and ratings for purchased products, fostering trust and engagement.  
 
-![alt text](assets/images/readme_images/add_user.png) 
+5. **Newsletter Subscription**  
+   - Allow users to subscribe to a newsletter for updates on new products, promotions, and exclusive deals.  
 
-8. **Pagination for Posts**: 
-   Users can browse through a paginated list of posts, making it easier to explore older news stories.
+6. **Social Media Integration**  
+   - Add social media sharing buttons for products and integrate social media feeds on the website.  
 
-   ![Pagination](assets/images/readme_images/pagination.png)
-
- 
-9. **About us Page**
-    ![Pagination](assets/images/readme_images/aboutus.png)
-    
-
-    ![Pagination](assets/images/readme_images/collaborate.png)
+7. **Live Chat Support**  
+   - Introduce a live chat feature for real-time customer support.  
 
 
-
-
-### Future Features:
-
-8. **About Us Page:**  
-   - Provides information about the platform's mission, vision, and values.  
-   - Highlights the team behind EC Platform 2050 and their commitment to quality.  
-
-9. **Contact Us Page:**  
-   - A user-friendly contact form for inquiries, feedback, or support requests.  
-   - Includes links to social media platforms and customer support email.  
+---
 
  
-
+ 
    
  
    
