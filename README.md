@@ -5,7 +5,12 @@
 ---
 [![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
- 
+
+[![loqta2050](assets/images/readme_images/loqta2050.png)](https://loqta2050.com)
+
+
+
+
 [![alt text](assets/images/readme_images/main3.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
  
 [![alt text](assets/images/readme_images/main4.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
@@ -64,7 +69,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 
 --- 
 
-[![devices](assets/images/readme_images/loqta2050.png)](https://loqta2050.com)
+
 
 # Contents
 
@@ -78,12 +83,8 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 - [Contents](#contents)
   - [Purpose of the Project – **Loqta2050.com E-Commerce V1.0**](#purpose-of-the-project--loqta2050com-e-commerce-v10)
   - [User Stories:](#user-stories)
-  - [**User Stories**](#user-stories-1)
-    - [**As a Site User**:](#as-a-site-user)
-    - [**As a Site Admin**:](#as-a-site-admin)
-    - [**As a Site Owner**:](#as-a-site-owner)
-    - [**As a Site Admin**:](#as-a-site-admin-1)
-    - [**As a Site Owner**:](#as-a-site-owner-1)
+    - [**User Stories**](#user-stories-1)
+    - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
   - [Site Structure](#site-structure)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
@@ -149,264 +150,62 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 
 ![userstory2.png](assets/images/readme_images/userstory.png)
  
+
  
+
+### **User Stories**
+
+| User Story ID | AS A / AN | I WANT TO BE ABLE TO... | SO THAT I CAN... |
+| --- | --- | --- | --- |
+| | | ***Viewing and Navigation*** | | 
+| 1 | Shopper | View a list of products | Select some to purchase and identify the price, description, and product rating |
+| 2 | Shopper | View individual product details | See the product image and available sizes |
+| 3 | Shopper | Quickly identify deals, clearance items, and special offers | Take advantage of special savings on products I'd like to purchase |
+| 4 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
+| | | ***Registration & User Accounts*** | | 
+| 5 | Site User | Easily register for an account | Have a personal account and view my profile |
+| 6 | Site User | Easily login or logout | Access my personal account information |
+| 7 | Site User | Easily recover my password in case I forget it | Recover access to my account |
+| 8 | Site User | Receive an email confirmation after registering | Verify that my account registration was successful |
+| 9 | Site User | Have a personalized user profile | View my personal order history, order confirmations, and save my payment information |
+| | | ***Sorting & Searching*** | | 
+| 10 | Shopper | Sort the list of available products | Easily identify the best-rated, best-priced, and categorically sorted products |
+| 11 | Shopper | Sort a specific category of product | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| 12 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware" |
+| 13 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| 14 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| | | ***Purchasing & Checkout*** | | 
+| 15 | Shopper | Easily select the size and quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product, quantity, or size |
+| 16 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| 17 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| 18 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
+| 19 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 20 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 21 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| | | ***Admin & Store Management*** | | 
+| 22 | Store Owner | Add a product | Add new items to my store |
+| 23 | Store Owner | Edit/update a product | Change product prices, descriptions, images, and other product criteria |
+| 24 | Store Owner | Delete a product | Remove items that are no longer for sale |
+
+---
+
+### **Additional User Stories for Site Admin and Site Owner**
+
+| User Story ID | AS A / AN | I WANT TO BE ABLE TO... | SO THAT I CAN... |
+| --- | --- | --- | --- |
+| | | ***Site Admin*** | | 
+| 25 | Site Admin | Moderate user posts and comments | Manage inappropriate content |
+| 26 | Site Admin | Create, read, update, and delete posts | Manage blog content |
+| 27 | Site Admin | Create draft posts | Finish writing the content later |
+| 28 | Site Admin | Manage categories | Keep the content organized |
+| 29 | Site Admin | View all user activities | Ensure compliance with community guidelines |
+| 30 | Site Admin | Update About page content | Keep the About page up-to-date |
+| | | ***Site Owner*** | | 
+| 31 | Site Owner | Mark collaboration requests as "read" | Track which requests I still need to process |
+| 32 | Site Owner | Store collaboration requests in the database | Review them later |
+| 33 | Site Owner | Add a contact form for collaboration requests | Allow users to submit collaboration requests |
+
  
-## **User Stories**
-
-### **As a Site User**:  
-
-1. **View Products List**  
-   - *As a Shopper, I want to view a list of products so that I can select some to purchase and identify the price, description, and product rating.*  
-   - **Acceptance Criteria**:  
-     - The product list displays prices, descriptions, and ratings.  
-     - Users can click on products to view more details.  
-     - The list is paginated for easy navigation.
-
-2. **View Product Details**  
-   - *As a Shopper, I want to view individual product details so that I can see the product image and available sizes.*  
-   - **Acceptance Criteria**:  
-     - Product details page includes images, sizes, and descriptions.  
-     - Users can zoom in on images.  
-     - Available sizes are clearly marked.
-
-3. **Identify Deals and Offers**  
-   - *As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on products I'd like to purchase.*  
-   - **Acceptance Criteria**:  
-     - Deals and special offers are highlighted on the homepage.  
-     - Clearance items are marked with discounted prices.  
-     - Users can filter products by deals and offers.
-
-4. **View Purchase Total**  
-   - *As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid spending too much.*  
-   - **Acceptance Criteria**:  
-     - The shopping cart displays the total cost.  
-     - Users can view the total before proceeding to checkout.  
-     - The total updates automatically when items are added or removed.
-
-5. **Register for Account**  
-   - *As a Site User, I want to easily register for an account so that I can have a personal account and view my profile.*  
-   - **Acceptance Criteria**:  
-     - Registration form is simple and easy to complete.  
-     - Users receive a confirmation email after registration.  
-     - Users can log in immediately after registration.
-
-6. **Login and Logout**  
-   - *As a Site User, I want to easily log in or log out so that I can access my personal account information.*  
-   - **Acceptance Criteria**:  
-     - Login and logout buttons are easily accessible.  
-     - Users are redirected to their profile after logging in.  
-     - Session expires after a period of inactivity.
-
-7. **Recover Password**  
-   - *As a Site User, I want to easily recover my password in case I forget it so that I can recover access to my account.*  
-   - **Acceptance Criteria**:  
-     - Password recovery option is available on the login page.  
-     - Users receive a password reset link via email.  
-     - Users can set a new password after clicking the link.
-
-8. **Email Confirmation After Registration**  
-   - *As a Site User, I want to receive an email confirmation after registering so that I can verify that my account registration was successful.*  
-   - **Acceptance Criteria**:  
-     - Confirmation email is sent immediately after registration.  
-     - Email contains a link to verify the account.  
-     - Users cannot log in until the account is verified.
-
-9. **Personalized User Profile**  
-   - *As a Site User, I want to have a personalized user profile so that I can view my personal order history, order confirmations, and save my payment information.*  
-   - **Acceptance Criteria**:  
-     - Profile page displays order history and confirmations.  
-     - Users can save and update payment information.  
-     - Profile information is secure and private.
-
-10. **Sort Product List**  
-    - *As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.*  
-    - **Acceptance Criteria**:  
-      - Sorting options include price, rating, and category.  
-      - Products are dynamically sorted based on user selection.  
-      - Default sorting is by relevance.
-
-11. **Sort Specific Category**  
-    - *As a Shopper, I want to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.*  
-    - **Acceptance Criteria**:  
-      - Users can select a category and apply sorting options.  
-      - Sorting options include price, rating, and name.  
-      - Products within the category are displayed accordingly.
-
-12. **Sort Multiple Categories**  
-    - *As a Shopper, I want to sort multiple categories of products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware."*  
-    - **Acceptance Criteria**:  
-      - Users can select multiple categories and apply sorting.  
-      - Sorting options include price and rating.  
-      - Products from selected categories are displayed together.
-
-13. **Search for Product**  
-    - *As a Shopper, I want to search for a product by name or description so that I can find a specific product I'd like to purchase.*  
-    - **Acceptance Criteria**:  
-      - Search bar is easily accessible on all pages.  
-      - Search results include products matching the name or description.  
-      - Users can refine search results with filters.
-
-14. **View Search Results**  
-    - *As a Shopper, I want to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.*  
-    - **Acceptance Criteria**:  
-      - Search results display the search term and number of matches.  
-      - Users can see a preview of products in the search results.  
-      - No results message is displayed if no matches are found.
-
-15. **Select Product Size and Quantity**  
-    - *As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity, or size.*  
-    - **Acceptance Criteria**:  
-      - Size and quantity options are clearly displayed.  
-      - Users can adjust quantity before adding to the cart.  
-      - Out-of-stock sizes are marked as unavailable.
-
-16. **View Shopping Cart**  
-    - *As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.*  
-    - **Acceptance Criteria**:  
-      - Shopping cart displays all selected items and their details.  
-      - Total cost is clearly displayed.  
-      - Users can remove items from the cart.
-
-17. **Adjust Cart Quantity**  
-    - *As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.*  
-    - **Acceptance Criteria**:  
-      - Quantity can be adjusted directly in the cart.  
-      - Total cost updates automatically when quantity is changed.  
-      - Users can save changes before proceeding to checkout.
-
-18. **Enter Payment Information**  
-    - *As a Shopper, I want to easily enter my payment information so that I can check out quickly and with no hassles.*  
-    - **Acceptance Criteria**:  
-      - Payment information form is simple and secure.  
-      - Users can save payment information for future purchases.  
-      - Multiple payment options are available.
-
-19. **Secure Payment Information**  
-    - *As a Shopper, I want to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.*  
-    - **Acceptance Criteria**:  
-      - Site uses SSL encryption for secure transactions.  
-      - Payment information is stored securely.  
-      - Users are notified of any security measures.
-
-20. **View Order Confirmation**  
-    - *As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.*  
-    - **Acceptance Criteria**:  
-      - Order confirmation page displays all purchase details.  
-      - Users can print or save the confirmation.  
-      - Confirmation email is sent immediately after purchase.
-
-21. **Receive Email Confirmation After Checkout**  
-    - *As a Shopper, I want to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.*  
-    - **Acceptance Criteria**:  
-      - Confirmation email is sent immediately after checkout.  
-      - Email includes order details and a summary.  
-      - Users can contact support from the email if needed.
-
----
-
-### **As a Site Admin**:  
-
-1. **Add Product**  
-   - *As a Store Owner, I want to add a product so that I can add new items to my store.*  
-   - **Acceptance Criteria**:  
-     - Product addition form is easy to use.  
-     - New products are immediately available in the store.  
-     - Users can add images, descriptions, and prices.
-
-2. **Edit Product**  
-   - *As a Store Owner, I want to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.*  
-   - **Acceptance Criteria**:  
-     - Product details can be edited from the admin panel.  
-     - Changes are reflected immediately in the store.  
-     - Users can preview changes before saving.
-
-3. **Delete Product**  
-   - *As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale.*  
-   - **Acceptance Criteria**:  
-     - Products can be deleted from the admin panel.  
-     - Deleted products are removed from the store immediately.  
-     - Users are prompted to confirm before deletion.
-
----
-
-### **As a Site Owner**:  
-
-1. **Mark Collaboration Requests as Read**  
-   - *I can mark collaboration requests as "read" so that I can see how many I still need to process.*  
-   - **Acceptance Criteria**:  
-     - Collaboration requests have a "read/unread" status flag in the database.  
-     - Status can be toggled via the admin panel.  
-     - Read requests are visually distinct from unread ones.
-
-2. **Store Collaboration Requests in the Database**  
-   - *I can store collaboration requests in the database so that I can review them.*  
-   - **Acceptance Criteria**:  
-     - Submitted requests are saved with details and metadata (e.g., date, status).  
-     - Requests are retrievable through the admin interface.
-
-3. **Add Contact Form for Collaboration Requests**  
-   - *I can fill in a contact form so that I can submit a request for collaboration.*  
-   - **Acceptance Criteria**:  
-     - The website includes a contact form for collaboration requests.  
-     - The form collects necessary details (name, email, message).  
-     - Successful submissions display a confirmation message.
-
----
-
-### **As a Site Admin**:  
-
-1. **Moderate User Posts and Comments**  
-   - *I want to manage user posts and comments so I can moderate inappropriate content.*  
-   - **Acceptance Criteria**:  
-     - AC1: Admins can approve or disapprove comments.  
-     - AC2: Approved comments are visible, while disapproved ones are not.
-
-2. **Create, Read, Update, and Delete Posts**  
-   - *I can create, read, update, and delete posts so that I can manage my blog content.*  
-   - **Acceptance Criteria**:  
-     - AC1: Logged-in admins can create, read, update, and delete blog posts.
-
-3. **Create Draft Posts**  
-   - *I can create draft posts so that I can finish writing the content later.*  
-   - **Acceptance Criteria**:  
-     - AC1: Logged-in admins can save draft blog posts.  
-     - AC2: Draft posts can be edited and published later.
-
-4. **Manage Categories**  
-   - *I want to manage categories so I can keep the content organized.*
-
-5. **View All User Activities**  
-   - *I want to view all user activities and ensure compliance with community guidelines.*
-
-6. **Update About Page Content**  
-   - *I can create or update the about page content so that it is available on the site.*  
-   - **Acceptance Criteria**:  
-     - AC1: The About app is accessible in the admin panel.
-
----
-
-### **As a Site Owner**:  
-
-1. **Mark Collaboration Requests as Read**  
-   - *I can mark collaboration requests as "read" so that I can see how many I still need to process.*  
-   - **Acceptance Criteria**:  
-     - AC1: Collaboration requests have a "read/unread" status flag in the database.  
-     - AC2: Status can be toggled via the admin panel.  
-     - AC3: Read requests are visually distinct from unread ones.
-
-2. **Store Collaboration Requests in the Database**  
-   - *I can store collaboration requests in the database so that I can review them.*  
-   - **Acceptance Criteria**:  
-     - AC1: Submitted requests are saved with details and metadata (e.g., date, status).  
-     - AC2: Requests are retrievable through the admin interface.
-
-3. **Add Contact Form for Collaboration Requests**  
-   - *I can fill in a contact form so that I can submit a request for collaboration.*  
-   - **Acceptance Criteria**:  
-     - AC1: The website includes a contact form for collaboration requests.  
-     - AC2: The form collects necessary details (name, email, message).  
-     - AC3: Successful submissions display a confirmation message.
-
 
 
 ## Site Structure
@@ -449,15 +248,7 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
    - **Order Management:** Admins can view and manage customer orders.  
    - **User Management:** Admins can manage user accounts and permissions.  
 
-8. **About Us Page:**  
-   - Provides information about the platform's mission, vision, and values.  
-   - Highlights the team behind EC Platform 2050 and their commitment to quality.  
-
-9. **Contact Us Page:**  
-   - A user-friendly contact form for inquiries, feedback, or support requests.  
-   - Includes links to social media platforms and customer support email.  
-
-10. **User Interaction Features:**  
+8. **User Interaction Features:**  
     - **Wishlist:** Users can save products to a wishlist for future purchase.  
     - **Product Reviews:** Users can leave reviews and ratings for purchased products.  
     - **Newsletter Subscription:** Users can subscribe to receive updates on new products and promotions.  
@@ -501,7 +292,9 @@ The typography of Word Adventure is crafted for simplicity and readability. A cl
 
 The **Un2050 News Site** offers several features to enhance user experience:
 
-
+   
+2. **Multimedia Support**: 
+   The ability for users to include images or videos in their posts to enhance the richness of shared content.
 
 1. **Navigation**  
  
@@ -530,7 +323,7 @@ The **Un2050 News Site** offers several features to enhance user experience:
 
 
 
- 
+
 
 4. **Commenting System**: 
    Users can comment on posts, fostering discussions on different news stories.
@@ -574,17 +367,20 @@ The **Un2050 News Site** offers several features to enhance user experience:
 
 ### Future Features:
 
-1. **Private Messaging**: 
-   Users will be able to send private messages to one another for more direct engagement.
+8. **About Us Page:**  
+   - Provides information about the platform's mission, vision, and values.  
+   - Highlights the team behind EC Platform 2050 and their commitment to quality.  
+
+9. **Contact Us Page:**  
+   - A user-friendly contact form for inquiries, feedback, or support requests.  
+   - Includes links to social media platforms and customer support email.  
+
+ 
+
    
-2. **Multimedia Support**: 
-   The ability for users to include images or videos in their posts to enhance the richness of shared content.
+ 
    
-3. **Push Notifications**: 
-   Users will receive notifications for upvotes, comments, and replies on their posts.
-   
-4. **Tagging System**: 
-   Implement a tagging system for posts to enable better organization and searching across topics.
+ 
 
    
 ## Technologies Used  
