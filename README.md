@@ -146,6 +146,16 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 
 
 
+---
+
+**Facebook Business Page for EC Platform 2050 V1**  
+As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **EC Platform 2050 V1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [EC Platform 2050 V1 Facebook Page](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif).  
+[![EC Platform 2050 V1 Facebook Page](assets/images/readme_images/loqta2050_fb.jpg)](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif)
+
+--- 
+ 
+
+ 
 ## User Stories:
 
 ![userstory2.png](assets/images/readme_images/userstory.png)
