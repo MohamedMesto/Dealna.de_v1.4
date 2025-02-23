@@ -1,6 +1,6 @@
 [<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
- 
+
   
 ---
 [![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
@@ -411,34 +411,58 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 
 ## Site Structure
 
-**Loqta2050.com For E-Commerce V1.0** is designed as a modern news platform with various sections accessible from the navigation bar. Here's an overview of its structure:
+**EC Platform 2050 V1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an overview of its structure:
 
 1. **Home Page:**  
-   - A dynamic and welcoming page showcasing the latest news articles and featured stories.  
-   - Includes navigation links to other sections of the site.  
+   - A visually appealing landing page showcasing featured products, special offers, and categories.  
+   - Includes a navigation bar with links to key sections such as Shop, Deals, and User Account.  
 
-2. **News Categories:**  
-   - **Latest News:** A curated feed of up-to-date global headlines and breaking stories.  
-   - **Trending Topics:** Highlights trending articles based on user engagement and current events.  
-   - **Categories Section:** Provides categorized content such as politics, environment, technology, and lifestyle for easy navigation.  
+2. **Product Categories:**  
+   - **Shop by Category:** Products are organized into categories (e.g., Clothing, Homeware, Electronics) for easy browsing.  
+   - **Deals & Offers:** Highlights discounted products, clearance items, and special promotions.  
+   - **New Arrivals:** Showcases the latest products added to the platform.  
 
-3. **Article Page:**  
-   - **Article Content:** Displays a full news article with an image, title, and detailed body text.  
-   - **Author Information:** Includes the author's name and publication date.  
-   - **Comments Section:** Allows users to view and submit comments on articles, encouraging interaction.  
+3. **Product Page:**  
+   - **Product Details:** Displays comprehensive information about a product, including images, price, description, available sizes, and ratings.  
+   - **Add to Cart:** Allows users to select quantity and size, and add products to their shopping cart.  
+   - **Product Reviews:** Displays user reviews and ratings for the product.  
 
-4. **About Us Page:**  
-   - Learn more about the mission, vision, and team behind UN2050.  
-   - Showcases the site's goals in providing reliable and timely news to users.  
+4. **Shopping Cart:**  
+   - **Cart Summary:** Displays all items added to the cart, including quantity, price, and total cost.  
+   - **Edit Cart:** Allows users to adjust quantities or remove items before checkout.  
+   - **Proceed to Checkout:** Redirects users to the secure checkout page.  
 
-5. **Contact Us Page:**  
-   - A user-friendly contact form where visitors can submit inquiries or feedback.  
-   - Includes links to social media platforms for additional interaction.  
+5. **Checkout Page:**  
+   - **Shipping Details:** Users can enter their shipping address and choose delivery options.  
+   - **Payment Information:** A secure form for entering payment details (e.g., credit card, PayPal).  
+   - **Order Summary:** Displays a final summary of the order, including items, total cost, and shipping fees.  
+   - **Place Order:** Completes the purchase and redirects users to an order confirmation page.  
 
-6. **User Interaction:**  
-   - Registered users can log in to comment on articles and participate in discussions.  
-   - Features such as “Share” and “Like” buttons are integrated for social sharing and engagement.  
+6. **User Account:**  
+   - **Registration & Login:** Users can create an account or log in to access personalized features.  
+   - **Order History:** Displays past orders with details such as order number, date, and status.  
+   - **Saved Payment Methods:** Allows users to save and manage payment information for faster checkout.  
+   - **Profile Management:** Users can update their personal information and preferences.  
 
+7. **Admin Dashboard:**  
+   - **Product Management:** Admins can add, edit, or delete products from the platform.  
+   - **Order Management:** Admins can view and manage customer orders.  
+   - **User Management:** Admins can manage user accounts and permissions.  
+
+8. **About Us Page:**  
+   - Provides information about the platform's mission, vision, and values.  
+   - Highlights the team behind EC Platform 2050 and their commitment to quality.  
+
+9. **Contact Us Page:**  
+   - A user-friendly contact form for inquiries, feedback, or support requests.  
+   - Includes links to social media platforms and customer support email.  
+
+10. **User Interaction Features:**  
+    - **Wishlist:** Users can save products to a wishlist for future purchase.  
+    - **Product Reviews:** Users can leave reviews and ratings for purchased products.  
+    - **Newsletter Subscription:** Users can subscribe to receive updates on new products and promotions.  
+
+ 
 The **Loqta2050.com For E-Commerce V1.0** is accessible at [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 [Back to top](<#contents>)  
