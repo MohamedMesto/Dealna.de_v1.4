@@ -92,7 +92,12 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
   - [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Future Features**](#future-features)
-  - [Technologies Used](#technologies-used)
+  - [**Technologies Used**](#technologies-used)
+    - [**Languages**](#languages)
+    - [**Frameworks \& Libraries**](#frameworks--libraries)
+    - [**Database**](#database)
+    - [**Tools \& Services**](#tools--services)
+    - [**Design Tools**](#design-tools)
   - [**Data Model**](#data-model)
     - [**Core Models**](#core-models)
     - [**Relational Model**](#relational-model)
@@ -380,34 +385,58 @@ The **EC Platform 2050 V1** offers a range of features designed to enhance the u
 ---
 
  
- 
-   
- 
-   
- 
+  
 
-   
-## Technologies Used  
+## **Technologies Used**
 
-- **HTML5:** Provides the foundational structure and semantic content for the **UN2050 News Site**, ensuring accessibility and compatibility across browsers.  
-- **CSS3:** Styles and layouts are meticulously crafted to deliver a responsive and visually appealing design that enhances user experience.  
-- **JavaScript (JS):** Powers the interactive elements of the site, such as navigation menus and user engagement features like comments and likes.  
+### **Languages**
+
+- **[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML):** Provides the foundational structure and semantic content for the **EC Platform 2050 V1**, ensuring accessibility and compatibility across browsers.  
+- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS):** Styles and layouts are meticulously crafted to deliver a responsive and visually appealing design that enhances user experience.  
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript):** Powers the interactive elements of the site, such as navigation menus, product filtering, and shopping cart functionality.  
 - **[Python](https://www.python.org/):** The backend logic is implemented using Python, enabling robust data handling and seamless integration with the database.  
+
+---
+
+### **Frameworks & Libraries**
+
 - **[Django](https://www.djangoproject.com/):** A high-level web framework used for building the server-side logic, managing models, views, templates, and user authentication efficiently.  
-- **[Bootstrap](https://getbootstrap.com/):** Provides a responsive grid system and pre-designed components, accelerating the design process and ensuring consistency across the site.  
+- **[Bootstrap5](https://getbootstrap.com/):** Provides a responsive grid system and pre-designed components, accelerating the design process and ensuring consistency across the site.  
+- **[Django-Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html):** Python user authentication and login plugin for Django.  
+- **[Stripe](https://stripe.com/en-gb):** Online payments platform used for secure checkout functionality.  
+- **[jQuery](https://jquery.com/):** Used for initializing Bootstrap5 components and enhancing shopping cart functionality.  
+- **[Jinja](https://jinja.palletsprojects.com/en/2.11.x/):** Templating language for Python, used for dynamic HTML rendering.  
+
+---
+
+### **Database**
+
 - **[PostgreSQL](https://www.postgresql.org/):** A powerful, open-source relational database system used to manage and store the site's data securely.  
-- **[Cloudinary](https://cloudinary.com/):** Utilized for hosting and optimizing images, ensuring fast loading times and reduced server load.  
+- **[SQLite3](https://www.sqlitetutorial.net/sqlite-python/):** Default database created with Django, used for app development on localhost.  
+
+---
+
+### **Tools & Services**
+
 - **[Heroku](https://www.heroku.com/):** The platform used for deploying the live site, offering scalability and reliable hosting for the project.  
-- **[Adobe XD](https://www.adobe.com/ie/products/xd.html):** Employed to design wireframes and prototypes, allowing the team to visualize and test user flows before development.  
-- **[Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html):** Used to create the site's logo and social media graphics, maintaining a professional and consistent brand identity.  
-- **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html):** Utilized to resize and optimize images for web use, enhancing the visual quality of the site while maintaining performance.  
+- **[AWS S3](https://aws.amazon.com/s3/):** Amazon Simple Storage Service (S3), used to store and serve static and media files.  
+- **[Cloudinary](https://cloudinary.com/):** Utilized for hosting and optimizing images, ensuring fast loading times and reduced server load.  
 - **[VS Code](https://code.visualstudio.com/):** The primary code editor for development, offering a range of extensions for better productivity and code management.  
-- **Git Bash:** A command-line tool for version control and managing project repositories efficiently.  
-- **GitHub:** Used to host and manage the codebase, ensuring version control and seamless collaboration among team members.  
+- **[Git](https://git-scm.com/):** Used for version control by committing to Git and pushing to GitHub.  
+- **[GitHub](https://github.com/):** Used to store, host, and deploy the project files and source code.  
+- **[Font Awesome](https://fontawesome.com/icons?d=gallery):** Used for icons to enhance headings and add emphasis to text.  
 - **[Google Fonts](https://fonts.google.com/):** Provides a selection of web fonts used to ensure a clean and modern typography throughout the site.  
 - **[Favicon Generator](https://favicon.io/):** Used to create the site's favicon, adding a professional touch to the browser tab display.  
 
+---
 
+### **Design Tools**
+
+- **[Adobe XD](https://www.adobe.com/ie/products/xd.html):** Employed to design wireframes and prototypes, allowing the team to visualize and test user flows before development.  
+- **[Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html):** Used to create the site's logo and social media graphics, maintaining a professional and consistent brand identity.  
+- **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html):** Utilized to resize and optimize images for web use, enhancing the visual quality of the site while maintaining performance.  
+
+ 
  
 ---
 
