@@ -103,6 +103,9 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
     - [**Relational Model**](#relational-model)
     - [**Example Relationships**](#example-relationships)
     - [**Database Schema Diagram**](#database-schema-diagram)
+  - [**Email Marketing Integration**](#email-marketing-integration)
+    - [**Mailchimp**](#mailchimp)
+    - [**Screenshot of Mailchimp Pricing**](#screenshot-of-mailchimp-pricing)
   - [Testing:](#testing)
     - [Chrome Test](#chrome-test)
     - [Lighthouse Testing](#lighthouse-testing)
@@ -544,7 +547,26 @@ User
 └── Review
     └── Product
 ```
+ 
 
+## **Email Marketing Integration**
+
+### **Mailchimp**  
+Initially, we planned to integrate **Mailchimp** for email marketing to allow users to subscribe to newsletters and receive updates about new products, promotions, and exclusive deals. However, due to recent changes in Mailchimp's registration rules and pricing, this feature could not be implemented.  
+
+- **Issue:**  
+  - Mailchimp no longer offers a free plan beyond a 14-day trial.  
+  - The paid plan starts at **$24/month**, which was beyond the project's budget.  
+
+- **Alternative Solution:**  
+  - For future implementation, we recommend exploring other email marketing services that offer free or more affordable plans, such as **Sendinblue** or **MailerLite**.  
+
+### **Screenshot of Mailchimp Pricing**  
+Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier:  
+
+![Mailchimp Pricing](assets/images/readme_images/mailchimp_pricing.png)  
+
+ 
 ---
  
 
