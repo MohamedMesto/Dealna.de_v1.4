@@ -114,10 +114,10 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
   - [Testing:](#testing)
     - [Chrome Test](#chrome-test)
     - [Lighthouse Testing](#lighthouse-testing)
-    - [Performance](#performance)
-      - [Desktop lighthouse Performance](#desktop-lighthouse-performance)
-      - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
-    - [Accessibility Testing](#accessibility-testing)
+      - [Performance](#performance)
+        - [Desktop lighthouse Performance](#desktop-lighthouse-performance)
+        - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
+      - [Accessibility Testing](#accessibility-testing)
         - [Lighthouse Accessibility Testing](#lighthouse-accessibility-testing)
         - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     - [Fixing Accessibility issues:](#fixing-accessibility-issues)
@@ -608,10 +608,6 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [lo
 
 
 
-
-
-
-
 ![Chrome_test1](assets/images/readme_images/Chrome_test1.png)
 
 
@@ -627,14 +623,14 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [lo
 
 ### Lighthouse Testing
 
-### Performance
+#### Performance
 The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and it tests it under mobile and desktop criteria.
 
-#### Desktop lighthouse Performance
+##### Desktop lighthouse Performance
 ![Lighthouse testing](assets/images/readme_images/lighthouse_performance1.png)
  
 
-#### Mobile lighthouse Performance
+##### Mobile lighthouse Performance
 ![Lighthouse testing](assets/images/readme_images/lighthouse_performance2.png)
  
  
@@ -642,7 +638,7 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
-### Accessibility Testing 
+#### Accessibility Testing 
 
 ##### Lighthouse Accessibility Testing 
 ![Lighthouse Accessibility Testing](assets/images/readme_images/lighthouse_accessibility.png)

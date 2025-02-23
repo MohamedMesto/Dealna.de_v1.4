@@ -46,14 +46,19 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 # DEBUG = os.environ.get('DEVELOPMENT')
 
-# DEBUG=False
-DEBUG=True
+DEBUG=False
+# DEBUG=True
                     
 ALLOWED_HOSTS = ['ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
                  '127.0.0.1',
                  ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/",
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Application definition
 
