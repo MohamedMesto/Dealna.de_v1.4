@@ -93,7 +93,11 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
     - [**Existing Features**](#existing-features)
     - [**Future Features**](#future-features)
   - [Technologies Used](#technologies-used)
-  - [Data Model:](#data-model)
+  - [**Data Model**](#data-model)
+    - [**Core Models**](#core-models)
+    - [**Relational Model**](#relational-model)
+    - [**Example Relationships**](#example-relationships)
+    - [**Database Schema Diagram**](#database-schema-diagram)
   - [Testing:](#testing)
   - [Chrome Test](#chrome-test)
   - [Lighthouse Testing](#lighthouse-testing)
@@ -404,19 +408,115 @@ The **EC Platform 2050 V1** offers a range of features designed to enhance the u
 - **[Favicon Generator](https://favicon.io/):** Used to create the site's favicon, adding a professional touch to the browser tab display.  
 
 
-## Data Model:
+ 
+---
+
+## **Data Model**
 
 This project uses Django’s Object-Relational Mapping (ORM) to handle data interactions between the application and PostgreSQL. The key models are as follows:
 
-- **User**: Handles authentication and user profile information.
-- **Post**: Represents a news article or story, including its title, content, author, category, and timestamp.
-- **Comment**: Represents user comments on a post.
-- **Category**: Represents a grouping or category of posts (e.g., Politics, Technology).
-- **Vote**: Handles upvoting and downvoting of posts and comments.
+### **Core Models**
 
-The relational model ensures each post has associated comments, votes, and categories.
+1. **User**  
+   - Handles authentication and user profile information.  
+   - Fields:  
+     - `username` (CharField): Unique username for login.  
+     - `email` (EmailField): User's email address.  
+     - `password` (CharField): Hashed password for secure authentication.  
+     - `first_name` (CharField): User's first name.  
+     - `last_name` (CharField): User's last name.  
+     - `is_staff` (BooleanField): Indicates if the user is an admin.  
 
+2. **Product**  
+   - Represents a product available for purchase.  
+   - Fields:  
+     - `name` (CharField): Name of the product.  
+     - `description` (TextField): Detailed description of the product.  
+     - `price` (DecimalField): Price of the product.  
+     - `category` (ForeignKey): Category the product belongs to.  
+     - `image` (ImageField): Product image.  
+     - `rating` (DecimalField): Average rating based on user reviews.  
+     - `stock` (IntegerField): Available stock quantity.  
 
+3. **Category**  
+   - Represents a grouping of products (e.g., Clothing, Electronics).  
+   - Fields:  
+     - `name` (CharField): Name of the category.  
+     - `friendly_name` (CharField): User-friendly name for display.  
+
+4. **Order**  
+   - Represents a user's purchase order.  
+   - Fields:  
+     - `user` (ForeignKey): User who placed the order.  
+     - `order_number` (CharField): Unique order identifier.  
+     - `date` (DateTimeField): Date and time the order was placed.  
+     - `total` (DecimalField): Total cost of the order.  
+     - `status` (CharField): Current status of the order (e.g., Processing, Shipped).  
+
+5. **OrderLineItem**  
+   - Represents an individual item within an order.  
+   - Fields:  
+     - `order` (ForeignKey): Associated order.  
+     - `product` (ForeignKey): Product purchased.  
+     - `quantity` (IntegerField): Quantity of the product.  
+     - `lineitem_total` (DecimalField): Total cost for this line item.  
+
+6. **Review**  
+   - Represents a user review for a product.  
+   - Fields:  
+     - `user` (ForeignKey): User who wrote the review.  
+     - `product` (ForeignKey): Product being reviewed.  
+     - `rating` (IntegerField): Rating given by the user (e.g., 1-5 stars).  
+     - `comment` (TextField): User's review comment.  
+     - `date` (DateTimeField): Date and time the review was posted.  
+
+---
+
+### **Relational Model**
+
+- Each **Product** belongs to a **Category**.  
+- Each **Order** is associated with a **User** and contains multiple **OrderLineItem** entries.  
+- Each **OrderLineItem** is linked to a specific **Product**.  
+- Each **Review** is associated with a **User** and a **Product**.  
+
+---
+
+### **Example Relationships**
+
+1. **User → Order**  
+   - A user can place multiple orders.  
+   - Example: User "JohnDoe" places two orders, each containing multiple products.  
+
+2. **Product → Category**  
+   - A product belongs to a specific category.  
+   - Example: Product "Smartphone" belongs to the "Electronics" category.  
+
+3. **Order → OrderLineItem**  
+   - An order contains multiple line items, each representing a product and its quantity.  
+   - Example: Order #123 contains two products: "Smartphone" (quantity: 1) and "Headphones" (quantity: 2).  
+
+4. **User → Review**  
+   - A user can leave multiple reviews for different products.  
+   - Example: User "JaneDoe" leaves a 5-star review for "Smartphone" and a 4-star review for "Headphones".  
+
+---
+
+### **Database Schema Diagram**
+
+Below is a simplified representation of the database schema:
+
+```
+User
+├── Order
+│   ├── OrderLineItem
+│   │   └── Product
+│   │       └── Category
+└── Review
+    └── Product
+```
+
+---
+ 
 
 ## Testing:
 
