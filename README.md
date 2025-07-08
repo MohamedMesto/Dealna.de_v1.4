@@ -6,10 +6,10 @@
 [![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
-[![Dealna.de](assets/images/readme_images/loqta2050.png)](https://Dealna.de)
+[![Dealna.de1](assets/images/readme_images/Dealna.de1.png)](https://Dealna.de)
+ 
 
-
-
+[![Dealna.de2](assets/images/readme_images/Dealna.de2.png)](https://Dealna.de)
 
 [![alt text](assets/images/readme_images/main3.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
  
@@ -18,7 +18,7 @@
 
 [![alt text](assets/images/readme_images/main5.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
-
+ 
 ---
  
 # **_Dealna.de E-Commerce V1.0_**
@@ -166,10 +166,17 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 
 ---
 
-**Facebook Business Page for EC Platform 2050 V1**  
-As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **EC Platform 2050 V1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [EC Platform 2050 V1 Facebook Page](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif).  
+**Facebook Business Page for Dealna.de v1**  
+As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **Dealna.de v1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [Dealna.de v1 Facebook Page](https://www.facebook.com/share/1AvNPvqf9B/).  
 
-[![EC Platform 2050 V1 Facebook Page](assets/images/readme_images/loqta2050_fb.jpg)](https://www.facebook.com/profile.php?id=61569686675871&notif_id=1739449327369401&notif_t=page_user_activity&ref=notif)
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb3.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
+
+
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb1.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
+
+
+
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb2.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
 
 --- 
  
@@ -239,7 +246,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
  
 ## Site Structure
 
-**EC Platform 2050 V1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an overview of its structure:
+**Dealna.de v1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an overview of its structure:
 
 1. **Home Page:**  
    - A visually appealing landing page showcasing featured products, special offers, and categories.  
@@ -293,7 +300,7 @@ The **Dealna.de For E-Commerce V1.0** is accessible at [Dealna.de For E-Commerce
 ### Colour Scheme
  
 
-The color scheme of EC Platform 2050 V1 is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of #04668C (a deep blue) for headings and key elements, complemented by #A7C3D1 (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, #DE8C1C (a warm orange) is used for buttons and interactive elements. The text is displayed in #000000 (black) for readability, while #FFFFFF (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
+The color scheme of Dealna.de v1 is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of #04668C (a deep blue) for headings and key elements, complemented by #A7C3D1 (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, #DE8C1C (a warm orange) is used for buttons and interactive elements. The text is displayed in #000000 (black) for readability, while #FFFFFF (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
 
 [Back to top](<#contents>)
 
@@ -318,7 +325,7 @@ Here’s the updated content with image links for both **mobile devices** and **
 
 ### **Typography**
 
-The typography of **EC Platform 2050 V1** is designed for clarity, readability, and a modern aesthetic. A clean sans-serif font is used throughout the website, ensuring a professional and approachable feel. The text is displayed in **#000000** (black) for primary content and **#FFFFFF** (white) for text on darker backgrounds, ensuring high contrast and reducing eye strain. Headings and key elements are emphasized using **#04668C** (deep blue), while interactive elements like buttons are highlighted with **#DE8C1C** (warm orange). This typography choice enhances the user experience, making the platform intuitive and easy to navigate.
+The typography of **Dealna.de v1** is designed for clarity, readability, and a modern aesthetic. A clean sans-serif font is used throughout the website, ensuring a professional and approachable feel. The text is displayed in **#000000** (black) for primary content and **#FFFFFF** (white) for text on darker backgrounds, ensuring high contrast and reducing eye strain. Headings and key elements are emphasized using **#04668C** (deep blue), while interactive elements like buttons are highlighted with **#DE8C1C** (warm orange). This typography choice enhances the user experience, making the platform intuitive and easy to navigate.
 
 ---
 
@@ -326,7 +333,7 @@ The typography of **EC Platform 2050 V1** is designed for clarity, readability, 
 
 ### **Existing Features**
 
-The **EC Platform 2050 V1** offers a range of features designed to enhance the user experience and streamline the shopping process:
+The **Dealna.de v1** offers a range of features designed to enhance the user experience and streamline the shopping process:
 
 1. **Navigation**  
    - The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **Account**, and **Cart**.  
@@ -370,7 +377,7 @@ The **EC Platform 2050 V1** offers a range of features designed to enhance the u
 ### **Future Features**
 
 1. **About Us Page**  
-   - Provide information about the platform's mission, vision, and values, as well as the team behind **EC Platform 2050 V1**.  
+   - Provide information about the platform's mission, vision, and values, as well as the team behind **Dealna.de v1**.  
 
 2. **Wishlist Functionality**  
    - Allow users to save products to a wishlist for future purchase.  
@@ -400,7 +407,7 @@ The **EC Platform 2050 V1** offers a range of features designed to enhance the u
 
 ### **Languages**
 
-- **[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML):** Provides the foundational structure and semantic content for the **EC Platform 2050 V1**, ensuring accessibility and compatibility across browsers.  
+- **[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML):** Provides the foundational structure and semantic content for the **Dealna.de v1**, ensuring accessibility and compatibility across browsers.  
 - **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS):** Styles and layouts are meticulously crafted to deliver a responsive and visually appealing design that enhances user experience.  
 - **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript):** Powers the interactive elements of the site, such as navigation menus, product filtering, and shopping cart functionality.  
 - **[Python](https://www.python.org/):** The backend logic is implemented using Python, enabling robust data handling and seamless integration with the database.  
@@ -579,7 +586,7 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 ## **Compliance and Trust**
 
 ### **Händlerbund Membership**  
-We are proud members of **[Händlerbund](https://www.haendlerbund.de/de)**, the largest association for e-commerce and online retailers in Europe. This membership ensures that our platform, **EC Platform 2050 V1**, adheres to the highest standards of legal compliance and consumer protection.  
+We are proud members of **[Händlerbund](https://www.haendlerbund.de/de)**, the largest association for e-commerce and online retailers in Europe. This membership ensures that our platform, **Dealna.de v1**, adheres to the highest standards of legal compliance and consumer protection.  
 
 ### **Trusted Shops Seal**  
 Our website has been awarded the **Trusted Shops** seal, a mark of trust and reliability in e-commerce. This certification demonstrates our commitment to:  
