@@ -1,4 +1,4 @@
-[<img src="assets/images/readme_images/loqta2050_v7.png" alt="loqta2050_v7 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
   
@@ -6,7 +6,7 @@
 [![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
 
-[![loqta2050](assets/images/readme_images/loqta2050.png)](https://loqta2050.com)
+[![Dealna.de](assets/images/readme_images/loqta2050.png)](https://Dealna.de)
 
 
 
@@ -21,7 +21,7 @@
 
 ---
  
-# **_Loqta2050.com E-Commerce V1.0_**
+# **_Dealna.de E-Commerce V1.0_**
 
 ## Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
@@ -53,14 +53,14 @@ The **Loqta2050 E-Commerce V1.0** reflects the iterative evolution of a robust p
 
 In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [Loqta2050 E-Commerce V1.0](https://loqta2050.com).**  
+**You can view the live site here - [Loqta2050 E-Commerce V1.0](https://Dealna.de).**  
 
 
 
 ---
 
 
-**You can view the live site here - [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
+**You can view the live site here - [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
 
 
 ---
@@ -73,7 +73,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 
 # Contents
 
-- [**_Loqta2050.com E-Commerce V1.0_**](#loqta2050com-e-commerce-v10)
+- [**_Dealna.de E-Commerce V1.0_**](#dealnade-e-commerce-v10)
   - [Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#loqta2050-e-commerce-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
     - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)
@@ -81,7 +81,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
     - [Continuous Innovation and Growth](#continuous-innovation-and-growth)
     - [Conclusion](#conclusion)
 - [Contents](#contents)
-  - [Purpose of the Project – **Loqta2050.com E-Commerce V1.0**](#purpose-of-the-project--loqta2050com-e-commerce-v10)
+  - [Purpose of the Project – **Dealna.de E-Commerce V1.0**](#purpose-of-the-project--dealnade-e-commerce-v10)
   - [User Stories:](#user-stories)
     - [**User Stories**](#user-stories-1)
     - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
@@ -154,13 +154,13 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 
 
 
-## Purpose of the Project – **Loqta2050.com E-Commerce V1.0**  
+## Purpose of the Project – **Dealna.de E-Commerce V1.0**  
 
-The goal of **Loqta2050.com** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, clothing, homeware, and special offers.  
+The goal of **Dealna.de** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, clothing, homeware, and special offers.  
 
-With features such as advanced search, secure checkout, product categorization, and personalized user accounts, **Loqta2050.com** aims to provide an intuitive and efficient marketplace for both buyers and sellers. Customers can easily browse, purchase, and track their orders, while vendors can manage their inventory and sales through a robust backend system.  
+With features such as advanced search, secure checkout, product categorization, and personalized user accounts, **Dealna.de** aims to provide an intuitive and efficient marketplace for both buyers and sellers. Customers can easily browse, purchase, and track their orders, while vendors can manage their inventory and sales through a robust backend system.  
 
-Whether you're a shopper looking for the best deals or a seller aiming to expand your reach, **Loqta2050.com** offers a powerful and scalable solution to meet your e-commerce needs.
+Whether you're a shopper looking for the best deals or a seller aiming to expand your reach, **Dealna.de** offers a powerful and scalable solution to meet your e-commerce needs.
 
 
 
@@ -283,7 +283,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
     - **Newsletter Subscription:** Users can subscribe to receive updates on new products and promotions.  
 
  
-The **Loqta2050.com For E-Commerce V1.0** is accessible at [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **Dealna.de For E-Commerce V1.0** is accessible at [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 [Back to top](<#contents>)  
 
@@ -595,7 +595,7 @@ We strictly follow all European regulations, including:
 - **E-Commerce Directive:** Ensuring transparency in online transactions and contracts.  
 
 ### **Screenshot of Trusted Shops Seal**  
-Below is a screenshot of the **Trusted Shops** seal displayed on our website [loqta2050.com](https://loqta2050.com/):  
+Below is a screenshot of the **Trusted Shops** seal displayed on our website [Dealna.de](https://Dealna.de/):  
 
 ![Trusted Shops Seal](assets/images/readme_images/trusted_shops_seal.png)  
 
@@ -989,5 +989,5 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [Loqta2050.com For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
+You can view the live site here also: [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
 

@@ -41,7 +41,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 
 
-
+ 
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = os.environ.get('DEVELOPMENT')

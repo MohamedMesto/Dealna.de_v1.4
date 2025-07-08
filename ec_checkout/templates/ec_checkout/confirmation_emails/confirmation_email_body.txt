@@ -1,7 +1,7 @@
 
 Hello {{ ec_order.full_name }}!
 
-This is a confirmation of your order at Loqta2050.com For E-Commerce. Your order information is below:
+This is a confirmation of your order at Dealna.de For E-Commerce. Your order information is below:
 
 Order Number: {{ ec_order.ec_order_number }}
 Order Date: {{ ec_order.date }}
@@ -20,5 +20,5 @@ Thank you for your order!
 
 Sincerely,
 
-Loqta2050.com Team
+Dealna.de Team
 un2050.de Team
