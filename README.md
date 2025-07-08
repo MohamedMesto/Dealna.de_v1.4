@@ -23,15 +23,15 @@
  
 # **_Dealna.de E-Commerce V1.0_**
 
-## Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
+## Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
-**Loqta2050 E-Commerce V1.0:** A Gateway to Seamless Online Shopping  
+**Dealna.de v1.0:** A Gateway to Seamless Online Shopping  
 
-The **Loqta2050 E-Commerce Platform** is designed to provide users with a modern, intuitive, and secure online shopping experience. Powered by Django, this dynamic platform delivers a seamless experience for browsing, purchasing, and managing products across diverse categories, reflecting a commitment to quality, reliability, and user satisfaction.
+The **Dealna.de E-Commerce Platform** is designed to provide users with a modern, intuitive, and secure online shopping experience. Powered by Django, this dynamic platform delivers a seamless experience for browsing, purchasing, and managing products across diverse categories, reflecting a commitment to quality, reliability, and user satisfaction.
 
 ### A Platform for Smart Shopping  
 
-At its core, **Loqta2050 E-Commerce V1.0** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
+At its core, **Dealna.de v1.0** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
 
 ### A User-Centric Experience  
 
@@ -43,17 +43,17 @@ The platform is designed with usability in mind, featuring:
 
 ### A Tool for Informed Decisions  
 
-By presenting detailed product information, customer reviews, and competitive pricing, **Loqta2050 E-Commerce V1.0** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
+By presenting detailed product information, customer reviews, and competitive pricing, **Dealna.de v1.0** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
 
 ### Continuous Innovation and Growth  
 
-The **Loqta2050 E-Commerce V1.0** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
+The **Dealna.de v1.0** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
 
 ### Conclusion  
 
-In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
+In an era of rapid digital transformation, **Dealna.de v1.0** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [Loqta2050 E-Commerce V1.0](https://Dealna.de).**  
+**You can view the live site here - [Dealna.de v1.0](https://Dealna.de).**  
 
 
 
@@ -74,7 +74,7 @@ In an era of rapid digital transformation, **Loqta2050 E-Commerce V1.0** stands 
 # Contents
 
 - [**_Dealna.de E-Commerce V1.0_**](#dealnade-e-commerce-v10)
-  - [Loqta2050 E-Commerce V1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#loqta2050-e-commerce-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
+  - [Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
     - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)
     - [A Tool for Informed Decisions](#a-tool-for-informed-decisions)
@@ -185,8 +185,8 @@ As part of our project requirements, we have created a dedicated Facebook busine
 ## User Stories:
 
 ![userstory2.png](assets/images/readme_images/userstory.png)
+  
  
-
  
 
 ### **User Stories**
@@ -346,7 +346,8 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
      - **Notebook/Desktop View:** ![Sign In](assets/images/readme_images/signin.png)  
      - **Mobile View:** ![Sign In Mobile](assets/images/readme_images/signin_mobile.png)  
      - **Notebook/Desktop View:** ![Sign Up](assets/images/readme_images/signin2.png)  
-     - **Mobile View:** ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)  
+     - **Mobile View:** 
+     ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)  
  
 3. **Product Browsing and Filtering**  
    - Users can browse products by category, sort by price, rating, or name, and filter by deals or special offers.  
