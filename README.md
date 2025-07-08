@@ -18,7 +18,7 @@
 
 [![alt text](assets/images/readme_images/main5.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
 
- 
+  
 ---
  
 # **_Dealna.de E-Commerce V1.0_**
