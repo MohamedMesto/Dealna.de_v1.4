@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import EC_Product,EC_Category
 from .forms import EC_ProductForm
+from review.forms import ReviewForm
 
 
 # Create your views here.
@@ -140,3 +141,20 @@ def delete_ec_product(request, ec_product_id):
     ec_product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('ec_products'))
+
+
+ 
+def ec_product_detail(request, pk):
+    ec_product = get_object_or_404(EC_Product, pk=pk)
+    reviews = ec_product.reviews.all()
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.ec_product = ec_product
+            review.user = request.user
+            review.save()
+            return redirect('ec_product_detail', pk=ec_product.pk)
+    else:
+        form = ReviewForm()
+    return render(request, 'ec_products/ec_product_detail.html', {'ec_product': ec_product, 'reviews': reviews, 'form': form})
