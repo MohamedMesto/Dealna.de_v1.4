@@ -46,8 +46,8 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 DEBUG = os.environ.get('DEVELOPMENT')
 
-DEBUG=False
-# DEBUG=True
+# DEBUG=False
+DEBUG=True
                     
 ALLOWED_HOSTS = ['ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
@@ -82,6 +82,7 @@ INSTALLED_APPS = [
      # Other
     'crispy_forms',
     'storages',
+    'django_extensions',
     ]
 
 MIDDLEWARE = [
@@ -163,9 +164,15 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': str(BASE_DIR) +'/db.sqlite3',
         }
     }
+
+
+ 
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
