@@ -111,9 +111,46 @@
         </div>
     </div>
 </div>
+ 
+
+
+
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
 {% include 'ec_products/includes/quantity_input_script.html' %}
+
+
+<!-- REVIEWS SECTION -->
+<div class="row mt-5">
+    <div class="col-12 col-lg-8 offset-lg-2">
+        <h4>Reviews</h4>
+
+        {% if reviews %}
+          <ul class="list-group mb-3">
+            {% for review in reviews %}
+              <li class="list-group-item">
+                <strong>{{ review.user.username }}</strong>: {{ review.content }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No reviews yet for this product.</p>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+        <h5 class="mt-4">Leave a Review</h5>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary mt-2">Submit Review</button>
+        </form>
+        {% else %}
+        <p><a href="{% url 'account_login' %}">Log in</a> to leave a review.</p>
+        {% endif %}
+    </div>
+</div>
+
+
 {% endblock %}
 

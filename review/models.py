@@ -8,4 +8,4 @@ class ReviewModel(models.Model):
     content = models.TextField()
 
     def __str__(self):
-        return f"{self.user} on {self.ec_product}"
+        return f"Review by {self.user} on {self.ec_product.name}"

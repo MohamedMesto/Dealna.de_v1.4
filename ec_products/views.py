@@ -143,10 +143,12 @@ def delete_ec_product(request, ec_product_id):
     return redirect(reverse('ec_products'))
 
 
+# Review app
  
-def ec_product_detail(request, pk):
-    ec_product = get_object_or_404(EC_Product, pk=pk)
+def ec_product_detail(request, ec_product_id):
+    ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
     reviews = ec_product.reviews.all()
+
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
@@ -154,7 +156,12 @@ def ec_product_detail(request, pk):
             review.ec_product = ec_product
             review.user = request.user
             review.save()
-            return redirect('ec_product_detail', pk=ec_product.pk)
+            return redirect('ec_product_detail', ec_product_id=ec_product.pk)
     else:
         form = ReviewForm()
-    return render(request, 'ec_products/ec_product_detail.html', {'ec_product': ec_product, 'reviews': reviews, 'form': form})
+
+    return render(request, 'ec_products/ec_product_detail.html', {
+        'ec_product': ec_product,
+        'reviews': reviews,
+        'form': form,
+    })

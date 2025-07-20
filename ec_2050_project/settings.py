@@ -78,8 +78,9 @@ INSTALLED_APPS = [
     'ec_bag',
     'ec_checkout',
     'ec_profiles',
+    'review',    
 
-     # Other
+    # Other
     'crispy_forms',
     'storages',
     'django_extensions',
