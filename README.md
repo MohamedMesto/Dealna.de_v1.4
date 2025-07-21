@@ -999,3 +999,23 @@ This project can be deployed on platforms such as **Heroku** using the following
 
 You can view the live site here also: [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
 
+
+
+
+---
+
+
+
+
+Stage 2: Add Product-Specific FAQ System
+
+- Created new `faq` app with `FAQ` model linked to `EC_Product`
+- Added views to:
+  - List FAQs for a specific product
+  - Add FAQs per product using a form
+- Updated templates:
+  - `faq_list.html` styled using Bootstrap 4.6 Accordion
+  - `add_faq.html` for submitting product-specific FAQs
+- Linked FAQ view to `ec_product_detail` via `ec_product.id`
+- Ensured FAQs are shown under each product detail page
+- Cleaned and tested routes and template blocks

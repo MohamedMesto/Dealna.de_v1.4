@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container d-flex justify-content-left align-items-center" style="min-height: 100vh;">
+
+    <div class="col-lg-6">
+        <h2 class="text-center mb-4">Add FAQ for "{{ ec_product.name }}"</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Add FAQ</button>
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="{% url 'ec_product_detail' ec_product.id %}" class="btn btn-secondary">Back to FAQs</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+ 
+ 

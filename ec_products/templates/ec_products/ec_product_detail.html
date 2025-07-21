@@ -44,11 +44,15 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_ec_product' ec_product.id %}">Edit</a> | 
+                    <a href="{% url 'edit_ec_product' ec_product.id %}">Edit</a> |
                     <a class="text-danger" href="{% url 'delete_ec_product' ec_product.id %}">Delete</a>
                 </small>
                 {% endif %}
                 <p class="mt-3">{{ ec_product.description }}</p>
+
+
+
+
                 <form class="form" action="{% url 'add_to_ec_bag' ec_product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
@@ -111,7 +115,7 @@
         </div>
     </div>
 </div>
- 
+
 
 
 
@@ -121,21 +125,100 @@
 {% include 'ec_products/includes/quantity_input_script.html' %}
 
 
+
+
+<!-- FAQs SECTION -->
+<div class="row mt-5">
+    <div class="col-12 col-lg-8 offset-lg-2">
+        <h4>Frequently Asked Questions</h4>
+
+        {% if faqs %}
+        <div class="accordion mt-3" id="faqAccordion">
+            {% for faq in faqs %}
+            <div class="card">
+                <div class="card-header" id="heading{{ forloop.counter }}">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left {% if not forloop.first %}collapsed{% endif %}"
+                            type="button" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"
+                            aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                            aria-controls="collapse{{ forloop.counter }}">
+                            {{ faq.question }}
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.first %}show{% endif %}"
+                    aria-labelledby="heading{{ forloop.counter }}" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        {{ faq.answer }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+
+        <p class="mt-3">No FAQs for this product yet.</p>
+        {% endif %}
+
+        {% if request.user.is_superuser %}
+        <a href="{% url 'add_faq_to_product' ec_product.id %}" class="btn btn btn-primary mt-3">
+            Add FAQ
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+<!-- 
+<h4>FAQs</h4>
+
+{% if faqs %}
+    <div class="accordion" id="faqAccordion">
+        {% for faq in faqs %}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{{ forloop.counter }}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="false"
+                        aria-controls="collapse{{ forloop.counter }}">
+                    {{ faq.question }}
+                </button>
+            </h2>
+            <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse"
+                 aria-labelledby="heading{{ forloop.counter }}" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    {{ faq.answer }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No FAQs yet for this product.</p>
+{% endif %}
+
+{% if request.user.is_superuser %}
+    <a href="{% url 'add_faq_to_product' ec_product.id %}" class="btn btn-outline-success mt-3">
+        Add FAQ
+    </a>
+{% endif %} -->
+
+
+
+
 <!-- REVIEWS SECTION -->
 <div class="row mt-5">
     <div class="col-12 col-lg-8 offset-lg-2">
         <h4>Reviews</h4>
 
         {% if reviews %}
-          <ul class="list-group mb-3">
+        <ul class="list-group mb-3">
             {% for review in reviews %}
-              <li class="list-group-item">
+            <li class="list-group-item">
                 <strong>{{ review.user.username }}</strong>: {{ review.content }}
-              </li>
+            </li>
             {% endfor %}
-          </ul>
+        </ul>
         {% else %}
-          <p>No reviews yet for this product.</p>
+        <p>No reviews yet for this product.</p>
         {% endif %}
 
         {% if user.is_authenticated %}
@@ -153,4 +236,3 @@
 
 
 {% endblock %}
-

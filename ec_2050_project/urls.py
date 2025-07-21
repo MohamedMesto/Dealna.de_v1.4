@@ -28,6 +28,8 @@ urlpatterns = [
     path('ec_bag/', include('ec_bag.urls')),
     path('ec_checkout/', include('ec_checkout.urls')),
     path('ec_profile/', include('ec_profiles.urls')),
+    path('faq/', include('faq.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'ec_2050_project.views.handler404'

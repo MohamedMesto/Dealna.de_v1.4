@@ -6,7 +6,7 @@ from django.db.models.functions import Lower
 from .models import EC_Product,EC_Category
 from .forms import EC_ProductForm
 from review.forms import ReviewForm
-
+from faq.models import FAQ  
 
 # Create your views here.
 
@@ -59,15 +59,6 @@ def all_ec_products(request):
 
     return render(request, 'ec_products/ec_products.html', context)
 
-def ec_product_detail(request, ec_product_id):
-    """ A view to show individual product details """
-
-    ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
-
-    context = {
-        'ec_product': ec_product,
-    }
-    return render(request, 'ec_products/ec_product_detail.html', context)
 
 
 @login_required
@@ -148,6 +139,7 @@ def delete_ec_product(request, ec_product_id):
 def ec_product_detail(request, ec_product_id):
     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
     reviews = ec_product.reviews.all()
+    faqs = ec_product.faqs.all()  # related_name='faqs' in FAQ model
 
     if request.method == 'POST':
         form = ReviewForm(request.POST)
@@ -164,4 +156,22 @@ def ec_product_detail(request, ec_product_id):
         'ec_product': ec_product,
         'reviews': reviews,
         'form': form,
+        'faqs': faqs,
     })
+
+
+
+ 
+
+
+
+
+# def ec_product_detail(request, ec_product_id):
+#     """ A view to show individual product details """
+
+#     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
+
+#     context = {
+#         'ec_product': ec_product,
+#     }
+#     return render(request, 'ec_products/ec_product_detail.html', context)
