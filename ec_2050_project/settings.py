@@ -80,6 +80,7 @@ INSTALLED_APPS = [
     'ec_profiles',
     'review',    
     'faq',
+    'about',
 
     # Other
     'crispy_forms',
