@@ -10,12 +10,7 @@ def product_faq_list(request, ec_product_id):
     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
     faqs = FAQ.objects.filter(ec_product=ec_product)
 
-    # print("Hallooooooooooo")
-    # print(f"Product: {ec_product}")  # Add debug
-    # print(f"FAQs found: {faqs.count()}")  # Add debug
-
-
-    return render(request, 'faq/faq_list.html', {
+    return render(request, 'faq/product_faq_list.html', {
         'ec_product': ec_product,
         'faqs': faqs,
     })
@@ -24,7 +19,7 @@ def product_faq_list(request, ec_product_id):
 
 @login_required
 @user_passes_test(lambda u: u.is_superuser)
-def add_faq_to_product(request, ec_product_id):
+def add_product_faq(request, ec_product_id):
     ec_product = get_object_or_404(EC_Product, id=ec_product_id)
 
     if request.method == 'POST':
@@ -43,3 +38,21 @@ def add_faq_to_product(request, ec_product_id):
     })
      
      
+def edit_product_faq(request, faq_id):
+    faq = get_object_or_404(FAQ, pk=faq_id)
+    if request.method == 'POST':
+        form = FAQForm(request.POST, instance=faq)
+        if form.is_valid():
+            form.save()
+            return redirect('ec_product_detail', ec_product_id=faq.ec_product.id)
+    else:
+        form = FAQForm(instance=faq)
+    return render(request, 'faq/edit_faq.html', {'form': form, 'faq': faq})
+
+def delete_product_faq(request, faq_id):
+    faq = get_object_or_404(FAQ, pk=faq_id)
+    if request.method == 'POST':
+        ec_product_id = faq.ec_product.id
+        faq.delete()
+        return redirect('ec_product_detail', ec_product_id=ec_product_id)
+    return render(request, 'faq/delete_faq.html', {'faq': faq})

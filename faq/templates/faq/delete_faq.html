@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <div class="container d-flex justify-content-left align-items-center" style="min-height: 100vh;">
+
+    <div class="col-lg-6">
+       <h2>Delete FAQ</h2>
+        <p>Are you sure you want to delete the following FAQ?</p>
+
+        <blockquote class="blockquote">
+        <strong>{{ faq.question }}</strong><br>
+        {{ faq.answer }}
+        </blockquote>
+
+        <form method="POST">
+            {% csrf_token %}
+   
+
+  <button type="submit" class="btn btn-danger">Yes, delete</button>
+            <a href="{% url 'ec_product_detail' faq.ec_product.id %}" class="btn btn-secondary">Cancel</a>
+      
+        </form>
+ 
+    </div>
+</div>
+{% endblock %}
