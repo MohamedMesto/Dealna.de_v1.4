@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Contact Us</h2>
+    <hr>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+    </form>
+</div>
+{% endblock %}
