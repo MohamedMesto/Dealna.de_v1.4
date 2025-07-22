@@ -17,13 +17,17 @@
 
 
 {% block content %}
-<div class="container  py-5">
-    <div class="col-lg-5">
+<div class=" container py-5">
+    <div class="col-lg-5" style="background-color: rgba(255, 255, 255, 0.7); border-radius: 12px;">
         <h1 class="text-center mb-4">{{ about.title }}</h1>
 
-        <p class="d-flex justify-content-center ">
-           {{ about.content|linebreaks }}<strong>Berlin - Mohamed Mesto.</strong>
-        <a href="https://un2050.de/">Un2050.de</a> - <a href="https://un2050.com/">Un2050.com</a> - <a href="https://Dealna.de/">Dealna.de</a></p>
+        <p class="text-center mb-4 ">
+            {{ about.content|linebreaks }}
+            <strong>Berlin - Mohamed Mesto.</strong>
+            <a href="https://un2050.de/">Un2050.de</a> -
+            <a href="https://un2050.com/">Un2050.com</a> -
+            <a href="https://Dealna.de/">Dealna.de</a>
+        </p>
         <hr>
         <p class="lead text-center">
             Dealna.de is a modern e-commerce platform aiming to deliver quality products with outstanding customer
