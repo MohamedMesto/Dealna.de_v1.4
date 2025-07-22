@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
 {% block content %}
-<div class="container d-flex justify-content-left align-items-center" style="min-height: 100vh;">
+
+<div class="container ">
 
     <div class="col-lg-6">
         <h2 class="text-center mb-4">Add FAQ for "{{ ec_product.name }}"</h2>

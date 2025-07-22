@@ -1,13 +1,33 @@
 {% extends "base.html" %}
+ 
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
 {% block content %}
-<!-- <div class="container mt-5"> -->
-<div class="container d-flex justify-content-left align-items-center" style="min-height: 100vh;"> 
-    <h2>Edit FAQ</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Save</button>
-        <a href="{% url 'ec_product_detail' faq.ec_product.id %}" class="btn btn-secondary">Cancel</a>
-    </form>
+
+<div class="container ">
+
+    <div class="col-lg-6">
+        <!--     
+<div class="container d-flex justify-content-left align-items-center" style="min-height: 100vh;">  -->
+        <h2>Edit FAQ</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="{% url 'ec_product_detail' faq.ec_product.id %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
 </div>
 {% endblock %}
