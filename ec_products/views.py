@@ -160,18 +160,4 @@ def ec_product_detail(request, ec_product_id):
     })
 
 
-
  
-
-
-
-
-# def ec_product_detail(request, ec_product_id):
-#     """ A view to show individual product details """
-
-#     ec_product = get_object_or_404(EC_Product, pk=ec_product_id)
-
-#     context = {
-#         'ec_product': ec_product,
-#     }
-#     return render(request, 'ec_products/ec_product_detail.html', context)

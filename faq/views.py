@@ -15,7 +15,7 @@ def product_faq_list(request, ec_product_id):
         'faqs': faqs,
     })
 
- 
+
 
 @login_required
 @user_passes_test(lambda u: u.is_superuser)

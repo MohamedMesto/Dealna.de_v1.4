@@ -153,13 +153,13 @@
 
 
 
-        {% if request.user.is_superuser %}
-                          <div class="mt-2">
+                        {% if request.user.is_superuser %}
+                        <div class="mt-2">
                             <a href="{% url 'edit_product_faq' faq.id %}" class="btn btn-sm btn-outline-info">Edit</a>
                             <a href="{% url 'delete_product_faq' faq.id %}"
                                 class="btn btn-sm btn-outline-danger">Delete</a>
                         </div>
-        {% endif %}
+                        {% endif %}
 
 
                     </div>

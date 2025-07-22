@@ -1,37 +1,51 @@
-
-
 {% extends "base.html" %}
 
 
 
 {% load static %}
 
- 
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
 
 
 
 {% block content %}
-<div class="container py-5">
-  <h1 class="text-center mb-4">{{ about.title }}</h1>
-  <p class="lead text-center">
-    Dealna.de is a modern e-commerce platform aiming to deliver quality products with outstanding customer support.
-  </p>
-  <hr>
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <h3>Our Mission</h3>
-      <p>To empower online shoppers with a seamless and secure shopping experience while providing a platform for merchants to grow.</p>
+<div class="container  py-5">
+    <div class="col-lg-5">
+        <h1 class="text-center mb-4">{{ about.title }}</h1>
+
+        <p class="d-flex justify-content-center ">
+           {{ about.content|linebreaks }}
+        </p>
+        <hr>
+        <p class="lead text-center">
+            Dealna.de is a modern e-commerce platform aiming to deliver quality products with outstanding customer
+            support.
+        </p>
+        <hr>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Our Mission</h3>
+                <p>To empower online shoppers with a seamless and secure shopping experience while providing a platform
+                    for merchants to grow.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Why Dealna.de?</h3>
+                <ul>
+                    <li>Reliable product sourcing</li>
+                    <li>Transparent reviews & FAQs</li>
+                    <li>Fast and secure checkout</li>
+                    <li>Community-driven support</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-      <h3>Why Dealna.de?</h3>
-      <ul>
-        <li>Reliable product sourcing</li>
-        <li>Transparent reviews & FAQs</li>
-        <li>Fast and secure checkout</li>
-        <li>Community-driven support</li>
-        {{ about.content|linebreaks }}
-      </ul>
-    </div>
-  </div>
 </div>
 {% endblock %}
