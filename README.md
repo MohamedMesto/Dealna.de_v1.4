@@ -1019,3 +1019,42 @@ Stage 2: Add Product-Specific FAQ System
 - Linked FAQ view to `ec_product_detail` via `ec_product.id`
 - Ensured FAQs are shown under each product detail page
 - Cleaned and tested routes and template blocks
+
+
+<h1 style="color:red;">Stage 2: Review Model Enhancements</h1>
+
+<h2 style="color:#149ed9;">Overview</h2>
+
+This section introduces enhancements to the `Review` model:
+
+- Add a timestamp to reviews
+- Enforce recent-first display
+- Prevent duplicate reviews per user-product pair
+
+<h2 style="color:#149ed9;">Updated Model</h2>
+
+```python
+from django.db import models
+from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from ec_products.models import EC_Product
+
+class Review(models.Model):
+    ec_product = models.ForeignKey(
+        EC_Product, related_name='reviews', on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Review by {self.user.username} on {self.ec_product.name}"
+
+    def clean(self):
+        # Prevent duplicate reviews per user per product
+        if Review.objects.filter(ec_product=self.ec_product, user=self.user).exclude(pk=self.pk).exists():
+            raise ValidationError("You have already reviewed this product.")
+
+    class Meta:
+        ordering = ['-id']
+        unique_together = ('ec_product', 'user')
