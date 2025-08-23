@@ -16,6 +16,9 @@ class EC_OrderForm(forms.ModelForm):
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
+
+        self.fields['country'].choices = list(self.fields['country'].choices)
+
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',

@@ -1,4 +1,3 @@
-
 from django import forms
 from .models import EC_UserProfile
 
@@ -9,11 +8,11 @@ class EC_UserProfileForm(forms.ModelForm):
         exclude = ('user',)
 
     def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
         super().__init__(*args, **kwargs)
+
+        # MMM
+        self.fields['default_country'].choices = self.fields['default_country'].widget.choices
+
         placeholders = {
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
@@ -21,6 +20,7 @@ class EC_UserProfileForm(forms.ModelForm):
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
+            # 'default_country': 'un',
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True

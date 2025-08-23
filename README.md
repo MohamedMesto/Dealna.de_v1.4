@@ -21,7 +21,7 @@
   
 ---
  
-# **_Dealna.de E-Commerce V1.0_**
+# **_Dealna.de E-Commerce V1.2_**
 
 ## Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
@@ -73,7 +73,7 @@ In an era of rapid digital transformation, **Dealna.de v1.0** stands out as a re
 
 # Contents
 
-- [**_Dealna.de E-Commerce V1.0_**](#dealnade-e-commerce-v10)
+- [**_Dealna.de E-Commerce V1.2_**](#dealnade-e-commerce-v12)
   - [Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
     - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)

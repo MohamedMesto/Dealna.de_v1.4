@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_title %} - {{ user }}{% endblock %}
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'ec_profiles/css/ec_profile.css' %}">
 {% endblock %}
