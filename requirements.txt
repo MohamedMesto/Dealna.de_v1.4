@@ -11,7 +11,6 @@ certifi==2020.6.20
 cffi==1.17.1
 chardet==5.2.0
 charset-normalizer==3.4.3
-cliapp==1.20180812.1
 click==8.0.3
 cmdtest==0.32+git
 colorama==0.4.4
