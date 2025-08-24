@@ -12,7 +12,6 @@ cffi==1.17.1
 chardet==5.2.0
 charset-normalizer==3.4.3
 click==8.0.3
-cmdtest==0.32+git
 colorama==0.4.4
 command-not-found==0.3
 crispy-bootstrap4==2025.6
