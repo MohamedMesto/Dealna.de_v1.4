@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #SECRET_KEY = 'django-insecure-^*q34#5@azm24qkjoh^gj1t4n-_y+=%pp76l%+d77)h19av!p+'
 
  
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
@@ -46,16 +46,16 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 DEBUG = os.environ.get('DEVELOPMENT')
 
-# DEBUG=False
-DEBUG=True
+DEBUG=False
+# DEBUG=True
                     
-ALLOWED_HOSTS = ['ec-platform-2050-v1-1e860717f359.herokuapp.com', # herokuapp App
+ALLOWED_HOSTS = ['dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
                  '127.0.0.1',
                  ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://loqta2050-v1-3-e08d6b94e893.herokuapp.com/",
+    "https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/",
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com"
 ]
