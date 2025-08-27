@@ -51,8 +51,10 @@ DEBUG=False
                     
 ALLOWED_HOSTS = ['dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
                  'localhost', # listen for stripe webhooks
-                 '127.0.0.1',
+                 '127.0.0.1',  # Local preview
                  ]
+ 
+
 
 CSRF_TRUSTED_ORIGINS = [
     "https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/",
