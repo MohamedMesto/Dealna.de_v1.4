@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-# from pathlib import Path
+from pathlib import Path
 import os
 import dj_database_url
 
@@ -19,23 +19,15 @@ if os.path.isfile('env.py'):
     import env # noqa: F401
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-^*q34#5@azm24qkjoh^gj1t4n-_y+=%pp76l%+d77)h19av!p+'
-
+ 
  
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# Stripe
-STRIPE_CURRENCY = 'usd'
-#STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 
 
@@ -49,9 +41,9 @@ DEBUG = os.environ.get('DEVELOPMENT')
 DEBUG=False
 # DEBUG=True
                     
-ALLOWED_HOSTS = ['dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
-                 'localhost', # listen for stripe webhooks
-                 '127.0.0.1',  # Local preview
+ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
+                'localhost', # listen for stripe webhooks
+                 'dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
                  ]
  
 
@@ -206,7 +198,8 @@ LANGUAGE_CODE = 'en-us'
 
  
 # TIME_ZONE = 'UTC'
-TIME_ZONE = 'CET'  # Only for standard time (UTC+1) - 'Europe/Stockholm'
+TIME_ZONE = 'Europe/Berlin'
+# TIME_ZONE = 'CET'  # Only for standard time (UTC+1) - 'Europe/Stockholm'
 
 USE_I18N = True
 
@@ -226,6 +219,14 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# MMM
+# Directory where 'collectstatic' will gather all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+
+
 
 
 if 'USE_AWS' in os.environ:
@@ -257,6 +258,13 @@ if 'USE_AWS' in os.environ:
 #Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+# Stripe
+STRIPE_CURRENCY = 'usd'
+#STRIPE_CURRENCY = 'eur'
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
+
 
 
 # Default primary key field type
