@@ -36,7 +36,6 @@ psycopg2==2.9.9
 pycodestyle==2.12.1
 pycparser==2.22
 pyflakes==3.2.0
-pygraphviz==1.11
 PyMuPDF==1.26.3
 pypdf==3.17.4
 pypdfium2==4.30.0
