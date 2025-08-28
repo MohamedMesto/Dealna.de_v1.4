@@ -27,6 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
  
  
 SECRET_KEY = os.environ.get('SECRET_KEY')
+if not SECRET_KEY:
+    raise ValueError("The SECRET_KEY setting must not be empty!")
+
 
 
 
@@ -36,14 +39,17 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
  
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = os.environ.get('DEVELOPMENT')
+DEBUG = os.environ.get('DEBUG')
+if not DEBUG:
+    raise ValueError("The DEBUG setting must be set!")
+
 
 DEBUG=False
 # DEBUG=True
                     
 ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
                 'localhost', # listen for stripe webhooks
-                 'dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
+                'dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
                  ]
  
 
@@ -261,11 +267,17 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 # Stripe
 STRIPE_CURRENCY = 'usd'
 #STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
-STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
-STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
+# Fail fast if required keys are missing
 
+required_vars = ["STRIPE_PUBLIC_KEY", "STRIPE_SECRET_KEY", "STRIPE_WH_SECRET"]
 
+for var in required_vars:
+    if not os.environ.get(var):
+        raise ValueError(f"{var} is not set in environment variables")
+
+STRIPE_PUBLIC_KEY = os.environ["STRIPE_PUBLIC_KEY"]
+STRIPE_SECRET_KEY = os.environ["STRIPE_SECRET_KEY"]
+STRIPE_WH_SECRET = os.environ["STRIPE_WH_SECRET"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
