@@ -39,7 +39,12 @@ if not SECRET_KEY:
  
 
  
- 
+
+
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
+if not SECRET_KEY:
+    raise ValueError("The SECRET_KEY setting must not be empty!")
 DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
  
  

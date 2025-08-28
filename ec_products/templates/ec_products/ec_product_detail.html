@@ -200,12 +200,19 @@
         {% endif %}
 
         {% if user.is_authenticated %}
+        {% if user_has_reviewed %}
+        <p class="text-muted">You have already reviewed this product.</p>
+        {% else %}
+
         <h5 class="mt-4">Leave a Review</h5>
         <form method="post">
             {% csrf_token %}
             {{ form|crispy }}
             <button type="submit" class="btn btn-primary mt-2">Submit Review</button>
         </form>
+        {% endif %}
+
+
         {% else %}
         <p><a href="{% url 'account_login' %}">Log in</a> to leave a review.</p>
         {% endif %}

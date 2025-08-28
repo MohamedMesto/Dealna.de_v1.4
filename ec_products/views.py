@@ -141,6 +141,12 @@ def ec_product_detail(request, ec_product_id):
     reviews = ec_product.reviews.all()
     faqs = ec_product.faqs.all()  # related_name='faqs' in FAQ model
 
+    user_has_reviewed = False
+    if request.user.is_authenticated:
+        user_has_reviewed = reviews.filter(user=request.user).exists()
+
+
+
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
@@ -157,6 +163,7 @@ def ec_product_detail(request, ec_product_id):
         'reviews': reviews,
         'form': form,
         'faqs': faqs,
+        "user_has_reviewed": user_has_reviewed,
     })
 
 
