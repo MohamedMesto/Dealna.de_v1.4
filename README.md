@@ -84,6 +84,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [User Stories:](#user-stories)
     - [**User Stories**](#user-stories-1)
     - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
+    - [**Additional User Stories for New Apps**](#additional-user-stories-for-new-apps)
   - [Site Structure](#site-structure)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
@@ -166,16 +167,16 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 ---
 
 **Facebook Business Page for Dealna.de v1**  
-As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **Dealna.de v1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [Dealna.de v1 Facebook Page](https://www.facebook.com/share/1AvNPvqf9B/).  
+As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **Dealna.de v1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [Dealna.de v1 Facebook Page](https://www.facebook.com/share/1B8bq6A3Jw/).  
 
-[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb3.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
-
-
-[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb1.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb3.jpg)](https://www.facebook.com/share/1B8bq6A3Jw/)
 
 
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb1.jpg)](https://www.facebook.com/share/1B8bq6A3Jw/)
 
-[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb2.jpg)](https://www.facebook.com/share/1AvNPvqf9B/)
+
+
+[![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb2.jpg)](https://www.facebook.com/share/1B8bq6A3Jw/)
 
 --- 
  
@@ -240,7 +241,26 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | 32 | Site Owner | Store collaboration requests in the database | Review them later |
 | 33 | Site Owner | Add a contact form for collaboration requests | Allow users to submit collaboration requests |
 
+### **Additional User Stories for New Apps**
  
+| User Story ID | AS A / AN  | I WANT TO BE ABLE TO...                       | SO THAT I CAN...                                              |
+| ------------- | ---------- | --------------------------------------------- | ------------------------------------------------------------- |
+|               |            | ***Reviews App***                             |                                                               |
+| 34            | Shopper    | Leave a review for a product                  | Share my experience and help other shoppers decide            |
+| 35            | Shopper    | View reviews from other users                 | Make better-informed purchasing decisions                     |
+| 36            | Shopper    | Edit or delete my own review                  | Correct mistakes or remove feedback I no longer want to share |
+| 37            | System     | Restrict each user to one review per product  | Ensure fair and balanced feedback                             |
+|               |            | ***FAQ App***                                 |                                                               |
+| 38            | Shopper    | View frequently asked questions for a product | Quickly find answers without contacting support               |
+| 39            | Site Admin | Add, edit, or delete FAQs                     | Keep product information accurate and up to date              |
+|               |            | ***About App***                               |                                                               |
+| 40            | Shopper    | View an About page                            | Learn more about the store, its mission, and values           |
+| 41            | Site Admin | Update the About page content                 | Keep the information current                                  |
+|               |            | ***Contact App***                             |                                                               |
+| 42            | Shopper    | Submit a contact form                         | Ask questions or request help                                 |
+| 43            | Site Owner | Receive collaboration requests                | Explore opportunities with potential partners                 |
+| 44            | Site Owner | Mark collaboration requests as “read”         | Track which requests I still need to process                  |
+| 45            | Site Owner | Store collaboration requests in the database  | Review them later                                             |
 
  
 ## Site Structure
