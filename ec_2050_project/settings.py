@@ -14,7 +14,6 @@ from pathlib import Path
 import os
 import dj_database_url
 
-
 if os.path.isfile('env.py'):
     import env # noqa: F401
 
@@ -45,8 +44,6 @@ if not SECRET_KEY:
  
 # DEBUG is True if DEVELOPMENT=1, False otherwise
 DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
-
-print("DEBUG 999999999999999999 =", DEBUG)
 
                     
 ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
@@ -176,7 +173,8 @@ else:
     }
 
 
- 
+
+
 
 
 
@@ -205,9 +203,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
  
-# TIME_ZONE = 'UTC'
-TIME_ZONE = 'Europe/Berlin'
-# TIME_ZONE = 'CET'  # Only for standard time (UTC+1) - 'Europe/Stockholm'
+TIME_ZONE = 'UTC'
+# TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
@@ -239,6 +236,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
 
+    
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
@@ -252,6 +250,8 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    print("Bucket name11111111111111111:", AWS_STORAGE_BUCKET_NAME)
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
