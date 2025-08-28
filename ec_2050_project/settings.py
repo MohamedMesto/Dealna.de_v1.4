@@ -43,8 +43,8 @@ if not SECRET_KEY:
 # DEBUG = os.environ.get('DEBUG')
  
 # DEBUG is True if DEVELOPMENT=1, False otherwise
-DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
-
+# DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
+DEBUG=True
                     
 ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
                 'localhost', # listen for stripe webhooks
@@ -250,6 +250,8 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    print("Debug9999999999999", DEBUG)
 
     print("Bucket name11111111111111111:", AWS_STORAGE_BUCKET_NAME)
 
