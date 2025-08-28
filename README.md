@@ -1,37 +1,35 @@
-[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
 
   
 ---
-[![alt text](assets/images/readme_images/main1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[![alt text](assets/images/readme_images/main1.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
+[![alt text](assets/images/readme_images/Dealna.de1.png)]( https://Dealna.de)
 
-[![Dealna.de1](assets/images/readme_images/Dealna.de1.png)](https://Dealna.de)
+[![alt text](assets/images/readme_images/Dealna.de2.png)]( https://Dealna.de)
+
+[![alt text](assets/images/readme_images/main3.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
  
-
-[![Dealna.de2](assets/images/readme_images/Dealna.de2.png)](https://Dealna.de)
-
-[![alt text](assets/images/readme_images/main3.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
- 
-[![alt text](assets/images/readme_images/main4.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[![alt text](assets/images/readme_images/main4.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
 
-[![alt text](assets/images/readme_images/main5.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+[![alt text](assets/images/readme_images/main5.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
   
 ---
  
-# **_Dealna.de E-Commerce V1.2_**
+# **_Dealna.de E-Commerce V1.3_**
 
-## Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
+## Dealna.de v1.3 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
-**Dealna.de v1.0:** A Gateway to Seamless Online Shopping  
+**Dealna.de v1.3:** A Gateway to Seamless Online Shopping  
 
 The **Dealna.de E-Commerce Platform** is designed to provide users with a modern, intuitive, and secure online shopping experience. Powered by Django, this dynamic platform delivers a seamless experience for browsing, purchasing, and managing products across diverse categories, reflecting a commitment to quality, reliability, and user satisfaction.
 
 ### A Platform for Smart Shopping  
 
-At its core, **Dealna.de v1.0** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
+At its core, **Dealna.de v1.3** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
 
 ### A User-Centric Experience  
 
@@ -43,29 +41,30 @@ The platform is designed with usability in mind, featuring:
 
 ### A Tool for Informed Decisions  
 
-By presenting detailed product information, customer reviews, and competitive pricing, **Dealna.de v1.0** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
+By presenting detailed product information, customer reviews, and competitive pricing, **Dealna.de v1.3** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
 
 ### Continuous Innovation and Growth  
 
-The **Dealna.de v1.0** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
+The **Dealna.de v1.3** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
 
 ### Conclusion  
 
-In an era of rapid digital transformation, **Dealna.de v1.0** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
+In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [Dealna.de v1.0](https://Dealna.de).**  
-
-
-
----
+**You can view the live site here - [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/).**  
 
 
-**You can view the live site here - [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).**  
+
 
 
 ---
 
-[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/)
+**You can view Dealna.de live site here - [Dealna.de](https://Dealna.de).**  
+
+
+---
+
+[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
 --- 
 
@@ -73,15 +72,15 @@ In an era of rapid digital transformation, **Dealna.de v1.0** stands out as a re
 
 # Contents
 
-- [**_Dealna.de E-Commerce V1.2_**](#dealnade-e-commerce-v12)
-  - [Dealna.de v1.0 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v10-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
+- [**_Dealna.de E-Commerce V1.3_**](#dealnade-e-commerce-v13)
+  - [Dealna.de v1.3 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v13-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
     - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)
     - [A Tool for Informed Decisions](#a-tool-for-informed-decisions)
     - [Continuous Innovation and Growth](#continuous-innovation-and-growth)
     - [Conclusion](#conclusion)
 - [Contents](#contents)
-  - [Purpose of the Project – **Dealna.de E-Commerce V1.0**](#purpose-of-the-project--dealnade-e-commerce-v10)
+  - [Purpose of the Project – **Dealna.de E-Commerce v1.3**](#purpose-of-the-project--dealnade-e-commerce-v13)
   - [User Stories:](#user-stories)
     - [**User Stories**](#user-stories-1)
     - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
@@ -154,7 +153,7 @@ In an era of rapid digital transformation, **Dealna.de v1.0** stands out as a re
 
 
 
-## Purpose of the Project – **Dealna.de E-Commerce V1.0**  
+## Purpose of the Project – **Dealna.de E-Commerce v1.3**  
 
 The goal of **Dealna.de** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, clothing, homeware, and special offers.  
 
@@ -290,7 +289,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
     - **Newsletter Subscription:** Users can subscribe to receive updates on new products and promotions.  
 
  
-The **Dealna.de For E-Commerce V1.0** is accessible at [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 [Back to top](<#contents>)  
 
@@ -997,7 +996,7 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [Dealna.de For E-Commerce V1.0]( https://ec-platform-2050-v1-1e860717f359.herokuapp.com/).
+You can view the live site here also: [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/).
 
 
 
