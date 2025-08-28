@@ -39,11 +39,15 @@ if not SECRET_KEY:
  
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = os.environ.get('DEBUG')
  
 
-DEBUG=False
-# DEBUG=True
+# DEBUG = os.environ.get('DEBUG')
+ 
+# DEBUG is True if DEVELOPMENT=1, False otherwise
+DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
+
+print("DEBUG 999999999999999999 =", DEBUG)
+
                     
 ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
                 'localhost', # listen for stripe webhooks
