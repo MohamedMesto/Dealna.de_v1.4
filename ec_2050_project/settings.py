@@ -262,9 +262,9 @@ if 'USE_AWS' in os.environ:
 
     # MMM
     # Directory where 'collectstatic' will gather all static files
-    # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATIC_ROOT=STATIC_URL
-    STATIC_ROOT=MEDIA_URL
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    # STATIC_ROOT=STATIC_URL
+    # STATIC_ROOT=MEDIA_URL
 
 #Stripe
 FREE_DELIVERY_THRESHOLD = 50
