@@ -1,0 +1,147 @@
+* 7d0812a (HEAD -> main) set Debug
+* e4018dd fix Debug, Bucket name reading issue 2
+* 154d825 fix Debug, Bucket name reading issue
+* e71d05a fix Debug checking
+* 2a02ed9 unset Debug
+* 75c1e9f set Debug
+* f11f582 checking required_vars at settings
+* 86c6d6c  unset STATIC_ROOT in settings
+* 73eba34 Set STATIC_ROOT for Heroku collectstatic
+* d07e2c6  update settings
+* f02195d Delete requirement of install pygraphviz from requirements.txt to avoid using that at deployment in Heroku
+* ad6cd99 Prepare project for deployment
+* 272e407 fix requirements.txt
+* 85d70a0 delete command-not-found from requirements.txt
+* 0e60bef delete cmdtest from requirements.txt
+* 43df76a delete cliapp from requirements.txt
+* 345af4a delete Brlapi from setting
+* c0b54f4 delete apturl from setting
+* 92dfddb set DEBUG to False
+* 459caa9 Connect the new db to the local development web server
+* f3715e0 Edit Readme Dealna.de version
+* 329be7f Adding ordering to Review
+* 6c20085 improve contact visibility
+* 4bd79ce Adding contact functionality
+* e555fa1 improve About visibility
+* f75ef5b update About html
+* 18a2ba1 Adding About app
+* 390c534 improve Add, Edit, delete FAQ display
+* a620351 Add About app
+* 195b535 Add FAQ Edit, delete functionality
+* 4a8441f ✨ Stage 2: Add FAQ System per Product
+* c7dd28d feat: Add Review app with product detail integration and review display
+* d891d72 Add Review App with product-user relation
+* 0812309 update the DB link to use the SQLlite3 again
+* 7069937 update readme loqta2050 text to Dealna
+* 4402a75 update reame images
+* 62cb365 update loqta2050 to Dealna into projects files
+* f334942 Update loqta2050 to Dealna.de at Readme
+* 2a0ab6c set Debug to F
+* 3d98639 set Debug
+* 8aecbc7 adding  descriptive meta tags in the HTML.
+* fabd5b1 Adding  Händlerbund sections to readme
+* 5b24763 Adding  mailchimp sections to readme
+* 7cc7688 Adding  Lighthouse Testing ,Responsive Testing sections to readme
+* c73fbe9 Adding Technologies Used section to readme
+* 8f76aab Adding Data Model to readme
+* c734dc8 Adding Features  to readme
+* 86c6fc8 Adding Design Choices  to readme
+* c2f00d6 Adding Facebook Business Page  to readme
+* 3e5eaa2 Update 2 of user stories of Readme
+* acd1d73 Update Site Structure of Readme
+* 0e8e726 Adding sitemap.xml and robots.txt
+* 947c3d3 update Readme  Purpose of the Project
+* 24bf69d update Readme devices img 3
+* 79c10bc update Readme devices img 2
+* e6e968f update Readme devices img
+* 0e0f3a4 update Readme user stories
+* 3575684 set Debug
+* cc421e3 added error 404 template
+* bdd9fc9 063 shopping bag refactor
+* 8b220be 062 base.css and login/reg refactor
+* 1fecfd0 061 sending real emails
+* 16f99f1 Added cache control
+* 67e2bc9 Update TIME_ZONE
+* e3a0854 Update AWS Keys
+* e3172f2 added custom_storages
+* 3b52e57 059 - deployment part 5
+* e65f77f Revert "059 - deployment part 5"
+* 008eb39 059 - deployment part 5
+* 48233c7 update ALLOWED_HOSTS
+* e4d46c6 Set Development var
+* 842fe6f Preparing project for deployment - new DB
+* 0488ee4 set Debug 2
+* a9d9692 set Debug
+* b834e32 Preparing project for deployment
+* d17f683 Product admin - Fixing the image field part 2
+* e32dcb7 Product admin - Fixing the image field part 1
+* bb519a3 Product Admin - Securing the Views
+* f78b3b3 Product Admin - Deleting Products
+* 11551a2 Product Admin - Editing Products
+* a252ec7 Product admin - Finished add product functionality.'
+* 8c8d793 Product Admin - add product view, url and template
+* 90594c2 Product Admin - Product Form
+* 9efc5ad 046 Profiles part 6 - completed confirmation emails
+* d73b24a 045 Profiles part 5 - Updated webhook handler to handle profiles
+* ba39328 045 Profiles part 5 - Updated webhook handler to handle profiles
+* 2be93f5 Profiles part 4 - added order history and updated checkout views.
+* 2bb99d5 Added profile form, views and updated template
+* a0a846b Updated allauth templates and tested profiles
+* af96c81 Added allauth templates and base template
+* 632a257 Added profiles app
+* f56b9e1 Updated checkout form
+* c0c985f Updated checkout form
+* df29227 completed webhook handler
+* aa798c9 Added checkout form data caching in payment intent
+* 686a187 Added class methods to webhook handler and webhook view
+* c324c9a Added class methods to webhook handler and webhook view
+* faf2a6e Added webhook handler
+* 54aad07 Added  loading overlay
+* 809a57a Edit setting to read keys from env, Added checkout success logic
+* c778c30 update Readme Slogan
+* f79b74d Adding basic checkout functionality
+* 7890c52 Adding stripe elements
+* 9a2d189 Adding checkout views and templates
+* bff1dce Adding forms, admin and signals
+* d3b091d created checkout app and models
+* 65ae7bf Add notification Css, shopping bag preview, and additional messages
+* d32b1b0 Add toasts
+* d53fc67 Add adjust bag and remove from bag views, and calc subtotal template filter
+* 3c03a05 Add quantity boxes to shopping bag page
+* 0d72844 Added quantity input +/- buttons
+* d2aace1 Finished product size logic
+* 57fe274 added sizes to product model and size selctor box to product template
+* 54dbeaf updated shopping bag template
+* 35a82b9 updated context processor
+* b9b33a6 Add add to ec_bag functionality
+* b8ee166 Add bag context and delivery logic
+* 5fe9365 Added sorting JS and back to top link
+* 9204309 Add sorting and product counts to product page
+* 7026e30 Add sorting
+* af6c5b6 Added category filtering
+* d876818 Added search functionality
+* fd2298c added product details functionality
+* a4d9f15 Added products views and templates
+* 86af009 Customize admin
+* d4b65e6 added products app, models and fixtures
+* 7764932 Added mobile header and main navbar
+* ada53a1 Completed homepage header and css
+* d0f7e46 add base.css
+* a4c6d6d fix error 1
+* 144acad Complete adding main page header
+* de5c6ab Add body/header to base content
+* 26b216d Add homepage content
+* 4d363a5 add ec_home app and template
+* 8b0bae3 add blocks t obase template
+* 5635dca update Base Template
+* eb2e748 Added allauth templates and base templates
+* 6ebca7b copy templates/allauth folders
+* 56112a0 setup Allauth settings
+* 43667d9 Add EMAIL_BACKEND settings
+* e63df73 Merge remote changes into local branch
+*   f2172eb Merge branch 'main' of https://github.com/MohamedMesto/EC_Platform_2050_v1
+|\  
+| * 6a4199d new user story template
+* | bc52490 add needed allauth settings
+|/  
+* 109edef  git init

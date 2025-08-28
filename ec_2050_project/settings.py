@@ -14,8 +14,6 @@ from pathlib import Path
 import os
 import dj_database_url
 
-if os.path.isfile('env.py'):
-    import env # noqa: F401
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,29 +36,22 @@ if not SECRET_KEY:
  
 # SECURITY WARNING: don't run with debug turned on in production!
 
-<<<<<<< HEAD
-=======
  
->>>>>>> 686361f (fix Debug checking)
 
-# DEBUG = os.environ.get('DEBUG')
  
-# DEBUG is True if DEVELOPMENT=1, False otherwise
-<<<<<<< HEAD
-# DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
-=======
+ 
 DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
-
-print("DEBUG 999999999999999999 =", DEBUG)
-
->>>>>>> 686361f (fix Debug checking)
-                    
+ 
+ 
+                 
 ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
                 'localhost', # listen for stripe webhooks
                 'dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
                  ]
  
-
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+  ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 CSRF_TRUSTED_ORIGINS = [
     "https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/",
@@ -260,10 +251,7 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    print("Debug9999999999999", DEBUG)
-
-    print("Bucket name11111111111111111:", AWS_STORAGE_BUCKET_NAME)
-
+ 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'

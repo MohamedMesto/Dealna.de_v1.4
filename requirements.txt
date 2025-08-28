@@ -18,6 +18,7 @@ docopt==0.6.2
 docutils==0.21.2
 et_xmlfile==2.0.0
 flake8==7.1.2
+git-filter-repo==2.47.0
 greenlet==3.0.3
 gunicorn==23.0.0
 Jinja2==3.1.4
@@ -36,13 +37,16 @@ psycopg2==2.9.9
 pycodestyle==2.12.1
 pycparser==2.22
 pyflakes==3.2.0
+pygraphviz==1.11
 PyMuPDF==1.26.3
 pypdf==3.17.4
 pypdfium2==4.30.0
 pytesseract==0.3.13
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 python3-openid==3.2.0
 pythondialog==3.5.3
+requests==2.32.5
 requests-oauthlib==2.0.0
 s3transfer==0.11.2
 stripe==2.42.0
@@ -50,3 +54,4 @@ tabula-py==2.10.0
 tabulate==0.9.0
 typing_extensions==4.12.2
 tzdata==2025.2
+urllib3==2.5.0
