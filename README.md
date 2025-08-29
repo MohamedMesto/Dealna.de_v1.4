@@ -158,6 +158,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [**Responsive Testing**](#responsive-testing)
     - [**Testing Tools**](#testing-tools)
     - [**Issues with Online Tools**](#issues-with-online-tools)
+    - [**Issues with Checkout Page**](#issues-with-checkout-page)
     - [**Key Findings**](#key-findings)
     - [Manual Testing:](#manual-testing)
     - [Automated Unit Testing:](#automated-unit-testing)
@@ -1263,18 +1264,44 @@ Accessibility issues have been resolved, ensuring the link is now descriptive an
 ### Adobe Color Accessibility Tool 
 
 The [Adobe Color Accessibility Tool](https://color.adobe.com/create/color-accessibility) was used also to ensure the color palette met accessibility standards by testing contrast and simulating color blindness. This tool confirmed that the design maintains clarity and readability for users with visual impairments.
-  
+
+
+
 ![adobe_color_accessibility_validator2](assets/images/readme_images/adobe_color_accessibility_validator2.png)
 
 
 
+
+
+
+---
+
+
+  
 ![adobe_color_accessibility_validator1](assets/images/readme_images/adobe_color_accessibility_validator1.png)
 
 
- ![adobe_color_accessibility_validator1](assets/images/readme_images/adobe_color_accessibility_validator3.png)
 
-Here’s the updated **Responsive Testing** section, addressing the issue with **The Responsive Design Checker** and **The Viewport Resizer**:
 
+
+
+
+
+
+
+![adobe_color_accessibility_validator1](assets/images/readme_images/adobe_color_accessibility_validator4.png)
+
+
+
+
+ 
+
+
+
+
+
+
+ 
 ---
 
 ## **Responsive Testing**
@@ -1302,7 +1329,19 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
 - **[The Responsive Design Checker](https://responsivedesignchecker.com/):** Unable to test due to access restrictions on the website.  
 - **[The Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en):** Unable to test due to access restrictions on the website.  
 
- 
+### **Issues with Checkout Page**  
+- Unable to visit the Checkout page:
+  ![checkout_issue](assets/images/readme_images/checkout_issue.png)
+  
+- We add the Django version 4 to the requirements.txt in order to make Heroku run the right Django version. Therefore the issue solved
+  
+
+
+
+
+
+
+
 ---
 
 ### **Key Findings**  
