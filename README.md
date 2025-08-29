@@ -5,13 +5,36 @@
 ---
 [![alt text](assets/images/readme_images/main1.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
+
+
+
+
+
 [![alt text](assets/images/readme_images/Dealna.de1.png)]( https://Dealna.de)
+
+
+
+
+
 
 [![alt text](assets/images/readme_images/Dealna.de2.png)]( https://Dealna.de)
 
+
+
+
+
 [![alt text](assets/images/readme_images/main3.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+
+
+
+
  
 [![alt text](assets/images/readme_images/main4.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+
+
+
+
+
 
 
 [![alt text](assets/images/readme_images/main5.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
@@ -100,6 +123,9 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Future Features**](#future-features)
+  - [**Features**](#features-1)
+    - [**Existing Features**](#existing-features-1)
+    - [**Future Features**](#future-features-1)
   - [**Technologies Used**](#technologies-used)
     - [**Languages**](#languages)
     - [**Frameworks \& Libraries**](#frameworks--libraries)
@@ -262,7 +288,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
 
 
-
+[Back to top](<#contents>)
 
 
 
@@ -377,6 +403,9 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | 44            | Site Owner | Mark collaboration requests as “read”         | Track which requests I still need to process                  |
 | 45            | Site Owner | Store collaboration requests in the database  | Review them later                                             |
 
+[Back to top](<#contents>)
+
+
 
 ---
 
@@ -474,6 +503,9 @@ As part of our project requirements, we have created a dedicated Facebook busine
 ![Site_Structure](assets/images/readme_images/Site_Structure.png)
 
 
+
+[Back to top](<#contents>)
+
 ---
 
  
@@ -483,13 +515,7 @@ The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce
 
 
 
-
-
-
-
-
-
-[Back to top](<#contents>)  
+ 
 
 
 
@@ -530,6 +556,21 @@ The palette was generated using **[Adobe Color Wheel](https://color.adobe.com/cr
 
  
 
+ 
+
+### **Typography**
+
+The typography of **Dealna.de v1** is designed for clarity, readability, and a modern aesthetic:
+
+* **Font Family:** The site uses the **Poppins** font (via Google Fonts), delivering an elegant, approachable, and consistent look across devices.
+* **Primary Text Color:** **#000000** (black) ensures high readability for most content.
+* **Text on Dark Backgrounds:** **#FFFFFF** (white) maintains strong contrast and accessibility.
+* **Headings & Key UI Elements:** Styled in **#04668C** (deep blue) to reinforce brand identity and draw attention.
+* **Secondary Visual Accents:** **#59B5D9** (bright aqua blue) and **#B0CDD9** (soft pastel blue) are used for subtle section highlights, background tints, and less prominent elements.
+* **Interactive & Action Elements:** **#D9851E** (warm orange) highlights buttons, links, and CTAs to guide user engagement.
+* **Emphasis & Contrast Accents:** **#591902** (dark burgundy) is used sparingly for alerts, strong highlights, or emphasis within content.
+
+This design system ensures a clear typographic hierarchy, enhances user navigation, and aligns with the visual branding already in place—especially with the Poppins font providing a polished and cohesive feel.
 
 
  
@@ -555,19 +596,190 @@ The palette was generated using **[Adobe Color Wheel](https://color.adobe.com/cr
 
 
  
+---
+
+## **Features**
+
+### **Existing Features**
+
+The **Dealna.de v1** offers a range of features designed to enhance the user experience and streamline the shopping process:
+
+1. **Navigation**
+
+   * The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **About**, **FAQ**, **Contact**, **Account**, and **Cart**.
+   * **Responsive Design:** The navigation bar adapts seamlessly to different screen sizes, ensuring a smooth user experience across devices.
+
+     * **Notebook/Desktop View:** ![Desktop Navbar](assets/images/readme_images/navbar_desktop.png)
+  
+     * **Mobile View:**     <br>   ![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)
+
+2. **User Registration and Authentication**
+
+   * Users can create accounts, log in, and log out securely. Registered users can access personalized features such as order history and saved payment information.
+
+     * **Notebook/Desktop View:** ![Sign In](assets/images/readme_images/signin.png)
+     * **Mobile View:** <br>  ![Sign In Mobile](assets/images/readme_images/signin_mobile.png)
+     * **Notebook/Desktop View:** ![Sign Up](assets/images/readme_images/signup.png) 
+     * **Mobile View:** <br>  ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)
+
+3. **Product Browsing and Filtering**
+
+   * Users can browse products by category, sort by price, rating, or name, and filter by deals or special offers.
+   * Each product page includes detailed information, images, available sizes, and user reviews.
+
+     * **Notebook/Desktop View:** ![Product Page](assets/images/readme_images/product_page.png)
+     * **Mobile View:** <br> ![Product Page Mobile](assets/images/readme_images/product_page_mobile.png)
+
+4. **Shopping Cart and Checkout**
+
+   * Users can add products to their cart, adjust quantities, and proceed to a secure checkout process.
+   * The cart displays the total cost and allows users to review their order before payment.
+
+     * **Notebook/Desktop View:** ![Shopping Cart](assets/images/readme_images/cart.png)
+     * **Mobile View:** <br> ![Shopping Cart Mobile](assets/images/readme_images/cart_mobile.png)
+
+
+
+
+
+
+     * **Notebook/Desktop View:** 
+         ![Checkout2](assets/images/readme_images/checkout2.png)
+         ![Checkout1](assets/images/readme_images/checkout1.png)
+
+      
+     * **Mobile View:**  <br>![Checkout Mobile](assets/images/readme_images/checkout_mobile.png)
+
+1. **Order Confirmation and Email Notifications**
+
+   * After placing an order, users receive an on-screen confirmation and an email with order details.
+
+
+
+
+
+
+
+
+
+
+     * **Notebook/Desktop View:** ![Order Confirmation](assets/images/readme_images/order_Notifications.png)
+     * **Mobile View:**<br> ![Order Confirmation Mobile](assets/images/readme_images/order_Notifications_mobile.png)
+
+
+
+
+
+
+
+
+
+
+
+     * **Notebook/Desktop View:** ![Order Confirmation](assets/images/readme_images/order_confirmation3.png)
+      ![Order Confirmation](assets/images/readme_images/order_confirmation2.png)
+     * **Mobile View:**<br> ![Order Confirmation Mobile](assets/images/readme_images/order_confirmation_mobile.png)
+
+2. **Reviews**
+
+   * Shoppers can read product reviews from other users and leave their own ratings and feedback.
+   * Reviews help build trust and support better purchase decisions.
+    * **Notebook/Desktop View:** ![Reviews](assets/images/readme_images/review1.png)
+      ![Reviews](assets/images/readme_images/review2.png)
+
+3. **About Page**
+
+   * A dedicated page that introduces **Dealna.de**, including mission, vision, and values.
+   * Enhances brand trust by sharing more about the team and purpose behind the platform.
+
+4. **FAQ Page**
+
+   * Provides answers to frequently asked questions about shopping, shipping, returns, and account management.
+   * Improves customer support by reducing repetitive queries.
+   *  **Notebook/Desktop View:** ![faq](assets/images/readme_images/faq1.png)
+      ![faq](assets/images/readme_images/faq2.png)
+
+
+
+      ![faq](assets/images/readme_images/faq3.png)
+
+
+
+
+
+
+      ![faq](assets/images/readme_images/faq4.png) 
+
+
+
+
+
+     * **Mobile View:**<br> ![review_mobile](assets/images/readme_images/review_mobile.png)
+
+5. **Contact Page**
+
+   * Users can easily reach out to the store via a simple and intuitive contact form.
+   * Messages are stored in the database, allowing the admin to track and respond to collaboration or support requests.
+     * **Notebook/Desktop View:** ![contact](assets/images/readme_images/contact.png)
+
+     * **Mobile View:**<br> ![contact_mobile](assets/images/readme_images/contact_mobile.png)
+
+
+6.  **Admin Dashboard**
+
+    * Admin users can manage products, view orders, respond to contact messages, and update inventory through a dedicated dashboard.
+
+      * **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/admin_dashboard.png)
+      * **Mobile View:** <br> ![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)
+
+---
+
+### **Future Features**
+
+1. **Wishlist Functionality**
+
+   * Allow users to save products to a wishlist for future purchase.
+
+2. **Advanced Search and Filtering**
+
+   * Implement more advanced search and filtering options, such as price range, brand, and customer ratings.
+
+3. **Newsletter Subscription**
+
+   * Allow users to subscribe to a newsletter for updates on new products, promotions, and exclusive deals.
+
+4. **Social Media Integration**
+
+   * Add social media sharing buttons for products and integrate social media feeds on the website.
+
+5. **Live Chat Support**
+
+   * Introduce a live chat feature for real-time customer support.
+
+---
  
- 
----
-Here’s the updated content with image links for both **mobile devices** and **notebooks/desktops** for each feature point. I’ve included placeholders for the image links, which you can replace with actual screenshots from your project.
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
-
-### **Typography**
-
-The typography of **Dealna.de v1** is designed for clarity, readability, and a modern aesthetic. A clean sans-serif font is used throughout the website, ensuring a professional and approachable feel. The text is displayed in **#000000** (black) for primary content and **#FFFFFF** (white) for text on darker backgrounds, ensuring high contrast and reducing eye strain. Headings and key elements are emphasized using **#04668C** (deep blue), while interactive elements like buttons are highlighted with **#DE8C1C** (warm orange). This typography choice enhances the user experience, making the platform intuitive and easy to navigate.
-
----
-
+222222
 ## **Features**
 
 ### **Existing Features**
@@ -578,39 +790,39 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
    - The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **Account**, and **Cart**.  
    - **Responsive Design:** The navigation bar adapts seamlessly to different screen sizes, ensuring a smooth user experience across devices.  
      - **Notebook/Desktop View:** ![Desktop Navbar](assets/images/readme_images/navbar_desktop.png)  
-     - **Mobile View:** ![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)  
+     - **Mobile View:** <br>![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)  
  
 2. **User Registration and Authentication**  
    - Users can create accounts, log in, and log out securely. Registered users can access personalized features such as order history and saved payment information.  
      - **Notebook/Desktop View:** ![Sign In](assets/images/readme_images/signin.png)  
-     - **Mobile View:** ![Sign In Mobile](assets/images/readme_images/signin_mobile.png)  
+     - **Mobile View:** <br>![Sign In Mobile](assets/images/readme_images/signin_mobile.png)  
      - **Notebook/Desktop View:** ![Sign Up](assets/images/readme_images/signin2.png)  
-     - **Mobile View:** 
+     - **Mobile View:** <br>
      ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)  
  
 3. **Product Browsing and Filtering**  
    - Users can browse products by category, sort by price, rating, or name, and filter by deals or special offers.  
    - Each product page includes detailed information, images, available sizes, and user reviews.  
      - **Notebook/Desktop View:** ![Product Page](assets/images/readme_images/product_page.png)  
-     - **Mobile View:** ![Product Page Mobile](assets/images/readme_images/product_page_mobile.png)  
+     - **Mobile View:** <br>![Product Page Mobile](assets/images/readme_images/product_page_mobile.png)  
  
 4. **Shopping Cart and Checkout**  
    - Users can add products to their cart, adjust quantities, and proceed to a secure checkout process.  
    - The cart displays the total cost and allows users to review their order before payment.  
      - **Notebook/Desktop View:** ![Shopping Cart](assets/images/readme_images/cart.png)  
-     - **Mobile View:** ![Shopping Cart Mobile](assets/images/readme_images/cart_mobile.png)  
+     - **Mobile View:** <br>![Shopping Cart Mobile](assets/images/readme_images/cart_mobile.png)  
      - **Notebook/Desktop View:** ![Checkout](assets/images/readme_images/checkout.png)  
-     - **Mobile View:** ![Checkout Mobile](assets/images/readme_images/checkout_mobile.png)  
+     - **Mobile View:** <br>![Checkout Mobile](assets/images/readme_images/checkout_mobile.png)  
  
 5. **Order Confirmation and Email Notifications**  
    - After placing an order, users receive an on-screen confirmation and an email with order details.  
      - **Notebook/Desktop View:** ![Order Confirmation](assets/images/readme_images/order_confirmation.png)  
-     - **Mobile View:** ![Order Confirmation Mobile](assets/images/readme_images/order_confirmation_mobile.png)  
+     - **Mobile View:** <br>![Order Confirmation Mobile](assets/images/readme_images/order_confirmation_mobile.png)  
 
 6. **Admin Dashboard**  
    - Admin users can manage products, view orders, and update inventory through a dedicated dashboard.  
      - **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/admin_dashboard.png)  
-     - **Mobile View:** ![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)  
+     - **Mobile View:** <br>![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)  
 
 ---
  
