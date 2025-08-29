@@ -154,6 +154,9 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
         - [Lighthouse SEO Testing](#lighthouse-seo-testing)
         - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     - [Fixing Accessibility issues:](#fixing-accessibility-issues)
+      - [The Problem:](#the-problem)
+      - [Solutions:](#solutions)
+        - [**Add `aria-label` (no visible text)**](#add-aria-label-no-visible-text)
     - [Adobe Color Accessibility Tool](#adobe-color-accessibility-tool)
   - [**Responsive Testing**](#responsive-testing)
     - [**Testing Tools**](#testing-tools)
@@ -1120,7 +1123,30 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ![Chrome_test1](assets/images/readme_images/Chrome_test1.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1222,7 +1248,76 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 Accessibility issues have been resolved, ensuring the link is now descriptive and user-friendly for all users, including those relying on screen readers.
 
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue1.png)
+
+1. **Accessibility Issue1:**
+      The error you’re seeing is an **accessibility issue**. It indicates that a form control `<input>` **doesn’t have an associated `label`**, which makes it harder for screen reader users to understand the purpose of the input.
+
+      In your code, the relevant form is the **search field in the header**:
+
+ 
+
+      ### The Problem:
+
+      * The `<input>` **does not have a `label`**.
+      * It only has a `placeholder`.
+      * A placeholder **is not a substitute for a label** in terms of accessibility.
+
+      ---
+
+      #### Solutions:
+
+      
+
+      #### ** Use `aria-label` (no visible label)**
+      ```
+      <input class="form-control border border-black rounded-0" type="text" name="q"
+            placeholder="Search our site" aria-label="Search the site">
+      ```
+      
+
+      * This gives screen readers a description of the input without showing a visible label.
+      * Useful if you don’t want to add a visible label.
+      
+      ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue1.png)
+      
+11111111111
+
+2. **Accessibility Issue2:**
+   
+   The new error is about your **search button being “empty”**, which is another **accessibility issue**. Screen readers cannot tell what the button does because it has **no visible or textual label**.
+
+ 
+
+   #### The Problem:
+
+   * The `<button>` only contains an icon (`<i class="fas fa-search">`).
+   * Screen readers **cannot interpret an icon** as meaningful text.
+   * This is considered an “empty button” from an accessibility perspective.
+
+   ---
+
+   #### Solutions:
+   
+   ##### **Add `aria-label` (no visible text)**
+
+   ```html
+   <button class="form-control btn btn-black border border-black rounded-0" type="submit" aria-label="Search">
+      <i class="fas fa-search"></i>
+   </button>
+   ```
+ 
+
+ 
+
+3. **Changed `let` to `const` where variables are not reassigned:**
+   - Ensures better readability and avoids unnecessary reassignments.
+
+4. **Used `const` or `let` instead of `var`:**
+   - To adhere to modern JavaScript standards.
+
+we add ``````
+
+
 
 ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue2.png)
 
@@ -1594,60 +1689,4 @@ You can view the live site here also: [Dealna.de For E-Commerce v1.3]( https://d
 
 
 
-
----
-
-
-
-
-Stage 2: Add Product-Specific FAQ System
-
-- Created new `faq` app with `FAQ` model linked to `EC_Product`
-- Added views to:
-  - List FAQs for a specific product
-  - Add FAQs per product using a form
-- Updated templates:
-  - `faq_list.html` styled using Bootstrap 4.6 Accordion
-  - `add_faq.html` for submitting product-specific FAQs
-- Linked FAQ view to `ec_product_detail` via `ec_product.id`
-- Ensured FAQs are shown under each product detail page
-- Cleaned and tested routes and template blocks
-
-
-<h1 style="color:red;">Stage 2: Review Model Enhancements</h1>
-
-<h2 style="color:#149ed9;">Overview</h2>
-
-This section introduces enhancements to the `Review` model:
-
-- Add a timestamp to reviews
-- Enforce recent-first display
-- Prevent duplicate reviews per user-product pair
-
-<h2 style="color:#149ed9;">Updated Model</h2>
-
-```python
-from django.db import models
-from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
-from ec_products.models import EC_Product
-
-class Review(models.Model):
-    ec_product = models.ForeignKey(
-        EC_Product, related_name='reviews', on_delete=models.CASCADE)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE)
-    content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f"Review by {self.user.username} on {self.ec_product.name}"
-
-    def clean(self):
-        # Prevent duplicate reviews per user per product
-        if Review.objects.filter(ec_product=self.ec_product, user=self.user).exclude(pk=self.pk).exists():
-            raise ValidationError("You have already reviewed this product.")
-
-    class Meta:
-        ordering = ['-id']
-        unique_together = ('ec_product', 'user')
+ 
