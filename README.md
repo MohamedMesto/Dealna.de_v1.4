@@ -724,11 +724,45 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
      * **Mobile View:**<br> ![contact_mobile](assets/images/readme_images/contact_mobile.png)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 6.  **Admin Dashboard**
 
     * Admin users can manage products, view orders, respond to contact messages, and update inventory through a dedicated dashboard.
 
-      * **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/admin_dashboard.png)
+      * **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/Django_administration1.png)
+         ![Admin Dashboard](assets/images/readme_images/Django_administration2.png)
       * **Mobile View:** <br> ![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)
 
 ---
