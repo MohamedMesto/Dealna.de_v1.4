@@ -1214,34 +1214,7 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
-
-
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 777777777
-
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator3.png)
+ 
 
 
 
