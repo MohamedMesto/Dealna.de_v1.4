@@ -1280,13 +1280,11 @@ Accessibility issues have been resolved, ensuring the link is now descriptive an
       
       ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue1.png)
       
-11111111111
+
 
 2. **Accessibility Issue2:**
    
-   The new error is about your **search button being “empty”**, which is another **accessibility issue**. Screen readers cannot tell what the button does because it has **no visible or textual label**.
-
- 
+   The new error is about **search button being “empty”**, which is another **accessibility issue**. Screen readers cannot tell what the button does because it has **no visible or textual label**.
 
    #### The Problem:
 
@@ -1306,28 +1304,13 @@ Accessibility issues have been resolved, ensuring the link is now descriptive an
    </button>
    ```
  
-
+   ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue2.png)
  
 
-3. **Changed `let` to `const` where variables are not reassigned:**
-   - Ensures better readability and avoids unnecessary reassignments.
-
-4. **Used `const` or `let` instead of `var`:**
-   - To adhere to modern JavaScript standards.
-
-we add ``````
 
 
-
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue2.png)
-
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue3.png)
-
-![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/Fix_WAVE_Web_color_accessibility_issue4.png)
-
-**However, there are still some contrast issues to fix!**
-
-
+ 
+  
 
 ### Adobe Color Accessibility Tool 
 
@@ -1368,7 +1351,7 @@ The [Adobe Color Accessibility Tool](https://color.adobe.com/create/color-access
 
 
 
-
+11111111111
  
 ---
 
@@ -1397,6 +1380,8 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
 - **[The Responsive Design Checker](https://responsivedesignchecker.com/):** Unable to test due to access restrictions on the website.  
 - **[The Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en):** Unable to test due to access restrictions on the website.  
 
+![viewport_resizer1](assets/images/readme_images/viewport_resizer1.png)
+
 ### **Issues with Checkout Page**  
 - Unable to visit the Checkout page:
   ![checkout_issue](assets/images/readme_images/checkout_issue.png)
@@ -1420,7 +1405,7 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
 ---
 
  
-
+ 
  
 
 
