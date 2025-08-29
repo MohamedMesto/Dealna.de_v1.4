@@ -85,7 +85,15 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [**User Stories**](#user-stories-1)
     - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
     - [**Additional User Stories for New Apps**](#additional-user-stories-for-new-apps)
-  - [Site Structure](#site-structure)
+  - [**Site Structure**](#site-structure)
+    - [**1. Home Page**](#1-home-page)
+    - [**2. Product Categories**](#2-product-categories)
+    - [**3. Product Page**](#3-product-page)
+    - [**4. Shopping Cart**](#4-shopping-cart)
+    - [**5. Checkout Page**](#5-checkout-page)
+    - [**6. User Account**](#6-user-account)
+    - [**7. Admin Dashboard**](#7-admin-dashboard)
+    - [**8. User Interaction Features**](#8-user-interaction-features)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
     - [**Typography**](#typography)
@@ -169,10 +177,73 @@ Whether you're a shopper looking for the best deals or a seller aiming to expand
 **Facebook Business Page for Dealna.de v1**  
 As part of our project requirements, we have created a dedicated Facebook business page for our e-commerce platform, **Dealna.de v1**. This page serves as a marketing and engagement tool to connect with potential customers, showcase our products, and promote special offers. The page includes essential details about our platform, such as the website link, contact information, and a brief description of our mission to provide a seamless shopping experience. Screenshots of the Facebook business page have been included in this documentation to verify its creation and authenticity.**You can visit our Facebook business page using the following link:** [Dealna.de v1 Facebook Page](https://www.facebook.com/share/1B8bq6A3Jw/).  
 
+
+
+
+
+
+
+
+
+
+
+
+
 [![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb3.jpg)](https://www.facebook.com/share/1B8bq6A3Jw/)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [![Dealna.de v1 Facebook Page](assets/images/readme_images/Dealna_fb1.jpg)](https://www.facebook.com/share/1B8bq6A3Jw/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,13 +252,57 @@ As part of our project requirements, we have created a dedicated Facebook busine
 --- 
  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 ## User Stories:
 
-![userstory2.png](assets/images/readme_images/userstory.png)
+![userstory.png](assets/images/readme_images/userstory.png)
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
- 
+ ![userstory2.png](assets/images/readme_images/userstory2.png)
+
+
+
 
 ### **User Stories**
 
@@ -263,51 +378,109 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | 45            | Site Owner | Store collaboration requests in the database  | Review them later                                             |
 
  
-## Site Structure
+Got it ✅ — I’ll update the **Site Structure** to reflect the **new apps (Review, FAQ, About, Contact)** while keeping everything consistent with your existing structure.
 
-**Dealna.de v1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an overview of its structure:
+---
+Perfect 👍 Let’s lock it in. Here’s your **final updated site structure (text format)**, ready to commit into your repo’s documentation:
 
-1. **Home Page:**  
-   - A visually appealing landing page showcasing featured products, special offers, and categories.  
-   - Includes a navigation bar with links to key sections such as Shop, Deals, and User Account.  
+---
 
-2. **Product Categories:**  
-   - **Shop by Category:** Products are organized into categories (e.g., Clothing, Homeware, Electronics) for easy browsing.  
-   - **Deals & Offers:** Highlights discounted products, clearance items, and special promotions.  
-   - **New Arrivals:** Showcases the latest products added to the platform.  
+## **Site Structure**
 
-3. **Product Page:**  
-   - **Product Details:** Displays comprehensive information about a product, including images, price, description, available sizes, and ratings.  
-   - **Add to Cart:** Allows users to select quantity and size, and add products to their shopping cart.  
-   - **Product Reviews:** Displays user reviews and ratings for the product.  
+**Dealna.de v1** is designed as a modern e-commerce platform with a user-friendly interface and seamless navigation. Here's an updated overview of its structure:
 
-4. **Shopping Cart:**  
-   - **Cart Summary:** Displays all items added to the cart, including quantity, price, and total cost.  
-   - **Edit Cart:** Allows users to adjust quantities or remove items before checkout.  
-   - **Proceed to Checkout:** Redirects users to the secure checkout page.  
+---
 
-5. **Checkout Page:**  
-   - **Shipping Details:** Users can enter their shipping address and choose delivery options.  
-   - **Payment Information:** A secure form for entering payment details (e.g., credit card, PayPal).  
-   - **Order Summary:** Displays a final summary of the order, including items, total cost, and shipping fees.  
-   - **Place Order:** Completes the purchase and redirects users to an order confirmation page.  
+### **1. Home Page**
 
-6. **User Account:**  
-   - **Registration & Login:** Users can create an account or log in to access personalized features.  
-   - **Order History:** Displays past orders with details such as order number, date, and status.  
-   - **Saved Payment Methods:** Allows users to save and manage payment information for faster checkout.  
-   - **Profile Management:** Users can update their personal information and preferences.  
+* A visually appealing landing page showcasing featured products, special offers, and categories.
+* Includes a navigation bar with links to key sections: **Shop, Deals, About, Contact, and User Account**.
 
-7. **Admin Dashboard:**  
-   - **Product Management:** Admins can add, edit, or delete products from the platform.  
-   - **Order Management:** Admins can view and manage customer orders.  
-   - **User Management:** Admins can manage user accounts and permissions.  
+---
 
-8. **User Interaction Features:**  
-    - **Wishlist:** Users can save products to a wishlist for future purchase.  
-    - **Product Reviews:** Users can leave reviews and ratings for purchased products.  
-    - **Newsletter Subscription:** Users can subscribe to receive updates on new products and promotions.  
+### **2. Product Categories**
 
+* **Shop by Category:** Products organized into categories (e.g., Clothing, Homeware, Electronics).
+* **Deals & Offers:** Highlights discounted products, clearance items, and promotions.
+* **New Arrivals:** Displays the latest products added to the platform.
+
+---
+
+### **3. Product Page**
+
+* **Product Details:** Images, price, description, available sizes, and ratings.
+* **Add to Cart:** Select size/quantity and add products to cart.
+* **Product Reviews (Review App):**
+
+  * Shows ratings and comments.
+  * Logged-in users can leave, edit, or delete reviews.
+* **FAQs (FAQ App):**
+
+  * Displays product-related questions and answers.
+  * Admins can add/edit/delete FAQs.
+
+---
+
+### **4. Shopping Cart**
+
+* **Cart Summary:** All items, quantities, price, and total cost.
+* **Edit Cart:** Adjust quantities or remove items.
+* **Proceed to Checkout:** Redirects to secure checkout page.
+
+---
+
+### **5. Checkout Page**
+
+* **Shipping Details:** Enter shipping address and delivery options.
+* **Payment Information:** Secure form for card/PayPal.
+* **Order Summary:** Final breakdown of items and costs.
+* **Place Order:** Completes purchase and shows confirmation.
+
+---
+
+### **6. User Account**
+
+* **Registration & Login:** Create or log into account.
+* **Order History:** View previous orders with details.
+* **Saved Payment Methods:** Manage saved cards/payment info.
+* **Profile Management:** Update personal info and preferences.
+* **My Reviews (Review App):** Manage submitted product reviews.
+
+---
+
+### **7. Admin Dashboard**
+
+* **Product Management:** Add, edit, or delete products.
+* **Order Management:** View and manage customer orders.
+* **User Management:** Manage user accounts and permissions.
+* **FAQ Management (FAQ App):** Add/edit/delete product FAQs.
+* **Review Moderation (Review App):** Monitor and remove inappropriate reviews.
+* **About Page Management (About App):** Update company details/vision.
+* **Contact Management (Contact App):** Review contact/collaboration form submissions.
+
+---
+
+### **8. User Interaction Features**
+
+* **Wishlist:** Save products for future purchase.
+* **Product Reviews (Review App):** Submit and read reviews.
+* **FAQs (FAQ App):** Quick answers to product-related questions.
+* **Newsletter Subscription:** Get updates and promotions.
+* **Contact Form (Contact App):**
+
+  * Users send support, inquiry, or collaboration requests.
+  * Submissions stored in database for admin follow-up.
+* **About Page (About App):**
+
+  * Displays company mission, vision, and values.
+  * Managed by admin for credibility and transparency.
+
+![Site_Structure](assets/images/readme_images/Site_Structure.png)
+
+
+---
+
+ 
  
 The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
@@ -324,10 +497,32 @@ The color scheme of Dealna.de v1 is designed to create a modern, engaging, and u
 [Back to top](<#contents>)
 
   
+
+
+
+
+
+
+
+
+
+
   
 ![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb1.png)
 
  
+
+
+
+
+
+
+
+
+
+
+
+
 ![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb2.png)
 
 

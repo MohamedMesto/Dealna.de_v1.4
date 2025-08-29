@@ -1,0 +1,38 @@
+Priority,User Story ID,User Story (Short Name)
+MUST HAVE,1,View products list
+MUST HAVE,2,View product details
+MUST HAVE,15,Select product size and quantity
+MUST HAVE,16,View shopping cart
+MUST HAVE,18,Enter payment information
+MUST HAVE,19,Secure payment information
+MUST HAVE,20,View order confirmation
+MUST HAVE,33,Leave a product review
+MUST HAVE,37,View product FAQs
+MUST HAVE,41,Submit contact form
+SHOULD HAVE,3,Identify deals and offers
+SHOULD HAVE,5,Register for account
+SHOULD HAVE,6,Login and logout
+SHOULD HAVE,7,Recover password
+SHOULD HAVE,10,Sort product list
+SHOULD HAVE,13,Search for product
+SHOULD HAVE,34,View reviews from other users
+SHOULD HAVE,39,About page view
+COULD HAVE,4,View purchase total
+COULD HAVE,17,Adjust cart quantity
+COULD HAVE,11,Sort specific category
+COULD HAVE,12,Sort multiple categories
+COULD HAVE,14,View search results
+COULD HAVE,35,Edit/Delete own review
+COULD HAVE,36,Restrict to one review per product
+COULD HAVE,38,Admin manage FAQs
+COULD HAVE,40,Update About page content
+COULD HAVE,42,Collaboration requests
+COULD HAVE,43,Mark requests as read
+WON’T HAVE,8,Email confirmation after registration
+WON’T HAVE,9,Personalized user profile
+WON’T HAVE,21,Receive email confirmation after checkout
+WON’T HAVE,22,Add product
+COULD HAVE,44,Store requests in database
+WON’T HAVE,23,Edit product
+WON’T HAVE,24,Delete product
+WON’T HAVE,45,Integrate reviews & FAQs

@@ -518,4 +518,260 @@ As a **role** I can **capability** so that **received benefit**
 23. edit product  
 24. delete product  
 
+---
+👍 
  
+
+## 📌 Additional User Stories (33–45)
+
+---
+
+### **33. Product Reviews – Leave Review**
+
+**As a** Shopper
+**I want to** leave a review for a product
+**So that** I can share my experience and help other shoppers decide.
+
+**Acceptance Criteria**:
+
+* Users can add a review only if logged in.
+* A review form is available on the product detail page.
+* Reviews are stored and displayed under the product.
+
+---
+
+### **34. Product Reviews – View Reviews**
+
+**As a** Shopper
+**I want to** view reviews from other users
+**So that** I can make better-informed purchasing decisions.
+
+**Acceptance Criteria**:
+
+* Reviews are listed under each product.
+* Reviews display username, rating, and content.
+* Most recent reviews appear first.
+
+---
+
+### **35. Product Reviews – Edit/Delete Review**
+
+**As a** Shopper
+**I want to** edit or delete my own review
+**So that** I can correct mistakes or remove feedback.
+
+**Acceptance Criteria**:
+
+* Users can only edit/delete their own reviews.
+* Edit and delete buttons appear only for the logged-in user’s reviews.
+* Updated reviews save correctly and replace the old version.
+
+---
+
+### **36. Product Reviews – Restrict to One Review per User**
+
+**As a** System
+**I want to** restrict each user to one review per product
+**So that** product ratings remain fair and unbiased.
+
+**Acceptance Criteria**:
+
+* Users cannot add multiple reviews for the same product.
+* If a review already exists, they can only edit it.
+* Attempting to add a duplicate review shows a validation error.
+
+---
+
+### **37. FAQs – View Product FAQs**
+
+**As a** Shopper
+**I want to** view frequently asked questions (FAQs) for a product
+**So that** I can quickly find answers without contacting support.
+
+**Acceptance Criteria**:
+
+* FAQs are displayed under product details.
+* Each FAQ has a collapsible question/answer section.
+* If no FAQs exist, show a “No FAQs yet” message.
+
+---
+
+### **38. FAQs – Admin Manage FAQs**
+
+**As a** Site Admin
+**I want to** add, edit, or delete FAQs
+**So that** product information remains accurate and up to date.
+
+**Acceptance Criteria**:
+
+* Admins can manage FAQs via the dashboard.
+* FAQ changes are reflected immediately on product detail pages.
+* Only superusers/admins see edit/delete options.
+
+---
+
+### **39. About Page – View About Page**
+
+**As a** Shopper
+**I want to** view an About page
+**So that** I can learn more about the store’s mission and values.
+
+**Acceptance Criteria**:
+
+* About page is accessible from the navigation bar.
+* Page includes company background, mission, and contact info.
+* Content is styled consistently with the rest of the site.
+
+---
+
+### **40. About Page – Update Content**
+
+**As a** Site Admin
+**I want to** update the About page content
+**So that** store information remains current.
+
+**Acceptance Criteria**:
+
+* Admins can edit About page content via the dashboard.
+* Changes are saved to the database.
+* Updated content appears immediately on the live site.
+
+---
+
+### **41. Contact – Submit Contact Form**
+
+**As a** Shopper
+**I want to** submit a contact form
+**So that** I can ask questions or request help.
+
+**Acceptance Criteria**:
+
+* Contact form includes fields: name, email, subject, message.
+* Submissions are stored in the database.
+* A confirmation message is shown after submission.
+
+---
+
+### **42. Contact – Collaboration Requests**
+
+**As a** Site Owner
+**I want to** receive collaboration requests
+**So that** I can explore opportunities with potential partners.
+
+**Acceptance Criteria**:
+
+* Contact form includes a "Collaboration Request" category.
+* Requests are stored separately in the database.
+* Owner receives a notification for new collaboration requests.
+
+---
+
+### **43. Contact – Mark Requests as Read**
+
+**As a** Site Owner
+**I want to** mark collaboration requests as “read”
+**So that** I can track which requests I still need to process.
+
+**Acceptance Criteria**:
+
+* Requests are listed in the admin dashboard.
+* Each request has a “Mark as Read” action.
+* Read requests are visibly marked as completed.
+
+---
+
+### **44. Contact – Store Requests in Database**
+
+**As a** Site Owner
+**I want to** store collaboration requests in the database
+**So that** I can review them later.
+
+**Acceptance Criteria**:
+
+* All requests are logged in the database.
+* Requests include timestamp, user details, and message.
+* Admins can filter requests by status (read/unread).
+
+---
+
+### **45. Product Page – Integrate Reviews & FAQs**
+
+**As a** Shopper
+**I want to** see reviews and FAQs integrated on product pages
+**So that** I can easily find user opinions and answers in one place.
+
+**Acceptance Criteria**:
+
+* Reviews and FAQs are displayed under the product detail page.
+* Sections are styled consistently.
+* Both features work independently but complement each other.
+
+ 
+---
+
+# 📌 **Updated MoSCoW Prioritization with User Story IDs**
+
+---
+
+### **MUST HAVE**
+
+* **US 1** – View products list
+* **US 2** – View product details
+* **US 15** – Select product size and quantity
+* **US 16** – View shopping cart
+* **US 18** – Enter payment information
+* **US 19** – Secure payment information
+* **US 20** – View order confirmation
+* **US 33** – Leave a product review
+* **US 37** – View product FAQs
+* **US 41** – Submit contact form
+
+---
+
+### **SHOULD HAVE**
+
+* **US 3** – Identify deals and offers
+* **US 5** – Register for account
+* **US 6** – Login and logout
+* **US 7** – Recover password
+* **US 10** – Sort product list
+* **US 13** – Search for product
+* **US 34** – View reviews from other users
+* **US 39** – About page view
+
+---
+
+### **COULD HAVE**
+
+* **US 4** – View purchase total
+* **US 17** – Adjust cart quantity
+* **US 11** – Sort specific category
+* **US 12** – Sort multiple categories
+* **US 14** – View search results
+* **US 35** – Edit/Delete own review
+* **US 36** – Restrict to one review per product
+* **US 38** – Admin manage FAQs
+* **US 40** – Update About page content
+* **US 42** – Collaboration requests
+* **US 43** – Mark requests as read
+* **US 44** – Store requests in database
+
+---
+
+### **WON’T HAVE**
+
+* **US 8** – Email confirmation after registration
+* **US 9** – Personalized user profile
+* **US 21** – Receive email confirmation after checkout
+* **US 22** – Add product
+* **US 23** – Edit product
+* **US 24** – Delete product
+* **US 45** – Integrate reviews & FAQs
+
+---
+
+👉 Now every **User Story ID (1–45)** has a clear place in **MoSCoW prioritization**.
+This makes it easier to track in GitHub Projects or Jira boards since you can filter by **ID + Priority**.
+
+ 
+
