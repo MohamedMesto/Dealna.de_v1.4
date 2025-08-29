@@ -123,9 +123,6 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Future Features**](#future-features)
-  - [**Features**](#features-1)
-    - [**Existing Features**](#existing-features-1)
-    - [**Future Features**](#future-features-1)
   - [**Technologies Used**](#technologies-used)
     - [**Languages**](#languages)
     - [**Frameworks \& Libraries**](#frameworks--libraries)
@@ -597,13 +594,16 @@ This design system ensures a clear typographic hierarchy, enhances user navigati
 
  
 ---
-
+7777777777777
 ## **Features**
 
 ### **Existing Features**
 
 The **Dealna.de v1** offers a range of features designed to enhance the user experience and streamline the shopping process:
+ 
+<details><summary><span style="font-size:1.3em; font-weight:bold;">Features Details</span></summary>
 
+ 
 1. **Navigation**
 
    * The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **About**, **FAQ**, **Contact**, **Account**, and **Cart**.
@@ -707,8 +707,7 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
 
 
-
-      ![faq](assets/images/readme_images/faq4.png) 
+ 
 
 
 
@@ -758,7 +757,8 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
 ---
  
-
+[Back to top](<#contents>)
+ 
 
 </details>
 
@@ -777,82 +777,6 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
 
 
-
----
-222222
-## **Features**
-
-### **Existing Features**
-
-The **Dealna.de v1** offers a range of features designed to enhance the user experience and streamline the shopping process:
-
-1. **Navigation**  
-   - The navigation menu is prominently featured at the top of the page, providing easy access to key sections such as **Shop**, **Deals**, **Account**, and **Cart**.  
-   - **Responsive Design:** The navigation bar adapts seamlessly to different screen sizes, ensuring a smooth user experience across devices.  
-     - **Notebook/Desktop View:** ![Desktop Navbar](assets/images/readme_images/navbar_desktop.png)  
-     - **Mobile View:** <br>![Mobile Navbar](assets/images/readme_images/navbar_mobile.png)  
- 
-2. **User Registration and Authentication**  
-   - Users can create accounts, log in, and log out securely. Registered users can access personalized features such as order history and saved payment information.  
-     - **Notebook/Desktop View:** ![Sign In](assets/images/readme_images/signin.png)  
-     - **Mobile View:** <br>![Sign In Mobile](assets/images/readme_images/signin_mobile.png)  
-     - **Notebook/Desktop View:** ![Sign Up](assets/images/readme_images/signin2.png)  
-     - **Mobile View:** <br>
-     ![Sign Up Mobile](assets/images/readme_images/signin2_mobile.png)  
- 
-3. **Product Browsing and Filtering**  
-   - Users can browse products by category, sort by price, rating, or name, and filter by deals or special offers.  
-   - Each product page includes detailed information, images, available sizes, and user reviews.  
-     - **Notebook/Desktop View:** ![Product Page](assets/images/readme_images/product_page.png)  
-     - **Mobile View:** <br>![Product Page Mobile](assets/images/readme_images/product_page_mobile.png)  
- 
-4. **Shopping Cart and Checkout**  
-   - Users can add products to their cart, adjust quantities, and proceed to a secure checkout process.  
-   - The cart displays the total cost and allows users to review their order before payment.  
-     - **Notebook/Desktop View:** ![Shopping Cart](assets/images/readme_images/cart.png)  
-     - **Mobile View:** <br>![Shopping Cart Mobile](assets/images/readme_images/cart_mobile.png)  
-     - **Notebook/Desktop View:** ![Checkout](assets/images/readme_images/checkout.png)  
-     - **Mobile View:** <br>![Checkout Mobile](assets/images/readme_images/checkout_mobile.png)  
- 
-5. **Order Confirmation and Email Notifications**  
-   - After placing an order, users receive an on-screen confirmation and an email with order details.  
-     - **Notebook/Desktop View:** ![Order Confirmation](assets/images/readme_images/order_confirmation.png)  
-     - **Mobile View:** <br>![Order Confirmation Mobile](assets/images/readme_images/order_confirmation_mobile.png)  
-
-6. **Admin Dashboard**  
-   - Admin users can manage products, view orders, and update inventory through a dedicated dashboard.  
-     - **Notebook/Desktop View:** ![Admin Dashboard](assets/images/readme_images/admin_dashboard.png)  
-     - **Mobile View:** <br>![Admin Dashboard Mobile](assets/images/readme_images/admin_dashboard_mobile.png)  
-
----
- 
-### **Future Features**
-
-1. **About Us Page**  
-   - Provide information about the platform's mission, vision, and values, as well as the team behind **Dealna.de v1**.  
-
-2. **Wishlist Functionality**  
-   - Allow users to save products to a wishlist for future purchase.  
-
-3. **Advanced Search and Filtering**  
-   - Implement more advanced search and filtering options, such as price range, brand, and customer ratings.  
-
-4. **Product Reviews and Ratings**  
-   - Enable users to leave reviews and ratings for purchased products, fostering trust and engagement.  
-
-5. **Newsletter Subscription**  
-   - Allow users to subscribe to a newsletter for updates on new products, promotions, and exclusive deals.  
-
-6. **Social Media Integration**  
-   - Add social media sharing buttons for products and integrate social media feeds on the website.  
-
-7. **Live Chat Support**  
-   - Introduce a live chat feature for real-time customer support.  
-
-
----
-
- 
   
 
 ## **Technologies Used**
