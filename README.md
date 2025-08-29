@@ -124,16 +124,17 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [**Existing Features**](#existing-features)
     - [**Future Features**](#future-features)
   - [**Technologies Used**](#technologies-used)
-    - [**Languages**](#languages)
     - [**Frameworks \& Libraries**](#frameworks--libraries)
     - [**Database**](#database)
     - [**Tools \& Services**](#tools--services)
     - [**Design Tools**](#design-tools)
   - [**Data Model**](#data-model)
     - [**Core Models**](#core-models)
+    - [**New App Models**](#new-app-models)
     - [**Relational Model**](#relational-model)
     - [**Example Relationships**](#example-relationships)
-    - [**Database Schema Diagram**](#database-schema-diagram)
+    - [**Database Schema Diagram (Simplified)**](#database-schema-diagram-simplified)
+    - [**Generating the ERD**](#generating-the-erd)
   - [**Email Marketing Integration**](#email-marketing-integration)
     - [**Mailchimp**](#mailchimp)
     - [**Screenshot of Mailchimp Pricing**](#screenshot-of-mailchimp-pricing)
@@ -594,7 +595,7 @@ This design system ensures a clear typographic hierarchy, enhances user navigati
 
  
 ---
-7777777777777
+
 ## **Features**
 
 ### **Existing Features**
@@ -815,7 +816,11 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
 ## **Technologies Used**
 
-### **Languages**
+ 
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">Languages</span></summary>
+
+
 
 - **[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML):** Provides the foundational structure and semantic content for the **Dealna.de v1**, ensuring accessibility and compatibility across browsers.  
 - **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS):** Styles and layouts are meticulously crafted to deliver a responsive and visually appealing design that enhances user experience.  
@@ -862,103 +867,124 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 - **[Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html):** Used to create the site's logo and social media graphics, maintaining a professional and consistent brand identity.  
 - **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html):** Utilized to resize and optimize images for web use, enhancing the visual quality of the site while maintaining performance.  
 
- 
- 
+
+[Back to top](<#contents>)  
+
+</details>
+
 ---
+
+
 
 ## **Data Model**
 
-This project uses Django’s Object-Relational Mapping (ORM) to handle data interactions between the application and PostgreSQL. The key models are as follows:
+ 
+This project uses Django’s **Object-Relational Mapping (ORM)** to manage interactions between the application and **PostgreSQL**. The updated key models include the new apps.
+ 
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">Details</span></summary>
+
+
+ 
 
 ### **Core Models**
 
-1. **User**  
-   - Handles authentication and user profile information.  
-   - Fields:  
-     - `username` (CharField): Unique username for login.  
-     - `email` (EmailField): User's email address.  
-     - `password` (CharField): Hashed password for secure authentication.  
-     - `first_name` (CharField): User's first name.  
-     - `last_name` (CharField): User's last name.  
-     - `is_staff` (BooleanField): Indicates if the user is an admin.  
+1. **User**
 
-2. **Product**  
-   - Represents a product available for purchase.  
-   - Fields:  
-     - `name` (CharField): Name of the product.  
-     - `description` (TextField): Detailed description of the product.  
-     - `price` (DecimalField): Price of the product.  
-     - `category` (ForeignKey): Category the product belongs to.  
-     - `image` (ImageField): Product image.  
-     - `rating` (DecimalField): Average rating based on user reviews.  
-     - `stock` (IntegerField): Available stock quantity.  
+   * Handles authentication and user profile information.
+   * Fields:
 
-3. **Category**  
-   - Represents a grouping of products (e.g., Clothing, Electronics).  
-   - Fields:  
-     - `name` (CharField): Name of the category.  
-     - `friendly_name` (CharField): User-friendly name for display.  
+     * `username`, `email`, `password`, `first_name`, `last_name`, `is_staff`
 
-4. **Order**  
-   - Represents a user's purchase order.  
-   - Fields:  
-     - `user` (ForeignKey): User who placed the order.  
-     - `order_number` (CharField): Unique order identifier.  
-     - `date` (DateTimeField): Date and time the order was placed.  
-     - `total` (DecimalField): Total cost of the order.  
-     - `status` (CharField): Current status of the order (e.g., Processing, Shipped).  
+2. **Product**
 
-5. **OrderLineItem**  
-   - Represents an individual item within an order.  
-   - Fields:  
-     - `order` (ForeignKey): Associated order.  
-     - `product` (ForeignKey): Product purchased.  
-     - `quantity` (IntegerField): Quantity of the product.  
-     - `lineitem_total` (DecimalField): Total cost for this line item.  
+   * Represents a product available for purchase.
+   * Fields:
 
-6. **Review**  
-   - Represents a user review for a product.  
-   - Fields:  
-     - `user` (ForeignKey): User who wrote the review.  
-     - `product` (ForeignKey): Product being reviewed.  
-     - `rating` (IntegerField): Rating given by the user (e.g., 1-5 stars).  
-     - `comment` (TextField): User's review comment.  
-     - `date` (DateTimeField): Date and time the review was posted.  
+     * `name`, `description`, `price`, `category` (FK), `image`, `rating`, `stock`
+
+3. **Category**
+
+   * Represents a grouping of products.
+   * Fields: `name`, `friendly_name`
+
+4. **Order**
+
+   * Represents a user's purchase order.
+   * Fields: `user` (FK), `order_number`, `date`, `total`, `status`
+
+5. **OrderLineItem**
+
+   * Represents an individual item within an order.
+   * Fields: `order` (FK), `product` (FK), `quantity`, `lineitem_total`
+
+6. **Review**
+
+   * Represents a user review for a product.
+   * Fields: `user` (FK), `product` (FK), `rating`, `comment`, `date`
+
+---
+
+### **New App Models**
+
+1. **FAQ**
+
+   * Stores frequently asked questions related to products or general site queries.
+   * Fields: `question` (CharField), `answer` (TextField), `product` (FK, optional), `created_at`, `updated_at`
+
+2. **About**
+
+   * Contains information about the company or store.
+   * Fields: `title` (CharField), `content` (TextField), `updated_at`
+
+3. **Contact**
+
+   * Stores messages submitted through the contact form.
+   * Fields: `name` (CharField), `email` (EmailField), `subject` (CharField), `message` (TextField), `created_at`, `is_read` (BooleanField)
 
 ---
 
 ### **Relational Model**
 
-- Each **Product** belongs to a **Category**.  
-- Each **Order** is associated with a **User** and contains multiple **OrderLineItem** entries.  
-- Each **OrderLineItem** is linked to a specific **Product**.  
-- Each **Review** is associated with a **User** and a **Product**.  
+* **Product → Category**: Each product belongs to a category.
+* **Order → User**: Each order is placed by a user.
+* **Order → OrderLineItem → Product**: Orders contain multiple line items, each referencing a product.
+* **Review → User, Product**: Users can leave reviews for products.
+* **FAQ → Product**: Optional, relates questions to specific products.
+* **About**: Single model for company/store info.
+* **Contact → Admin/User**: Contact messages are stored in the database and can be flagged as read.
 
 ---
 
 ### **Example Relationships**
 
-1. **User → Order**  
-   - A user can place multiple orders.  
-   - Example: User "JohnDoe" places two orders, each containing multiple products.  
+1. **User → Order**
 
-2. **Product → Category**  
-   - A product belongs to a specific category.  
-   - Example: Product "Smartphone" belongs to the "Electronics" category.  
+   * A user can place multiple orders.
 
-3. **Order → OrderLineItem**  
-   - An order contains multiple line items, each representing a product and its quantity.  
-   - Example: Order #123 contains two products: "Smartphone" (quantity: 1) and "Headphones" (quantity: 2).  
+2. **Product → Category**
 
-4. **User → Review**  
-   - A user can leave multiple reviews for different products.  
-   - Example: User "JaneDoe" leaves a 5-star review for "Smartphone" and a 4-star review for "Headphones".  
+   * Products belong to a category.
+
+3. **Order → OrderLineItem → Product**
+
+   * An order can contain multiple line items, each representing a product.
+
+4. **User → Review → Product**
+
+   * A user can leave multiple reviews on different products.
+
+5. **Product → FAQ**
+
+   * A product can have multiple FAQs.
+
+6. **Contact Messages**
+
+   * Each message is stored for admin review.
 
 ---
 
-### **Database Schema Diagram**
-
-Below is a simplified representation of the database schema:
+### **Database Schema Diagram (Simplified)**
 
 ```
 User
@@ -968,8 +994,40 @@ User
 │   │       └── Category
 └── Review
     └── Product
+FAQ
+└── Product
+About
+Contact
 ```
+
+---
+
+### **Generating the ERD**
+
+To create a visual diagram of the models, use **Django Extensions**:
+
+```bash
+./manage.py graph_models -a -g -o Dealna_de_v1_3_diagram.png
+```
+
+* `-a`: Include all apps
+* `-g`: Group models by app
+* `-o`: Output file name
+
+The generated **ERD** will be saved as:
+**[Dealna\_de\_v1\_3\_diagram.png](Dealna_de_v1_3_diagram.png)**
+
+This diagram includes **core models** and **new apps** for a complete overview of your project schema.
+
+![Dealna_de_v1_3_diagram](assets/images/readme_images/Dealna_de_v1_3_diagram.png)  
+
+
  
+</details>
+
+[Back to top](<#contents>)
+
+77777777777
 
 ## **Email Marketing Integration**
 
