@@ -94,8 +94,8 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [**6. User Account**](#6-user-account)
     - [**7. Admin Dashboard**](#7-admin-dashboard)
     - [**8. User Interaction Features**](#8-user-interaction-features)
+    - [Dealna.de v1.3 Site Structure](#dealnade-v13-site-structure)
   - [Design Choices](#design-choices)
-    - [Colour Scheme](#colour-scheme)
     - [**Typography**](#typography)
   - [**Features**](#features)
     - [**Existing Features**](#existing-features)
@@ -377,11 +377,6 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | 44            | Site Owner | Mark collaboration requests as “read”         | Track which requests I still need to process                  |
 | 45            | Site Owner | Store collaboration requests in the database  | Review them later                                             |
 
- 
-Got it ✅ — I’ll update the **Site Structure** to reflect the **new apps (Review, FAQ, About, Contact)** while keeping everything consistent with your existing structure.
-
----
-Perfect 👍 Let’s lock it in. Here’s your **final updated site structure (text format)**, ready to commit into your repo’s documentation:
 
 ---
 
@@ -475,6 +470,7 @@ Perfect 👍 Let’s lock it in. Here’s your **final updated site structure (t
   * Displays company mission, vision, and values.
   * Managed by admin for credibility and transparency.
 
+### Dealna.de v1.3 Site Structure
 ![Site_Structure](assets/images/readme_images/Site_Structure.png)
 
 
@@ -484,32 +480,59 @@ Perfect 👍 Let’s lock it in. Here’s your **final updated site structure (t
  
 The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
+
+
+
+
+
+
+
+
+
 [Back to top](<#contents>)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Design Choices
 
-### Colour Scheme
+ 
+<details><summary><span style="font-size:1.3em; font-weight:bold;">Colour Scheme</span></summary>
+
+
+The color scheme of **Dealna.de v1** is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of **#04668C** (a deep blue) for headings and key elements, complemented by **#A7C3D1** (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, **#DE8C1C** (a warm orange) is used for buttons and interactive elements. The text is displayed in **#000000** (black) for readability, while **#FFFFFF** (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
+
+The palette was generated using **[Adobe Color Wheel](https://color.adobe.com/create/image)**, ensuring a professional and harmonious selection of shades.
+
  
 
-The color scheme of Dealna.de v1 is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of #04668C (a deep blue) for headings and key elements, complemented by #A7C3D1 (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, #DE8C1C (a warm orange) is used for buttons and interactive elements. The text is displayed in #000000 (black) for readability, while #FFFFFF (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
-
-[Back to top](<#contents>)
-
-  
-
-
-
-
-
-
-
-
+![Colour palette image of 5 colours](assets/images/readme_images/colour_palette2.png)
 
 
   
-![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb1.png)
+![Colour palette image of 5 colours](assets/images/readme_images/colour_palette1.png)
 
+ 
+
+
+
+ 
  
 
 
@@ -523,15 +546,17 @@ The color scheme of Dealna.de v1 is designed to create a modern, engaging, and u
 
 
 
-![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb2.png)
 
 
- 
 [Back to top](<#contents>)
- 
- 
- Got it! If the **About Us** page is not currently implemented and is planned as a future feature, I’ll adjust the content accordingly. Here’s the updated version:
 
+</details>
+
+
+
+ 
+ 
+ 
 ---
 Here’s the updated content with image links for both **mobile devices** and **notebooks/desktops** for each feature point. I’ve included placeholders for the image links, which you can replace with actual screenshots from your project.
 
