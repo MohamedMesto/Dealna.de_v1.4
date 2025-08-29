@@ -151,6 +151,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
         - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
       - [Accessibility Testing](#accessibility-testing)
         - [Lighthouse Accessibility Testing](#lighthouse-accessibility-testing)
+        - [Lighthouse SEO Testing](#lighthouse-seo-testing)
         - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     - [Fixing Accessibility issues:](#fixing-accessibility-issues)
     - [Adobe Color Accessibility Tool](#adobe-color-accessibility-tool)
@@ -1022,10 +1023,10 @@ This diagram includes **core models** and **new apps** for a complete overview o
 ![Dealna_de_v1_3_diagram](assets/images/readme_images/Dealna_de_v1_3_diagram.png)  
 
 
+[Back to top](<#contents>)
  
 </details>
 
-[Back to top](<#contents>)
 
  
 
@@ -1052,9 +1053,13 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 
 ![Mailchimp Pricing](assets/images/readme_images/mailchimp_pricing.png)  
 
- </details>
+
 
 [Back to top](<#contents>)
+
+
+ </details>
+
 
 ---
  
@@ -1086,9 +1091,14 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 ![Trusted Shops Seal](assets/images/readme_images/trusted_shops_seal.png)  
 
- </details>
 
 [Back to top](<#contents>)
+
+
+
+ </details>
+
+
 
 ---
 
@@ -1112,7 +1122,19 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 ![Chrome_test2](assets/images/readme_images/Chrome_test2.png)
 
 
+
+777777777
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">Testing</span></summary>
+
+
+
 ### Lighthouse Testing
+
+ 
+
+ 
+
 
 #### Performance
 The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and it tests it under mobile and desktop criteria.
@@ -1134,7 +1156,8 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 ##### Lighthouse Accessibility Testing 
 ![Lighthouse Accessibility Testing](assets/images/readme_images/lighthouse_accessibility.png)
 
-
+##### Lighthouse SEO Testing 
+![seo](assets/images/readme_images/seo.png)
  
 
 ##### WAVE Web Accessibility Evaluation Tool
@@ -1221,7 +1244,13 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
 - Images and text scale appropriately without breaking the layout.  
 
 ---
+
  
+
+ 
+
+
+
 
 
 
@@ -1271,8 +1300,10 @@ python manage.py test
 
 This command will execute all the tests we implemented, allowing you to confirm that each core functionality works as intended. Running these tests ensures that the site remains robust and stable throughout development.
 
- 
 
+ 
+[Back to top](<#contents>)
+</details>
   
 
  
