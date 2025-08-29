@@ -304,6 +304,11 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
 ## User Stories:
+<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+
+
+
+
 
 ![userstory.png](assets/images/readme_images/userstory.png)
   
@@ -502,8 +507,11 @@ As part of our project requirements, we have created a dedicated Facebook busine
 ![Site_Structure](assets/images/readme_images/Site_Structure.png)
 
 
+ 
 
+ 
 [Back to top](<#contents>)
+</details>
 
 ---
 
@@ -1105,6 +1113,8 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 ## Testing:
 
+<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+
 ### Chrome Test
 
 
@@ -1123,9 +1133,8 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 
 
-777777777
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">Testing</span></summary>
+
 
 
 
@@ -1164,14 +1173,72 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was used to check the colour contrast on the website for accessibility purposes which it passed. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator2.png)
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 777777777
 
 ![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator3.png)
 
