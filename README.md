@@ -1027,9 +1027,15 @@ This diagram includes **core models** and **new apps** for a complete overview o
 
 [Back to top](<#contents>)
 
-77777777777
+ 
 
 ## **Email Marketing Integration**
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+
+ 
+
+
 
 ### **Mailchimp**  
 Initially, we planned to integrate **Mailchimp** for email marketing to allow users to subscribe to newsletters and receive updates about new products, promotions, and exclusive deals. However, due to recent changes in Mailchimp's registration rules and pricing, this feature could not be implemented.  
@@ -1046,12 +1052,18 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 
 ![Mailchimp Pricing](assets/images/readme_images/mailchimp_pricing.png)  
 
- 
+ </details>
+
+[Back to top](<#contents>)
+
 ---
  
- 
+
 
 ## **Compliance and Trust**
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+
 
 ### **Händlerbund Membership**  
 We are proud members of **[Händlerbund](https://www.haendlerbund.de/de)**, the largest association for e-commerce and online retailers in Europe. This membership ensures that our platform, **Dealna.de v1**, adheres to the highest standards of legal compliance and consumer protection.  
@@ -1073,6 +1085,10 @@ We strictly follow all European regulations, including:
 Below is a screenshot of the **Trusted Shops** seal displayed on our website [Dealna.de](https://Dealna.de/):  
 
 ![Trusted Shops Seal](assets/images/readme_images/trusted_shops_seal.png)  
+
+ </details>
+
+[Back to top](<#contents>)
 
 ---
 
