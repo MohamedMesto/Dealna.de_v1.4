@@ -1489,7 +1489,12 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
 
 * **Problem:** `<script>` tags were using the unnecessary `type="text/javascript"` attribute. Modern HTML5 defaults to JavaScript, so this is redundant.
+  
+   ![Duplicate_ID](assets/images/readme_images/Duplicate_ID.png)
+
   **Solution:** Remove the `type="text/javascript"` attribute from `<script>` elements.
+
+  ![fix_type_text_javascript](assets/images/readme_images/fix_type_text_javascript.png)
 
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
 
