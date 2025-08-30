@@ -168,6 +168,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [Running Tests:](#running-tests)
   - [Validator Testing - Bugs Fixed:](#validator-testing---bugs-fixed)
   - [HTML Validation](#html-validation)
+    - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
     - [**Example 1: Invalid Attribute in an Element**](#example-1-invalid-attribute-in-an-element)
       - [**Error**:](#error)
       - [**Cause**:](#cause)
@@ -1348,10 +1349,6 @@ The [Adobe Color Accessibility Tool](https://color.adobe.com/create/color-access
  
 
 
-
-
-
-11111111111
  
 ---
 
@@ -1386,14 +1383,8 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
 - Unable to visit the Checkout page:
   ![checkout_issue](assets/images/readme_images/checkout_issue.png)
   
-- We add the Django version 4 to the requirements.txt in order to make Heroku run the right Django version. Therefore the issue solved
+- We add the `django==4.2` to the `requirements.tx`t in order to make Heroku run the right Django version. Therefore the issue solved
   
-
-
-
-
-
-
 
 ---
 
@@ -1407,6 +1398,10 @@ Responsiveness was tested manually using **Chrome DevTools** and by physically t
  
  
  
+
+
+
+
 
 
 
@@ -1465,6 +1460,7 @@ This command will execute all the tests we implemented, allowing you to confirm 
 </details>
   
 
+ 1111111111
  
 
 ## Validator Testing - Bugs Fixed:
@@ -1474,6 +1470,30 @@ This command will execute all the tests we implemented, allowing you to confirm 
 Validation errors occur when HTML code does not adhere to the established standards, which can lead to browser inconsistencies or inaccessible content. It is crucial to test your code against validators like the [W3C HTML Validator](https://validator.w3.org/) to ensure compliance with best practices and maintain cross-browser functionality. Below are two examples of common validation errors, their causes, and fixes.
 
  
+### HTML Validation Issues (Nu Html Checker)
+
+During validation of the project with the **Nu Html Checker**, several errors and warnings were reported.
+
+* **Problem:** `<li>` elements were placed directly inside `<nav>` tags, which is invalid since `<li>` elements must be inside a `<ul>`, `<ol>`, or `<menu>`.
+  **Solution:** Wrap all `<li>` items inside a proper `<ul>` or `<ol>` element within the navigation bar.
+
+* **Problem:** Duplicate IDs were found (`user-options` and `home-link`). HTML requires all IDs to be unique in the document.
+
+   ![Duplicate_ID](assets/images/readme_images/Duplicate_ID.png)
+
+
+
+  **Solution:** Ensure each element has a unique ID by renaming duplicates (e.g., `user-options-desktop` and `user-options-mobile`).
+
+   ![Duplicate_ID_solution](assets/images/readme_images/Duplicate_ID_solution.png)
+
+
+* **Problem:** `<script>` tags were using the unnecessary `type="text/javascript"` attribute. Modern HTML5 defaults to JavaScript, so this is redundant.
+  **Solution:** Remove the `type="text/javascript"` attribute from `<script>` elements.
+
+By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
+
+8888888888888888
 
 ### **Example 1: Invalid Attribute in an Element**
 
