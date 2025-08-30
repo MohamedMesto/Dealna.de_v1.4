@@ -11,7 +11,9 @@ class EC_UserProfileForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
 
         # MMM
-        self.fields['default_country'].choices = self.fields['default_country'].widget.choices
+        self.fields['default_country'].choices = (
+            self.fields['default_country'].widget.choices
+        )
 
         placeholders = {
             'default_phone_number': 'Phone Number',
@@ -20,7 +22,6 @@ class EC_UserProfileForm(forms.ModelForm):
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
-            # 'default_country': 'un',
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
@@ -31,5 +32,7 @@ class EC_UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = (
+                'border-black rounded-0 profile-form-input'
+            )
             self.fields[field].label = False

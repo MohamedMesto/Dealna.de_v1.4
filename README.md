@@ -171,10 +171,9 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
   - [CSS Validation](#css-validation)
     - [JavaScript Validation](#javascript-validation)
-    - [**Key Takeaways**:](#key-takeaways)
-  - [JS Validation](#js-validation)
     - [Fixes Applied](#fixes-applied)
   - [Py Validation](#py-validation)
+    - [**Key Takeaways**:](#key-takeaways)
   - [Getting Started:](#getting-started)
   - [Deployment:](#deployment)
   - [Credits](#credits)
@@ -1448,10 +1447,10 @@ This command will execute all the tests we implemented, allowing you to confirm 
  
 [Back to top](<#contents>)
 </details>
-  
 
- 1111111111
- 
+
+1111111111
+
 
 ## Validator Testing - Bugs Fixed:
 
@@ -1527,6 +1526,15 @@ Some JavaScript issues were detected during validation:
 * Line 96, Column 28: `'template literal syntax' is only available in ES6 (use 'esversion: 6')`
 * Line 115, Column 7: `Missing semicolon`
 
+### Fixes Applied
+1. **ESLint and JSHint Configuration:**
+   - Added `/* eslint-env es6 */` and `/* jshint esversion: 6 */` to support ES6.
+   - This explicitly tells linters that the script uses ES6 syntax.
+
+2. **Ensured ES6 Compatibility for Template Literals and Arrow Functions:**
+   - Verified ES6-compatible tools/environment usage.
+   - Added notes to indicate the ES6 usage for future reference.
+  
 These issues have been fixed. Screenshots of the validation results are shown below:
 
 ![js\_errors](assets/images/readme_images/js_errors.png)
@@ -1538,7 +1546,349 @@ These issues have been fixed. Screenshots of the validation results are shown be
 
 ![js\_validation2](assets/images/readme_images/js_validation2.png)
 
- 
+---
+
+
+## Py Validation
+
+using python3 -m flake8 we ckeck the python files
+
+we found the following errors:
+```
+python3 -m flake8
+./about/migrations/0001_initial.py:18:80: E501 line too long (94 > 79 characters)
+./about/migrations/0001_initial.py:19:80: E501 line too long (80 > 79 characters)
+./about/models.py:3:1: E302 expected 2 blank lines, found 1
+./about/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./about/urls.py:6:2: W292 no newline at end of file
+./about/views.py:4:1: E302 expected 2 blank lines, found 1
+./contact/admin.py:4:36: W292 no newline at end of file
+./contact/forms.py:4:1: E302 expected 2 blank lines, found 1
+./contact/forms.py:13:1: W293 blank line contains whitespace
+./contact/forms.py:13:9: W292 no newline at end of file
+./contact/migrations/0001_initial.py:18:80: E501 line too long (117 > 79 characters)
+./contact/migrations/0001_initial.py:23:80: E501 line too long (87 > 79 characters)
+./contact/models.py:4:1: E302 expected 2 blank lines, found 1
+./contact/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./contact/urls.py:6:2: W292 no newline at end of file
+./contact/views.py:5:1: E302 expected 2 blank lines, found 1
+./contact/views.py:10:80: E501 line too long (81 > 79 characters)
+./contact/views.py:14:1: W293 blank line contains whitespace
+./contact/views.py:15:67: W292 no newline at end of file
+./custom_storages.py:12:69: W292 no newline at end of file
+./ec_2050_project/settings.py:19:15: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:27:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:28:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:31:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:33:1: E303 too many blank lines (3)
+./ec_2050_project/settings.py:34:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:43:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:44:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:46:17: E128 continuation line under-indented for visual indent
+./ec_2050_project/settings.py:46:29: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:47:17: E128 continuation line under-indented for visual indent
+./ec_2050_project/settings.py:47:61: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:49:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:52:3: E111 indentation is not a multiple of 4
+./ec_2050_project/settings.py:72:29: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:72:80: E501 line too long (98 > 79 characters)
+./ec_2050_project/settings.py:78:14: W291 trailing whitespace
+./ec_2050_project/settings.py:115:62: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:115:80: E501 line too long (83 > 79 characters)
+./ec_2050_project/settings.py:132:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:138:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:165:6: W291 trailing whitespace
+./ec_2050_project/settings.py:169:36: E225 missing whitespace around operator
+./ec_2050_project/settings.py:175:1: E303 too many blank lines (3)
+./ec_2050_project/settings.py:180:80: E501 line too long (91 > 79 characters)
+./ec_2050_project/settings.py:183:80: E501 line too long (81 > 79 characters)
+./ec_2050_project/settings.py:186:80: E501 line too long (82 > 79 characters)
+./ec_2050_project/settings.py:189:80: E501 line too long (83 > 79 characters)
+./ec_2050_project/settings.py:198:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:212:1: E303 too many blank lines (5)
+./ec_2050_project/settings.py:212:1: E266 too many leading '#' for block comment
+./ec_2050_project/settings.py:213:1: E266 too many leading '#' for block comment
+./ec_2050_project/settings.py:228:1: E303 too many blank lines (8)
+./ec_2050_project/settings.py:230:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:231:5: E303 too many blank lines (2)
+./ec_2050_project/settings.py:238:5: E303 too many blank lines (2)
+./ec_2050_project/settings.py:243:80: E501 line too long (93 > 79 characters)
+./ec_2050_project/settings.py:246:5: E303 too many blank lines (2)
+./ec_2050_project/settings.py:262:1: E265 block comment should start with '# '
+./ec_2050_project/settings.py:267:1: E265 block comment should start with '# '
+./ec_2050_project/settings.py:287:1: E303 too many blank lines (3)
+./ec_2050_project/settings.py:298:1: W391 blank line at end of file
+./ec_2050_project/urls.py:18:29: E231 missing whitespace after ','
+./ec_2050_project/urls.py:37:1: F811 redefinition of unused 'handler404' from line 21
+./ec_2050_project/urls.py:37:48: W292 no newline at end of file
+./ec_2050_project/views.py:3:1: E302 expected 2 blank lines, found 1
+./ec_2050_project/views.py:5:58: W292 no newline at end of file
+./ec_bag/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+./ec_bag/contexts.py:6:1: E302 expected 2 blank lines, found 1
+./ec_bag/contexts.py:41:1: W293 blank line contains whitespace
+./ec_bag/contexts.py:43:1: W293 blank line contains whitespace
+./ec_bag/contexts.py:54:19: W292 no newline at end of file
+./ec_bag/models.py:1:1: F401 'django.db.models' imported but unused
+./ec_bag/templatetags/ec_bag_tools.py:6:1: E302 expected 2 blank lines, found 1
+./ec_bag/templatetags/ec_bag_tools.py:8:28: W292 no newline at end of file
+./ec_bag/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./ec_bag/urls.py:8:80: E501 line too long (83 > 79 characters)
+./ec_bag/urls.py:9:2: W292 no newline at end of file
+./ec_bag/views.py:1:1: W293 blank line contains whitespace
+./ec_bag/views.py:11:1: E302 expected 2 blank lines, found 1
+./ec_bag/views.py:32:80: E501 line too long (144 > 79 characters)
+./ec_bag/views.py:35:80: E501 line too long (101 > 79 characters)
+./ec_bag/views.py:38:80: E501 line too long (97 > 79 characters)
+./ec_bag/views.py:42:80: E501 line too long (97 > 79 characters)
+./ec_bag/views.py:53:1: E303 too many blank lines (3)
+./ec_bag/views.py:55:1: W293 blank line contains whitespace
+./ec_bag/views.py:65:80: E501 line too long (140 > 79 characters)
+./ec_bag/views.py:70:80: E501 line too long (101 > 79 characters)
+./ec_bag/views.py:74:80: E501 line too long (97 > 79 characters)
+./ec_bag/views.py:77:80: E501 line too long (81 > 79 characters)
+./ec_bag/views.py:81:5: E303 too many blank lines (3)
+./ec_bag/views.py:84:1: E302 expected 2 blank lines, found 1
+./ec_bag/views.py:96:80: E501 line too long (101 > 79 characters)
+./ec_bag/views.py:99:80: E501 line too long (81 > 79 characters)
+./ec_bag/views.py:102:9: E303 too many blank lines (2)
+./ec_bag/views.py:107:1: W293 blank line contains whitespace
+./ec_bag/views.py:108:1: W293 blank line contains whitespace
+./ec_bag/views.py:108:5: W292 no newline at end of file
+./ec_checkout/__init__.py:1:55: W292 no newline at end of file
+./ec_checkout/admin.py:4:1: E302 expected 2 blank lines, found 1
+./ec_checkout/admin.py:10:1: E303 too many blank lines (3)
+./ec_checkout/admin.py:17:1: W293 blank line contains whitespace
+./ec_checkout/admin.py:18:32: E231 missing whitespace after ','
+./ec_checkout/admin.py:24:1: W293 blank line contains whitespace
+./ec_checkout/admin.py:28:1: W293 blank line contains whitespace
+./ec_checkout/admin.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+./ec_checkout/admin.py:31:45: W292 no newline at end of file
+./ec_checkout/apps.py:9:9: F401 'ec_checkout.signals' imported but unused
+./ec_checkout/apps.py:9:35: W292 no newline at end of file
+./ec_checkout/forms.py:12:1: W293 blank line contains whitespace
+./ec_checkout/forms.py:35:14: E111 indentation is not a multiple of 4
+./ec_checkout/forms.py:35:14: E117 over-indented
+./ec_checkout/forms.py:43:41: W292 no newline at end of file
+./ec_checkout/migrations/0001_initial.py:19:80: E501 line too long (117 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:20:80: E501 line too long (85 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:25:80: E501 line too long (85 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:28:80: E501 line too long (92 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:29:80: E501 line too long (83 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:31:80: E501 line too long (98 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:32:80: E501 line too long (100 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:33:80: E501 line too long (97 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:39:80: E501 line too long (117 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:40:80: E501 line too long (88 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:42:80: E501 line too long (104 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:43:80: E501 line too long (146 > 79 characters)
+./ec_checkout/migrations/0001_initial.py:44:80: E501 line too long (121 > 79 characters)
+./ec_checkout/migrations/0005_ec_order_ec_user_profile.py:18:80: E501 line too long (164 > 79 characters)
+./ec_checkout/models.py:14:1: E303 too many blank lines (3)
+./ec_checkout/models.py:17:5: E303 too many blank lines (2)
+./ec_checkout/models.py:21:5: E303 too many blank lines (2)
+./ec_checkout/models.py:21:80: E501 line too long (81 > 79 characters)
+./ec_checkout/models.py:22:80: E501 line too long (131 > 79 characters)
+./ec_checkout/models.py:33:80: E501 line too long (94 > 79 characters)
+./ec_checkout/models.py:34:80: E501 line too long (96 > 79 characters)
+./ec_checkout/models.py:35:80: E501 line too long (93 > 79 characters)
+./ec_checkout/models.py:37:80: E501 line too long (86 > 79 characters)
+./ec_checkout/models.py:50:80: E501 line too long (105 > 79 characters)
+./ec_checkout/models.py:52:80: E501 line too long (98 > 79 characters)
+./ec_checkout/models.py:72:80: E501 line too long (119 > 79 characters)
+./ec_checkout/models.py:73:80: E501 line too long (97 > 79 characters)
+./ec_checkout/models.py:74:76: E261 at least two spaces before inline comment
+./ec_checkout/models.py:74:80: E501 line too long (93 > 79 characters)
+./ec_checkout/models.py:76:80: E501 line too long (113 > 79 characters)
+./ec_checkout/models.py:87:80: E501 line too long (87 > 79 characters)
+./ec_checkout/models.py:87:88: W292 no newline at end of file
+./ec_checkout/signals.py:6:1: E302 expected 2 blank lines, found 1
+./ec_checkout/signals.py:12:1: W293 blank line contains whitespace
+./ec_checkout/signals.py:13:1: E302 expected 2 blank lines, found 1
+./ec_checkout/signals.py:18:37: W292 no newline at end of file
+./ec_checkout/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./ec_checkout/urls.py:7:80: E501 line too long (96 > 79 characters)
+./ec_checkout/urls.py:8:80: E501 line too long (88 > 79 characters)
+./ec_checkout/urls.py:11:2: W292 no newline at end of file
+./ec_checkout/views.py:1:80: E501 line too long (87 > 79 characters)
+./ec_checkout/views.py:15:1: F401 'os' imported but unused
+./ec_checkout/views.py:17:1: E302 expected 2 blank lines, found 1
+./ec_checkout/views.py:32:1: W293 blank line contains whitespace
+./ec_checkout/views.py:33:1: E302 expected 2 blank lines, found 1
+./ec_checkout/views.py:39:1: W293 blank line contains whitespace
+./ec_checkout/views.py:63:25: E122 continuation line missing indentation or outdented
+./ec_checkout/views.py:64:25: E122 continuation line missing indentation or outdented
+./ec_checkout/views.py:65:25: E122 continuation line missing indentation or outdented
+./ec_checkout/views.py:69:80: E501 line too long (81 > 79 characters)
+./ec_checkout/views.py:79:80: E501 line too long (94 > 79 characters)
+./ec_checkout/views.py:86:80: E501 line too long (89 > 79 characters)
+./ec_checkout/views.py:93:80: E501 line too long (83 > 79 characters)
+./ec_checkout/views.py:104:1: W293 blank line contains whitespace
+./ec_checkout/views.py:125:5: E303 too many blank lines (2)
+./ec_checkout/views.py:133:8: E131 continuation line unaligned for hanging indent
+./ec_checkout/views.py:133:8: E266 too many leading '#' for block comment
+./ec_checkout/views.py:163:80: E501 line too long (88 > 79 characters)
+./ec_checkout/views.py:168:5: E303 too many blank lines (2)
+./ec_checkout/views.py:171:1: W293 blank line contains whitespace
+./ec_checkout/views.py:180:46: W292 no newline at end of file
+./ec_checkout/webhook_handler.py:13:1: E302 expected 2 blank lines, found 1
+./ec_checkout/webhook_handler.py:27:80: E501 line too long (81 > 79 characters)
+./ec_checkout/webhook_handler.py:28:1: W293 blank line contains whitespace
+./ec_checkout/webhook_handler.py:34:10: W291 trailing whitespace
+./ec_checkout/webhook_handler.py:38:5: E303 too many blank lines (3)
+./ec_checkout/webhook_handler.py:60:56: E261 at least two spaces before inline comment
+./ec_checkout/webhook_handler.py:62:59: E261 at least two spaces before inline comment
+./ec_checkout/webhook_handler.py:77:80: E501 line too long (82 > 79 characters)
+./ec_checkout/webhook_handler.py:79:80: E501 line too long (83 > 79 characters)
+./ec_checkout/webhook_handler.py:80:80: E501 line too long (83 > 79 characters)
+./ec_checkout/webhook_handler.py:110:80: E501 line too long (110 > 79 characters)
+./ec_checkout/webhook_handler.py:139:80: E501 line too long (81 > 79 characters)
+./ec_checkout/webhook_handler.py:155:80: E501 line too long (92 > 79 characters)
+./ec_checkout/webhook_handler.py:157:5: E301 expected 1 blank line, found 0
+./ec_checkout/webhook_handler.py:163:24: W292 no newline at end of file
+./ec_checkout/webhooks.py:9:1: E302 expected 2 blank lines, found 1
+./ec_checkout/webhooks.py:22:9: E122 continuation line missing indentation or outdented
+./ec_checkout/webhooks.py:24:5: F841 local variable 'e' is assigned to but never used
+./ec_checkout/webhooks.py:27:5: F841 local variable 'e' is assigned to but never used
+./ec_checkout/webhooks.py:37:80: E501 line too long (86 > 79 characters)
+./ec_checkout/webhooks.py:46:20: W292 no newline at end of file
+./ec_home/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+./ec_home/models.py:1:1: F401 'django.db.models' imported but unused
+./ec_home/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./ec_home/urls.py:8:1: W391 blank line at end of file
+./ec_home/views.py:5:1: E302 expected 2 blank lines, found 1
+./ec_home/views.py:8:49: W292 no newline at end of file
+./ec_products/admin.py:6:1: E303 too many blank lines (3)
+./ec_products/admin.py:18:1: E302 expected 2 blank lines, found 1
+./ec_products/admin.py:23:1: W293 blank line contains whitespace
+./ec_products/admin.py:27:1: E303 too many blank lines (4)
+./ec_products/admin.py:28:1: E305 expected 2 blank lines after class or function definition, found 4
+./ec_products/admin.py:29:51: W292 no newline at end of file
+./ec_products/forms.py:12:80: E501 line too long (92 > 79 characters)
+./ec_products/forms.py:21:67: W292 no newline at end of file
+./ec_products/migrations/0001_initial.py:18:80: E501 line too long (117 > 79 characters)
+./ec_products/migrations/0001_initial.py:20:80: E501 line too long (91 > 79 characters)
+./ec_products/migrations/0001_initial.py:26:80: E501 line too long (117 > 79 characters)
+./ec_products/migrations/0001_initial.py:27:80: E501 line too long (81 > 79 characters)
+./ec_products/migrations/0001_initial.py:31:80: E501 line too long (103 > 79 characters)
+./ec_products/migrations/0001_initial.py:32:80: E501 line too long (87 > 79 characters)
+./ec_products/migrations/0001_initial.py:33:80: E501 line too long (82 > 79 characters)
+./ec_products/migrations/0001_initial.py:34:80: E501 line too long (150 > 79 characters)
+./ec_products/models.py:7:7: E111 indentation is not a multiple of 4
+./ec_products/models.py:24:80: E501 line too long (100 > 79 characters)
+./ec_products/models.py:30:80: E501 line too long (87 > 79 characters)
+./ec_products/models.py:35:25: W291 trailing whitespace
+./ec_products/models.py:35:33: W292 no newline at end of file
+./ec_products/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./ec_products/urls.py:6:80: E501 line too long (84 > 79 characters)
+./ec_products/urls.py:8:80: E501 line too long (85 > 79 characters)
+./ec_products/urls.py:9:80: E501 line too long (91 > 79 characters)
+./ec_products/urls.py:10:80: E501 line too long (96 > 79 characters)
+./ec_products/urls.py:14:1: W293 blank line contains whitespace
+./ec_products/urls.py:14:2: W292 no newline at end of file
+./ec_products/views.py:6:31: E231 missing whitespace after ','
+./ec_products/views.py:9:1: F401 'faq.models.FAQ' imported but unused
+./ec_products/views.py:9:27: W291 trailing whitespace
+./ec_products/views.py:13:1: E302 expected 2 blank lines, found 1
+./ec_products/views.py:14:80: E501 line too long (80 > 79 characters)
+./ec_products/views.py:36:1: W293 blank line contains whitespace
+./ec_products/views.py:39:80: E501 line too long (81 > 79 characters)
+./ec_products/views.py:45:80: E501 line too long (80 > 79 characters)
+./ec_products/views.py:47:1: W293 blank line contains whitespace
+./ec_products/views.py:48:80: E501 line too long (80 > 79 characters)
+./ec_products/views.py:64:1: E303 too many blank lines (3)
+./ec_products/views.py:73:1: W293 blank line contains whitespace
+./ec_products/views.py:74:5: E303 too many blank lines (3)
+./ec_products/views.py:77:23: E225 missing whitespace around operator
+./ec_products/views.py:81:80: E501 line too long (94 > 79 characters)
+./ec_products/views.py:84:1: W293 blank line contains whitespace
+./ec_products/views.py:92:1: E302 expected 2 blank lines, found 1
+./ec_products/views.py:108:80: E501 line too long (100 > 79 characters)
+./ec_products/views.py:123:1: E303 too many blank lines (3)
+./ec_products/views.py:126:1: W293 blank line contains whitespace
+./ec_products/views.py:138:1: W293 blank line contains whitespace
+./ec_products/views.py:150:5: E303 too many blank lines (3)
+./ec_products/views.py:170:1: W293 blank line contains whitespace
+./ec_products/views.py:170:2: W292 no newline at end of file
+./ec_products/widgets.py:9:80: E501 line too long (90 > 79 characters)
+./ec_products/widgets.py:9:91: W292 no newline at end of file
+./ec_profiles/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+./ec_profiles/admin.py:6:1: E303 too many blank lines (3)
+./ec_profiles/forms.py:14:80: E501 line too long (94 > 79 characters)
+./ec_profiles/forms.py:34:80: E501 line too long (98 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:21:80: E501 line too long (117 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:22:80: E501 line too long (97 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:23:80: E501 line too long (111 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:24:80: E501 line too long (93 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:25:80: E501 line too long (97 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:26:80: E501 line too long (100 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:27:80: E501 line too long (100 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:28:80: E501 line too long (91 > 79 characters)
+./ec_profiles/migrations/0001_initial.py:29:80: E501 line too long (121 > 79 characters)
+./ec_profiles/models.py:8:1: E302 expected 2 blank lines, found 1
+./ec_profiles/models.py:15:80: E501 line too long (81 > 79 characters)
+./ec_profiles/models.py:16:80: E501 line too long (84 > 79 characters)
+./ec_profiles/models.py:17:80: E501 line too long (84 > 79 characters)
+./ec_profiles/models.py:18:80: E501 line too long (81 > 79 characters)
+./ec_profiles/models.py:21:80: E501 line too long (80 > 79 characters)
+./ec_profiles/models.py:22:5: E301 expected 1 blank line, found 0
+./ec_profiles/models.py:24:1: E302 expected 2 blank lines, found 0
+./ec_profiles/models.py:32:35: W291 trailing whitespace
+./ec_profiles/models.py:32:37: W292 no newline at end of file
+./ec_profiles/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./ec_profiles/urls.py:5:80: E501 line too long (96 > 79 characters)
+./ec_profiles/urls.py:6:2: W292 no newline at end of file
+./ec_profiles/views.py:14:1: W293 blank line contains whitespace
+./ec_profiles/views.py:18:17: E117 over-indented
+./ec_profiles/views.py:21:80: E501 line too long (86 > 79 characters)
+./ec_profiles/views.py:24:5: E303 too many blank lines (2)
+./ec_profiles/views.py:52:46: W292 no newline at end of file
+./env.py:3:80: E501 line too long (141 > 79 characters)
+./env.py:7:80: E501 line too long (133 > 79 characters)
+./env.py:12:80: E501 line too long (153 > 79 characters)
+./env.py:13:80: E501 line too long (129 > 79 characters)
+./env.py:20:1: E265 block comment should start with '# '
+./env.py:29:1: E303 too many blank lines (4)
+./env.py:34:1: W391 blank line at end of file
+./faq/admin.py:4:1: E302 expected 2 blank lines, found 1
+./faq/admin.py:8:1: E305 expected 2 blank lines after class or function definition, found 1
+./faq/forms.py:4:1: E302 expected 2 blank lines, found 1
+./faq/migrations/0001_initial.py:19:80: E501 line too long (117 > 79 characters)
+./faq/migrations/0001_initial.py:23:80: E501 line too long (145 > 79 characters)
+./faq/models.py:4:1: E302 expected 2 blank lines, found 1
+./faq/models.py:5:80: E501 line too long (93 > 79 characters)
+./faq/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./faq/urls.py:5:80: E501 line too long (93 > 79 characters)
+./faq/urls.py:6:80: E501 line too long (84 > 79 characters)
+./faq/urls.py:7:80: E501 line too long (84 > 79 characters)
+./faq/urls.py:8:80: E501 line too long (90 > 79 characters)
+./faq/urls.py:12:1: W293 blank line contains whitespace
+./faq/urls.py:12:2: W292 no newline at end of file
+./faq/views.py:6:1: W293 blank line contains whitespace
+./faq/views.py:9:1: E303 too many blank lines (3)
+./faq/views.py:20:1: E303 too many blank lines (3)
+./faq/views.py:39:1: W293 blank line contains whitespace
+./faq/views.py:40:1: W293 blank line contains whitespace
+./faq/views.py:47:80: E501 line too long (81 > 79 characters)
+./faq/views.py:52:1: E302 expected 2 blank lines, found 1
+./faq/views.py:58:64: W292 no newline at end of file
+./review/forms.py:5:1: E302 expected 2 blank lines, found 1
+./review/migrations/0001_initial.py:22:80: E501 line too long (117 > 79 characters)
+./review/migrations/0001_initial.py:24:80: E501 line too long (88 > 79 characters)
+./review/migrations/0001_initial.py:25:80: E501 line too long (148 > 79 characters)
+./review/migrations/0001_initial.py:26:80: E501 line too long (118 > 79 characters)
+./review/models.py:17:5: E301 expected 1 blank line, found 0
+```
+
+No py errors remains.
+
+
+
+![py_validate.png](assets/images/readme_images/py_validate.png)
+
+
+
+
+
 
 ---
 
@@ -1550,44 +1900,14 @@ These issues have been fixed. Screenshots of the validation results are shown be
 
  
 
-
-## JS Validation
-
+ 
 
  
 
-### Fixes Applied
-1. **ESLint and JSHint Configuration:**
-   - Added `/* eslint-env es6 */` and `/* jshint esversion: 6 */` to support ES6.
-   - This explicitly tells linters that the script uses ES6 syntax.
 
-2. **Replaced `for...of` with `Array.from().forEach`:**
-   - `Array.from()` converts the `HTMLCollection` to an array, enabling the use of `forEach`.
-   - Ensures compatibility with environments that may not support `for...of`.
-
-3. **Changed `let` to `const` where variables are not reassigned:**
-   - Ensures better readability and avoids unnecessary reassignments.
-
-4. **Used `const` or `let` instead of `var`:**
-   - To adhere to modern JavaScript standards.
-
-* **Ensured ES6 Compatibility for Template Literals and Arrow Functions:**
-   - Verified ES6-compatible tools/environment usage.
-   - Added notes to indicate the ES6 usage for future reference.
 
  
  
-## Py Validation
-
-No py errors remains.
-
-
-
-![py_validate.png](assets/images/readme_images/py_validate.png)
-
-
-
-
 
 
 

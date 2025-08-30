@@ -19,11 +19,18 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ReviewModel',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('content', models.TextField()),
-                ('created_on', models.DateTimeField(default=django.utils.timezone.now)),
-                ('ec_product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='ec_products.ec_product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('created_on', models.DateTimeField(
+                    default=django.utils.timezone.now)),
+                ('ec_product', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='reviews', to='ec_products.ec_product')),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'verbose_name': 'Review',

@@ -3,7 +3,6 @@ from .models import FAQ
 from ec_products.models import EC_Product
 from django.contrib.auth.decorators import login_required, user_passes_test
 from .forms import FAQForm
- 
 
 
 def product_faq_list(request, ec_product_id):
@@ -14,7 +13,6 @@ def product_faq_list(request, ec_product_id):
         'ec_product': ec_product,
         'faqs': faqs,
     })
-
 
 
 @login_required
@@ -36,18 +34,20 @@ def add_product_faq(request, ec_product_id):
         'form': form,
         'ec_product': ec_product,
     })
-     
-     
+
+
 def edit_product_faq(request, faq_id):
     faq = get_object_or_404(FAQ, pk=faq_id)
     if request.method == 'POST':
         form = FAQForm(request.POST, instance=faq)
         if form.is_valid():
             form.save()
-            return redirect('ec_product_detail', ec_product_id=faq.ec_product.id)
+            return redirect(
+                'ec_product_detail', ec_product_id=faq.ec_product.id)
     else:
         form = FAQForm(instance=faq)
     return render(request, 'faq/edit_faq.html', {'form': form, 'faq': faq})
+
 
 def delete_product_faq(request, faq_id):
     faq = get_object_or_404(FAQ, pk=faq_id)

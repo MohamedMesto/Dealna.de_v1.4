@@ -16,11 +16,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='FAQ',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id',
+                    models.BigAutoField(auto_created=True, primary_key=True,
+                                        serialize=False, verbose_name='ID')),
                 ('question', models.CharField(max_length=255)),
                 ('answer', models.TextField()),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('ec_product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='faqs', to='ec_products.ec_product')),
+                ('ec_product', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='faqs', to='ec_products.ec_product')),
             ],
         ),
     ]

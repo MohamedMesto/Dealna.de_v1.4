@@ -11,15 +11,16 @@ from ec_checkout.models import EC_Order
 def ec_profile(request):
     """ Display the user's ec_profile. """
     ec_profile = get_object_or_404(EC_UserProfile, user=request.user)
-    
+
     if request.method == 'POST':
         form = EC_UserProfileForm(request.POST, instance=ec_profile)
         if form.is_valid():
-                form.save()
-                messages.success(request, 'Profile updated successfully')
+            form.save()
+            messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
-
+            messages.error(
+                request,
+                'Update failed. Please ensure the form is valid.')
 
     else:
         form = EC_UserProfileForm(instance=ec_profile)
