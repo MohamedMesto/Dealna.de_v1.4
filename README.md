@@ -170,11 +170,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [HTML Validation](#html-validation)
     - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
   - [CSS Validation](#css-validation)
-      - [**JavaScript Access**:](#javascript-access)
-    - [**Example 2: Invalid Width Attribute Value**](#example-2-invalid-width-attribute-value)
-      - [**Error**:](#error)
-      - [**Cause**:](#cause)
-      - [**Fix**:](#fix)
+    - [JavaScript Validation](#javascript-validation)
     - [**Key Takeaways**:](#key-takeaways)
   - [JS Validation](#js-validation)
     - [Fixes Applied](#fixes-applied)
@@ -1501,50 +1497,46 @@ By fixing these issues, the code becomes more **standards-compliant**, **accessi
 
 ---
 
+
 ## CSS Validation
 
-No CSS errors found.
+All CSS files for the project have been validated using the **W3C CSS Validator**. No errors were found.
+
+Validator link: [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)
+
+Tested website: [https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/](https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
 
 
 
-![css_validation.png](assets/images/readme_images/css_validation.png)
+![css\_validation.png](assets/images/readme_images/css_validation.png)
 
-
+ 
 ---
 
 
 
-8888888888888888
- 
-  
-
-#### **JavaScript Access**:  
-
-
-
-```javascript
-const button = document.querySelector('.btn-delete');
-console.log(button.dataset.commentId); // Outputs: "13"
-```
-
----
-
-### **Example 2: Invalid Width Attribute Value**
-
-#### **Error**:  
-`Error: Bad value 75% for attribute width on element img: Expected a digit but saw % instead.`
-
-![alt text](assets/images/readme_images/width751.png)
 
  
+ 
 
-#### **Cause**:  
-The `width` attribute in HTML expects a numeric value in pixels, not a percentage. Using a percentage value causes a validation error.
+### JavaScript Validation
 
-#### **Fix**:  
-Use CSS for percentage-based widths, as this is the appropriate method for responsive designs.
+Some JavaScript issues were detected during validation:
 
-![alt text](assets/images/readme_images/width752.png)
+* Line 35, Column 20: `'template literal syntax' is only available in ES6 (use 'esversion: 6')`
+* Line 96, Column 28: `'template literal syntax' is only available in ES6 (use 'esversion: 6')`
+* Line 115, Column 7: `Missing semicolon`
+
+These issues have been fixed. Screenshots of the validation results are shown below:
+
+![js\_errors](assets/images/readme_images/js_errors.png)
+
+
+![js\_validation1](assets/images/readme_images/js_validation1.png)
+
+
+
+![js\_validation2](assets/images/readme_images/js_validation2.png)
 
  
 
@@ -1579,16 +1571,12 @@ Use CSS for percentage-based widths, as this is the appropriate method for respo
 4. **Used `const` or `let` instead of `var`:**
    - To adhere to modern JavaScript standards.
 
-5. **Ensured ES6 Compatibility for Template Literals and Arrow Functions:**
+* **Ensured ES6 Compatibility for Template Literals and Arrow Functions:**
    - Verified ES6-compatible tools/environment usage.
    - Added notes to indicate the ES6 usage for future reference.
 
  
-
-
-![css_validation.png](assets/images/readme_images/js_validate.png)
-
-
+ 
 ## Py Validation
 
 No py errors remains.
