@@ -169,17 +169,11 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [Validator Testing - Bugs Fixed:](#validator-testing---bugs-fixed)
   - [HTML Validation](#html-validation)
     - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
-    - [**Example 1: Invalid Attribute in an Element**](#example-1-invalid-attribute-in-an-element)
+      - [**JavaScript Access**:](#javascript-access)
+    - [**Example 2: Invalid Width Attribute Value**](#example-2-invalid-width-attribute-value)
       - [**Error**:](#error)
       - [**Cause**:](#cause)
       - [**Fix**:](#fix)
-      - [**Code Example**:](#code-example)
-      - [**JavaScript Access**:](#javascript-access)
-    - [**Example 2: Invalid Width Attribute Value**](#example-2-invalid-width-attribute-value)
-      - [**Error**:](#error-1)
-      - [**Cause**:](#cause-1)
-      - [**Fix**:](#fix-1)
-      - [**Code Example**:](#code-example-1)
     - [**Key Takeaways**:](#key-takeaways)
   - [CSS Validation](#css-validation)
   - [JS Validation](#js-validation)
@@ -1474,14 +1468,11 @@ Validation errors occur when HTML code does not adhere to the established standa
 
 During validation of the project with the **Nu Html Checker**, several errors and warnings were reported.
 
-* **Problem:** `<li>` elements were placed directly inside `<nav>` tags, which is invalid since `<li>` elements must be inside a `<ul>`, `<ol>`, or `<menu>`.
-  **Solution:** Wrap all `<li>` items inside a proper `<ul>` or `<ol>` element within the navigation bar.
-
 * **Problem:** Duplicate IDs were found (`user-options` and `home-link`). HTML requires all IDs to be unique in the document.
 
    ![Duplicate_ID](assets/images/readme_images/Duplicate_ID.png)
 
-
+   
 
   **Solution:** Ensure each element has a unique ID by renaming duplicates (e.g., `user-options-desktop` and `user-options-mobile`).
 
@@ -1496,40 +1487,26 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
   ![fix_type_text_javascript](assets/images/readme_images/fix_type_text_javascript.png)
 
+* **Problem:** `<li>` elements were placed directly inside `<nav>` tags, which is invalid since `<li>` elements must be inside a `<ul>`, `<ol>`, or `<menu>`.
+
+   ![Duplicate_ID_solution_user_options](assets/images/readme_images/Duplicate_ID_solution_user_options.png)
+
+
+  **Solution:** Wrap all `<li>` items inside a proper `<ul>` or `<ol>` element within the navigation bar.
+
+   ![No_HTNL_errors_or_warnings](assets/images/readme_images/No_HTNL_errors_or_warnings.png)
+
+
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
 
 8888888888888888
-
-### **Example 1: Invalid Attribute in an Element**
-
-#### **Error**: 
-`Error: Attribute comment_id not allowed on element button at this point.`
-
-#### **Cause**:  
-HTML5 does not allow custom attributes directly on elements like `<button>`. Attributes that are not globally recognized or specific to the element type will result in validation errors.
-
-![data_comment_id](assets/images/readme_images/data_comment_id.png)
-
-
-
-#### **Fix**:  
-Use `data-*` attributes to store custom data. These attributes are valid in HTML5 and can be accessed programmatically.
-
  
-![data_comment_id](assets/images/readme_images/data_comment_id2.png)
-
-#### **Code Example**:  
-**Before**:
-```html
-<button class="btn btn-delete" comment_id="13">Delete</button>
-```
-
-**After**:
-```html
-<button class="btn btn-delete" data-comment-id="13">Delete</button>
-```
+  
 
 #### **JavaScript Access**:  
+
+
+
 ```javascript
 const button = document.querySelector('.btn-delete');
 console.log(button.dataset.commentId); // Outputs: "13"
@@ -1554,17 +1531,7 @@ Use CSS for percentage-based widths, as this is the appropriate method for respo
 
 ![alt text](assets/images/readme_images/width752.png)
 
-
-#### **Code Example**:  
-**Before**:
-```html
-<img src="/static/images/example.jpg" width="75%" alt="example image">
-```
-
-**After**:
-```html
-<img src="/static/images/example.jpg" alt="example image" style="width: 75%;">
-```
+ 
 
 ---
 
