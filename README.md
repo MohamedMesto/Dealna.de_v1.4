@@ -1485,7 +1485,7 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
   **Solution:** Ensure each element has a unique ID by renaming duplicates (e.g., `user-options-desktop` and `user-options-mobile`).
 
-   ![Duplicate_ID_solution](assets/images/readme_images/Duplicate_ID_solution.png)
+   ![Duplicate_ID_solution_user_options](assets/images/readme_images/Duplicate_ID_solution_user_options.png)
 
 
 * **Problem:** `<script>` tags were using the unnecessary `type="text/javascript"` attribute. Modern HTML5 defaults to JavaScript, so this is redundant.
