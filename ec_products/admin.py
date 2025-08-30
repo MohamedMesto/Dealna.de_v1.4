@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import EC_Category, EC_Product
 
 
-
 class EC_ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -12,16 +11,14 @@ class EC_ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
-
     ordering = ('sku',)
+
 
 class EC_CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
     )
- 
-
 
 
 # Register your models here.

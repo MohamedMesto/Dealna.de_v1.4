@@ -4,5 +4,3 @@ from . import views
 urlpatterns = [
     path('', views.index, name='ec_home')
 ]
-
-
