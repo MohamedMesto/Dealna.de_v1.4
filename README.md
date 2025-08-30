@@ -169,13 +169,13 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [Validator Testing - Bugs Fixed:](#validator-testing---bugs-fixed)
   - [HTML Validation](#html-validation)
     - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
+  - [CSS Validation](#css-validation)
       - [**JavaScript Access**:](#javascript-access)
     - [**Example 2: Invalid Width Attribute Value**](#example-2-invalid-width-attribute-value)
       - [**Error**:](#error)
       - [**Cause**:](#cause)
       - [**Fix**:](#fix)
     - [**Key Takeaways**:](#key-takeaways)
-  - [CSS Validation](#css-validation)
   - [JS Validation](#js-validation)
     - [Fixes Applied](#fixes-applied)
   - [Py Validation](#py-validation)
@@ -1171,11 +1171,11 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and it tests it under mobile and desktop criteria.
 
 ##### Desktop lighthouse Performance
-![Lighthouse testing](assets/images/readme_images/lighthouse_performance1.png)
+![Lighthouse testing](assets/images/readme_images/lighthouse_performance.png)
  
 
 ##### Mobile lighthouse Performance
-![Lighthouse testing](assets/images/readme_images/lighthouse_performance2.png)
+![Lighthouse testing](assets/images/readme_images/lighthouse_performance_mobile.png)
  
  
  
@@ -1494,10 +1494,25 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
   **Solution:** Wrap all `<li>` items inside a proper `<ul>` or `<ol>` element within the navigation bar.
 
-   ![No_HTNL_errors_or_warnings](assets/images/readme_images/No_HTNL_errors_or_warnings.png)
+   ![html_validation](assets/images/readme_images/html_validation.png)
 
 
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
+
+---
+
+## CSS Validation
+
+No CSS errors found.
+
+
+
+![css_validation.png](assets/images/readme_images/css_validation.png)
+
+
+---
+
+
 
 8888888888888888
  
@@ -1542,13 +1557,6 @@ Use CSS for percentage-based widths, as this is the appropriate method for respo
 - Regularly test your HTML with validators to ensure quality, accessibility, and browser compatibility. 
 
  
-## CSS Validation
-
-No CSS errors found.
-
-
-
-![css_validation.png](assets/images/readme_images/css_validation.png)
 
 
 ## JS Validation
