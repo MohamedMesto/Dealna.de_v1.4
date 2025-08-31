@@ -6,4 +6,4 @@ class CheckoutConfig(AppConfig):
     name = 'ec_checkout'
 
     def ready(self):
-        import ec_checkout.signals
+        import ec_checkout.signals  # noqa: F401
