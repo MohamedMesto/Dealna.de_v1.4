@@ -28,7 +28,7 @@ if not SECRET_KEY:
 ALLOWED_HOSTS = [
                 '127.0.0.1',   # Local preview,
                 'localhost',   # listen for stripe webhooks
-                'https://dealna-de-v1-4-c11110135cbe.herokuapp.com',  # herokuapp App
+                'dealna-de-v1-4-c11110135cbe.herokuapp.com',  # herokuapp App
                 ]
 # MMM Extra
 # RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
 #   ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://https://dealna-de-v1-4-c11110135cbe.herokuapp.com/",
+    "https://dealna-de-v1-4-c11110135cbe.herokuapp.com/",
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com"
 ]
