@@ -15,6 +15,10 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='ec_order',
             name='ec_user_profile',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='ec_orders', to='ec_profiles.ec_userprofile'),
+            field=models.ForeignKey(
+                blank=True, null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='ec_orders',
+                to='ec_profiles.ec_userprofile'),
         ),
     ]
