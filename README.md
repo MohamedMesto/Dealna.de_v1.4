@@ -169,7 +169,9 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
   - [Validator Testing - Bugs Fixed:](#validator-testing---bugs-fixed)
   - [HTML Validation](#html-validation)
     - [HTML Validation Issues (Nu Html Checker)](#html-validation-issues-nu-html-checker)
+  - [](#)
   - [CSS Validation](#css-validation)
+  - [](#-1)
     - [JavaScript Validation](#javascript-validation)
     - [Fixes Applied](#fixes-applied)
   - [Py Validation](#py-validation)
@@ -296,7 +298,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
 ## User Stories:
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 
 
@@ -883,7 +885,7 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 This project uses Django’s **Object-Relational Mapping (ORM)** to manage interactions between the application and **PostgreSQL**. The updated key models include the new apps.
  
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 
  
@@ -1032,7 +1034,7 @@ This diagram includes **core models** and **new apps** for a complete overview o
 
 ## **Email Marketing Integration**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
  
 
@@ -1067,7 +1069,7 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 
 ## **Compliance and Trust**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 
 ### **Händlerbund Membership**  
@@ -1105,7 +1107,7 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 ## Testing:
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 ### Chrome Test
 
@@ -1446,13 +1448,14 @@ This command will execute all the tests we implemented, allowing you to confirm 
 [Back to top](<#contents>)
 </details>
 
-
-1111111111
+ 
 
 
 ## Validator Testing - Bugs Fixed:
 
 ## HTML Validation
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 Validation errors occur when HTML code does not adhere to the established standards, which can lead to browser inconsistencies or inaccessible content. It is crucial to test your code against validators like the [W3C HTML Validator](https://validator.w3.org/) to ensure compliance with best practices and maintain cross-browser functionality. Below are two examples of common validation errors, their causes, and fixes.
 
@@ -1492,10 +1495,13 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
 
+[Back to top](<#contents>)
+</details>
 ---
 
 
 ## CSS Validation
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 All CSS files for the project have been validated using the **W3C CSS Validator**. No errors were found.
 
@@ -1507,7 +1513,8 @@ Tested website: [https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/](https://dea
 
 ![css\_validation.png](assets/images/readme_images/css_validation.png)
 
- 
+ [Back to top](<#contents>)
+</details>
 ---
 
 
@@ -1517,6 +1524,8 @@ Tested website: [https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/](https://dea
  
 
 ### JavaScript Validation
+
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 Some JavaScript issues were detected during validation:
 
@@ -1544,10 +1553,13 @@ These issues have been fixed. Screenshots of the validation results are shown be
 
 ![js\_validation2](assets/images/readme_images/js_validation2.png)
 
+[Back to top](<#contents>)
+</details>
+
 ---
 ## Py Validation
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
 
 
  
