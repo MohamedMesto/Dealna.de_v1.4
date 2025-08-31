@@ -294,11 +294,9 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
 
 
-
-
  
 ## User Stories:
-<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
 
 
@@ -885,7 +883,7 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 This project uses Django’s **Object-Relational Mapping (ORM)** to manage interactions between the application and **PostgreSQL**. The updated key models include the new apps.
  
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">Details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
 
  
@@ -1034,7 +1032,7 @@ This diagram includes **core models** and **new apps** for a complete overview o
 
 ## **Email Marketing Integration**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
  
 
@@ -1069,7 +1067,7 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 
 ## **Compliance and Trust**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
 
 ### **Händlerbund Membership**  
@@ -1107,7 +1105,7 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 ## Testing:
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">details</span></summary>
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
 ### Chrome Test
 
@@ -1547,13 +1545,20 @@ These issues have been fixed. Screenshots of the validation results are shown be
 ![js\_validation2](assets/images/readme_images/js_validation2.png)
 
 ---
-
-
 ## Py Validation
 
-using python3 -m flake8 we ckeck the python files
+<details><summary><span style="font-size:1.3em; font-weight:bold;"More Details</span></summary>
 
-we found the following errors:
+
+ 
+
+
+ 
+`flake8` was used as a Python linter to validate code quality and enforce compliance with PEP8 standards. Running `python3 -m flake8` across the project highlighted a number of minor issues, including lines exceeding the 79-character limit, missing blank lines between class and function definitions, unused imports, and missing newlines at the end of some files.
+
+The following errors were identified during the initial validation:
+ 
+ 
 ```
 python3 -m flake8
 ./about/migrations/0001_initial.py:18:80: E501 line too long (94 > 79 characters)
@@ -1879,13 +1884,17 @@ python3 -m flake8
 ./review/models.py:17:5: E301 expected 1 blank line, found 0
 ```
 
-No py errors remains.
+All issues were subsequently resolved, and a final validation confirmed that the project passed `flake8` checks with **no remaining Python errors**.
+
+![py\_validation.png](assets/images/readme_images/py_validation.png)
 
 
 
-![py_validate.png](assets/images/readme_images/py_validate.png)
 
 
+[Back to top](<#contents>)
+</details>
+ 
 
 
 
@@ -1914,7 +1923,7 @@ No py errors remains.
 
 ## Getting Started:
 
-To set up **Un2050** locally for development or testing purposes, follow these steps:
+To set up **Dealna.de v1.3** locally for development or testing purposes, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Create a virtual environment and install the dependencies using:
