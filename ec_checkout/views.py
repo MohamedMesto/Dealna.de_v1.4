@@ -36,7 +36,6 @@ def ec_checkout(request):
 
     if request.method == 'POST':
         ec_bag = request.session.get('ec_bag', {})
-    
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -60,13 +59,15 @@ def ec_checkout(request):
                     ec_product = EC_Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         ec_order_line_item = EC_OrderLineItem(
-                        ec_order=ec_order,
-                        ec_product=ec_product,
-                        quantity=item_data,
+                            ec_order=ec_order,
+                            ec_product=ec_product,
+                            quantity=item_data,
                         )
                         ec_order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data[
+                            'items_by_size'
+                        ].items():
                             ec_order_line_item = EC_OrderLineItem(
                                 ec_order=ec_order,
                                 ec_product=ec_product,
@@ -76,21 +77,26 @@ def ec_checkout(request):
                             ec_order_line_item.save()
                 except EC_Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the ec_products in your ec_bag wasn't found in our database. "
+                        "One of the ec_products in your ec_bag wasn't"
+                        " found in our database. "
                         "Please call us for assistance!")
                     )
                     ec_order.delete()
                     return redirect(reverse('view_ec_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[ec_order.ec_order_number]))
+            return redirect(
+                reverse(
+                    'checkout_success', args=[ec_order.ec_order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                             Please double check your information.')
     else:
         ec_bag = request.session.get('ec_bag', {})
         if not ec_bag:
-            messages.error(request, "There's nothing in your ec_bag at the moment")
+            messages.error(
+                request,
+                "There's nothing in your ec_bag at the moment")
             return redirect(reverse('ec_products'))
 
         current_ec_bag = ec_bag_contents(request)
@@ -101,7 +107,6 @@ def ec_checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-       
         if request.user.is_authenticated:
             try:
                 ec_profile = EC_UserProfile.objects.get(user=request.user)
@@ -120,8 +125,6 @@ def ec_checkout(request):
                 ec_order_form = EC_OrderForm()
         else:
             ec_order_form = EC_OrderForm()
-
-
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
@@ -130,7 +133,7 @@ def ec_checkout(request):
     context = {
         'ec_order_form': ec_order_form,
         'stripe_public_key': stripe_public_key,
-       ## 'client_secret': intent.stripe_secret_key,
+        # 'client_secret': intent.stripe_secret_key,
         'client_secret': intent.client_secret,
     }
     return render(request, template, context)
@@ -148,7 +151,6 @@ def checkout_success(request, ec_order_number):
         # Attach the user's profile to the ec_order
         ec_order.ec_user_profile = ec_profile
         ec_order.save()
-
         # Save the user's info
         if save_info:
             ec_profile_data = {
@@ -160,18 +162,16 @@ def checkout_success(request, ec_order_number):
                 'default_street_address2': ec_order.street_address2,
                 'default_county': ec_order.county,
             }
-            user_profile_form = EC_UserProfileForm(ec_profile_data, instance=ec_profile)
+            user_profile_form = EC_UserProfileForm(
+                ec_profile_data,
+                instance=ec_profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
-
     messages.success(request, f'EC_Order successfully processed! \
         Your ec_order number is {ec_order_number}. A confirmation \
         email will be sent to {ec_order.email}.')
-    
     if 'ec_bag' in request.session:
         del request.session['ec_bag']
-
     template = 'ec_checkout/checkout_success.html'
     context = {
         'ec_order': ec_order,

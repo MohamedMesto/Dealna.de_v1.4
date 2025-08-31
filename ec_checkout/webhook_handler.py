@@ -10,6 +10,7 @@ from ec_profiles.models import EC_UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
@@ -24,16 +25,16 @@ class StripeWH_Handler:
             {'ec_order': ec_order})
         body = render_to_string(
             'ec_checkout/confirmation_emails/confirmation_email_body.txt',
-            {'ec_order': ec_order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+            {
+                'ec_order': ec_order,
+                'contact_email': settings.DEFAULT_FROM_EMAIL})
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
-
-
+        )
 
     def handle_event(self, event):
         """
@@ -57,9 +58,9 @@ class StripeWH_Handler:
             intent.latest_charge
         )
 
-        billing_details = stripe_charge.billing_details # updated
+        billing_details = stripe_charge.billing_details  # updated
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2) # updated
+        grand_total = round(stripe_charge.amount / 100, 2)  # updated
 
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
@@ -74,10 +75,16 @@ class StripeWH_Handler:
             if save_info:
                 ec_profile.default_phone_number = shipping_details.phone
                 ec_profile.default_country = shipping_details.address.country
-                ec_profile.default_postcode = shipping_details.address.postal_code
+                ec_profile.default_postcode = (
+                    shipping_details.address.postal_code
+                )
                 ec_profile.default_town_or_city = shipping_details.address.city
-                ec_profile.default_street_address1 = shipping_details.address.line1
-                ec_profile.default_street_address2 = shipping_details.address.line2
+                ec_profile.default_street_address1 = (
+                    shipping_details.address.line1
+                )
+                ec_profile.default_street_address2 = (
+                    shipping_details.address.line2
+                )
                 ec_profile.default_county = shipping_details.address.state
                 ec_profile.save()
 
@@ -107,7 +114,10 @@ class StripeWH_Handler:
         if ec_order_exists:
             self._send_confirmation_email(ec_order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified ec_order already in database',
+                content=(
+                    f'Webhook received: {event["type"]} | '
+                    'SUCCESS: Verified ec_order already in database'
+                ),
                 status=200)
         else:
             ec_order = None
@@ -136,7 +146,9 @@ class StripeWH_Handler:
                         )
                         ec_order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data[
+                            'items_by_size'
+                        ].items():
                             ec_order_line_item = EC_OrderLineItem(
                                 ec_order=ec_order,
                                 ec_product=ec_product,
@@ -152,8 +164,13 @@ class StripeWH_Handler:
                     status=500)
         self._send_confirmation_email(ec_order)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}| SUCCESS: Created order in webhook',
-            status=200)
+            content=(
+                f'Webhook received: {event["type"]} | '
+                'SUCCESS: Created order in webhook'
+                ),
+            status=200,
+            )
+
     def handle_payment_intent_payment_failed(self, event):
         """
         Handle the payment_intent.payment_failed webhook from Stripe
