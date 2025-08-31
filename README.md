@@ -1,58 +1,44 @@
-[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
+<a href="https://dealna-de-v1-4-c11110135cbe.herokuapp.com/" target="_blank">
+  <img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>
+</a>
 
+<a href="https://dealna-de-v1-4-c11110135cbe.herokuapp.com/" target="_blank">
+  <img src="assets/images/readme_images/main1.png" alt="alt text"/>
+</a>
 
-  
----
-[![alt text](assets/images/readme_images/main1.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
+<a href="https://Dealna.de" target="_blank">
+  <img src="assets/images/readme_images/Dealna.de1.png" alt="alt text"/>
+</a>
 
+<a href="https://Dealna.de" target="_blank">
+  <img src="assets/images/readme_images/Dealna.de2.png" alt="alt text"/>
+</a>
 
+<a href="https://dealna-de-v1-4-c11110135cbe.herokuapp.com/" target="_blank">
+  <img src="assets/images/readme_images/main3.png" alt="alt text"/>
+</a>
 
+<a href="https://dealna-de-v1-4-c11110135cbe.herokuapp.com/" target="_blank">
+  <img src="assets/images/readme_images/main4.png" alt="alt text"/>
+</a>
 
+<a href="https://dealna-de-v1-4-c11110135cbe.herokuapp.com/" target="_blank">
+  <img src="assets/images/readme_images/main5.png" alt="alt text"/>
+</a>
 
-
-[![alt text](assets/images/readme_images/Dealna.de1.png)]( https://Dealna.de)
-
-
-
-
-
-
-[![alt text](assets/images/readme_images/Dealna.de2.png)]( https://Dealna.de)
-
-
-
-
-
-[![alt text](assets/images/readme_images/main3.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
-
-
-
-
- 
-[![alt text](assets/images/readme_images/main4.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
-
-
-
-
-
-
-
-[![alt text](assets/images/readme_images/main5.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
-
-  
 ---
  
-# **_Dealna.de E-Commerce V1.3_**
+# **_Dealna.de E-Commerce V1.4_**
 
-## Dealna.de v1.3 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
+## Dealna.de v1.4 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.
 
-**Dealna.de v1.3:** A Gateway to Seamless Online Shopping  
+**Dealna.de v1.4:** A Gateway to Seamless Online Shopping  
 
 The **Dealna.de E-Commerce Platform** is designed to provide users with a modern, intuitive, and secure online shopping experience. Powered by Django, this dynamic platform delivers a seamless experience for browsing, purchasing, and managing products across diverse categories, reflecting a commitment to quality, reliability, and user satisfaction.
 
 ### A Platform for Smart Shopping  
 
-At its core, **Dealna.de v1.3** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
+At its core, **Dealna.de v1.4** offers users a curated selection of products, from fashion and electronics to home goods and lifestyle essentials. The intuitive navigation and categorization make it easy for shoppers to discover products tailored to their needs. Each product listing includes detailed descriptions, high-quality images, and customer reviews, creating a sense of trust and connection between buyers and sellers.
 
 ### A User-Centric Experience  
 
@@ -64,17 +50,17 @@ The platform is designed with usability in mind, featuring:
 
 ### A Tool for Informed Decisions  
 
-By presenting detailed product information, customer reviews, and competitive pricing, **Dealna.de v1.3** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
+By presenting detailed product information, customer reviews, and competitive pricing, **Dealna.de v1.4** empowers users to make informed purchasing decisions. Whether shopping for everyday essentials or unique finds, users are encouraged to explore and engage with the platform, ensuring a satisfying shopping experience.
 
 ### Continuous Innovation and Growth  
 
-The **Dealna.de v1.3** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
+The **Dealna.de v1.4** reflects the iterative evolution of a robust platform. Features such as advanced search filters, personalized recommendations, and seamless social sharing are just the beginning of a roadmap aimed at enhancing the user experience. Each iteration is a step closer to making this platform a go-to destination for online shoppers worldwide.
 
 ### Conclusion  
 
-In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
+In an era of rapid digital transformation, **Dealna.de v1.4** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).**  
+**You can view the live site here - [Dealna.de For E-Commerce v1.4]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).**  
 
 
 
@@ -95,15 +81,15 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
 
 # Contents
 
-- [**_Dealna.de E-Commerce V1.3_**](#dealnade-e-commerce-v13)
-  - [Dealna.de v1.3 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v13-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
+- [**_Dealna.de E-Commerce V1.4_**](#dealnade-e-commerce-v14)
+  - [Dealna.de v1.4 (Shop Smart, Live Better) - Portfolio Project 5 - Full Stack Toolkit Project.](#dealnade-v14-shop-smart-live-better---portfolio-project-5---full-stack-toolkit-project)
     - [A Platform for Smart Shopping](#a-platform-for-smart-shopping)
     - [A User-Centric Experience](#a-user-centric-experience)
     - [A Tool for Informed Decisions](#a-tool-for-informed-decisions)
     - [Continuous Innovation and Growth](#continuous-innovation-and-growth)
     - [Conclusion](#conclusion)
 - [Contents](#contents)
-  - [Purpose of the Project – **Dealna.de E-Commerce v1.3**](#purpose-of-the-project--dealnade-e-commerce-v13)
+  - [Purpose of the Project – **Dealna.de E-Commerce v1.4**](#purpose-of-the-project--dealnade-e-commerce-v14)
   - [User Stories:](#user-stories)
     - [**User Stories**](#user-stories-1)
     - [**Additional User Stories for Site Admin and Site Owner**](#additional-user-stories-for-site-admin-and-site-owner)
@@ -117,7 +103,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
     - [**6. User Account**](#6-user-account)
     - [**7. Admin Dashboard**](#7-admin-dashboard)
     - [**8. User Interaction Features**](#8-user-interaction-features)
-    - [Dealna.de v1.3 Site Structure](#dealnade-v13-site-structure)
+    - [Dealna.de v1.4 Site Structure](#dealnade-v14-site-structure)
   - [Design Choices](#design-choices)
     - [**Typography**](#typography)
   - [**Features**](#features)
@@ -183,7 +169,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
 
 
 
-## Purpose of the Project – **Dealna.de E-Commerce v1.3**  
+## Purpose of the Project – **Dealna.de E-Commerce v1.4**  
 
 The goal of **Dealna.de** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, clothing, homeware, and special offers.  
 
@@ -298,7 +284,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
 ## User Stories:
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 
 
@@ -497,7 +483,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
   * Displays company mission, vision, and values.
   * Managed by admin for credibility and transparency.
 
-### Dealna.de v1.3 Site Structure
+### Dealna.de v1.4 Site Structure
 ![Site_Structure](assets/images/readme_images/Site_Structure.png)
 
 
@@ -511,7 +497,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
  
-The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **Dealna.de For E-Commerce v1.4** is accessible at [Dealna.de For E-Commerce v1.4]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 
 
@@ -540,7 +526,7 @@ The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce
 ## Design Choices
 
  
-<details><summary><span style="font-size:1.3em; font-weight:bold;">Colour Scheme</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">Colour Scheme</span></summary>
 
 
 The color scheme of **Dealna.de v1** is designed to create a modern, engaging, and user-friendly experience. The interface features a clean and professional look with a primary color of **#04668C** (a deep blue) for headings and key elements, complemented by **#A7C3D1** (a soft blue) for secondary accents and backgrounds. To draw attention to important actions and highlights, **#DE8C1C** (a warm orange) is used for buttons and interactive elements. The text is displayed in **#000000** (black) for readability, while **#FFFFFF** (white) is used for backgrounds and contrast. This cohesive color palette ensures a visually appealing and intuitive experience for users, enhancing both functionality and aesthetics.
@@ -605,7 +591,7 @@ This design system ensures a clear typographic hierarchy, enhances user navigati
 
 The **Dealna.de v1** offers a range of features designed to enhance the user experience and streamline the shopping process:
  
-<details><summary><span style="font-size:1.3em; font-weight:bold;">Features Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">Features Details</span></summary>
 
  
 1. **Navigation**
@@ -821,7 +807,7 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
  
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">Languages</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">Languages</span></summary>
 
 
 
@@ -885,7 +871,7 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 This project uses Django’s **Object-Relational Mapping (ORM)** to manage interactions between the application and **PostgreSQL**. The updated key models include the new apps.
  
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 
  
@@ -1034,7 +1020,7 @@ This diagram includes **core models** and **new apps** for a complete overview o
 
 ## **Email Marketing Integration**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
  
 
@@ -1069,7 +1055,7 @@ Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier
 
 ## **Compliance and Trust**
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 
 ### **Händlerbund Membership**  
@@ -1107,7 +1093,7 @@ Below is a screenshot of the **Trusted Shops** seal displayed on our website [De
 
 ## Testing:
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 ### Chrome Test
 
@@ -1455,7 +1441,7 @@ This command will execute all the tests we implemented, allowing you to confirm 
 
 ## HTML Validation
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 Validation errors occur when HTML code does not adhere to the established standards, which can lead to browser inconsistencies or inaccessible content. It is crucial to test your code against validators like the [W3C HTML Validator](https://validator.w3.org/) to ensure compliance with best practices and maintain cross-browser functionality. Below are two examples of common validation errors, their causes, and fixes.
 
@@ -1501,7 +1487,7 @@ By fixing these issues, the code becomes more **standards-compliant**, **accessi
 
 
 ## CSS Validation
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 All CSS files for the project have been validated using the **W3C CSS Validator**. No errors were found.
 
@@ -1525,7 +1511,7 @@ Tested website: [https://dealna-de-v1-4-c11110135cbe.herokuapp.com/](https://dea
 
 ### JavaScript Validation
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 Some JavaScript issues were detected during validation:
 
@@ -1559,7 +1545,7 @@ These issues have been fixed. Screenshots of the validation results are shown be
 ---
 ## Py Validation
 
-<details><summary><span style="font-size:1.3em; font-weight:bold;">More Details</span></summary>
+<details><summary><span style="font-size:1.4em; font-weight:bold;">More Details</span></summary>
 
 
  
@@ -1935,7 +1921,7 @@ All issues were subsequently resolved, and a final validation confirmed that the
 
 ## Getting Started:
 
-To set up **Dealna.de v1.3** locally for development or testing purposes, follow these steps:
+To set up **Dealna.de v1.4** locally for development or testing purposes, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Create a virtual environment and install the dependencies using:
@@ -1999,7 +1985,7 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).
+You can view the live site here also: [Dealna.de For E-Commerce v1.4]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).
 
 
 
