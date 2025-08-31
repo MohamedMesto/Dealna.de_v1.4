@@ -11,55 +11,14 @@ import os
 import dj_database_url
 
 
-<<<<<<< HEAD
-=======
 if os.path.isfile('env.py'):
     import env  # noqa: F401
->>>>>>> 69839f2 (fix py files part6)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-<<<<<<< HEAD
- 
- 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-if not SECRET_KEY:
-    raise ValueError("The SECRET_KEY setting must not be empty!")
-
-
-
-
-
-
-
- 
-# SECURITY WARNING: don't run with debug turned on in production!
-
- 
-
- 
-
-
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-if not SECRET_KEY:
-    raise ValueError("The SECRET_KEY setting must not be empty!")
-DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
- 
- 
-                 
-ALLOWED_HOSTS = ['127.0.0.1',  # Local preview,
-                'localhost', # listen for stripe webhooks
-                'dealna-de-v1-3-3806d4fcd64f.herokuapp.com', # herokuapp App
-                 ]
- 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-  ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-=======
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG is True if DEVELOPMENT=1, False otherwise
 DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
@@ -69,16 +28,15 @@ if not SECRET_KEY:
 ALLOWED_HOSTS = [
                 '127.0.0.1',   # Local preview,
                 'localhost',   # listen for stripe webhooks
-                'dealna-de-v1-3-3806d4fcd64f.herokuapp.com',  # herokuapp App
+                'https://dealna-de-v1-4-c11110135cbe.herokuapp.com',  # herokuapp App
                 ]
 # MMM Extra
 # RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 # if RENDER_EXTERNAL_HOSTNAME:
 #   ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
->>>>>>> 69839f2 (fix py files part6)
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/",
+    "https://https://dealna-de-v1-4-c11110135cbe.herokuapp.com/",
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com"
 ]
@@ -181,16 +139,6 @@ else:
         }
     }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> 69839f2 (fix py files part6)
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
