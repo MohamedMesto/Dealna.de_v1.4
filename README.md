@@ -1,9 +1,9 @@
-[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[<img src="assets/images/readme_images/Dealna_v4.png" alt="Dealna_v4 logo" width="400"/>](https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 
   
 ---
-[![alt text](assets/images/readme_images/main1.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[![alt text](assets/images/readme_images/main1.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 
 
@@ -23,13 +23,13 @@
 
 
 
-[![alt text](assets/images/readme_images/main3.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[![alt text](assets/images/readme_images/main3.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 
 
 
  
-[![alt text](assets/images/readme_images/main4.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[![alt text](assets/images/readme_images/main4.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-[![alt text](assets/images/readme_images/main5.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[![alt text](assets/images/readme_images/main5.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
   
 ---
@@ -74,7 +74,7 @@ The **Dealna.de v1.3** reflects the iterative evolution of a robust platform. Fe
 
 In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a reliable and engaging online shopping destination. It goes beyond simply selling products; it fosters trust, inspires confidence, and creates connections among its users. The live site invites you to explore this vibrant e-commerce hub and experience the future of online shopping.
 
-**You can view the live site here - [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/).**  
+**You can view the live site here - [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).**  
 
 
 
@@ -87,7 +87,7 @@ In an era of rapid digital transformation, **Dealna.de v1.3** stands out as a re
 
 ---
 
-[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 --- 
 
@@ -511,7 +511,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
  
  
-The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
+The **Dealna.de For E-Commerce v1.3** is accessible at [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/), offering an intuitive layout with seamless access to all sections via the navigation bar.  
 
 
 
@@ -1507,7 +1507,7 @@ All CSS files for the project have been validated using the **W3C CSS Validator*
 
 Validator link: [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)
 
-Tested website: [https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/](https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/)
+Tested website: [https://dealna-de-v1-4-c11110135cbe.herokuapp.com/](https://dealna-de-v1-4-c11110135cbe.herokuapp.com/)
 
 
 
@@ -1999,7 +1999,7 @@ This project can be deployed on platforms such as **Heroku** using the following
 - **[Code Institute Course Material](https://codeinstitute.net/):** For foundational knowledge and guidance throughout the development of the project.
 - **[Word_adventure](https://github.com/MohamedMesto/Word_adventure)**: From it the README template was sourced.
 
-You can view the live site here also: [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-3-3806d4fcd64f.herokuapp.com/).
+You can view the live site here also: [Dealna.de For E-Commerce v1.3]( https://dealna-de-v1-4-c11110135cbe.herokuapp.com/).
 
 
 
