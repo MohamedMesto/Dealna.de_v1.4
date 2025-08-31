@@ -1,6 +1,7 @@
 from django import forms
 from .models import ContactMessage
 
+
 class ContactForm(forms.ModelForm):
     class Meta:
         model = ContactMessage
@@ -8,6 +9,3 @@ class ContactForm(forms.ModelForm):
         widgets = {
             'message': forms.Textarea(attrs={'rows': 4}),
         }
-
-
-        
