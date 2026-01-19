@@ -9,7 +9,7 @@ MUST HAVE,20,View order confirmation
 MUST HAVE,33,Leave a product review
 MUST HAVE,37,View product FAQs
 MUST HAVE,41,Submit contact form
-SHOULD HAVE,3,Identify deals and offers
+SHOULD HAVE,3,Identify top_deals and offers
 SHOULD HAVE,5,Register for account
 SHOULD HAVE,6,Login and logout
 SHOULD HAVE,7,Recover password

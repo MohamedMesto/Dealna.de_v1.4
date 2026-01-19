@@ -22,16 +22,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   - Cloning & Forking instructions
 
 ### Changed
-- Navbar text structure and categories:
-  - Clothing: Activewear & Essentials, Jeans, Shirts, All Clothing
-  - Homeware: Bed & Bath, Kitchen & Dining, All Homeware
-  - Special Offers: New Arrivals, Deals, Clearance, All Specials
 - Product content and images updated
 - Updated documentation in README for:
   - Mailchimp integration
   - Facebook Page
   - Deployment process
   - Credits & Acknowledgements
+- Navbar text structure and categories:
+  - Clothing: Activewear & Essentials, Jeans, Shirts, All Clothing
+  - Homeware: Bed & Bath, Kitchen & Dining, All Homeware
+  - Special Offers: New Arrivals, Deals, Clearance, All Specials
+#### the new Navbars
+- Navbar structure updated to focus on electronic accessories:
+  - Electronics: Phone_Accessories & Essentials, Laptop Accessories(Laptop_Accessories),Computer Accessories(Computer_Accessories), All Electronics
+  - Home Accessories(Home_Accessories):Bed & Bath, Kitchen & Dining, All Home Accessories
+  - Special Deals: New Deals, Top Deals, Clearance, All Deals
+
+
 
 ### Fixed
 - None in this release

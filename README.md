@@ -171,7 +171,7 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
 
 ## Purpose of the Project – **Dealna.de E-Commerce v1.7**  
 
-The goal of **Dealna.de** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, clothing, homeware, and special offers.  
+The goal of **Dealna.de** is to create a modern, user-friendly e-commerce platform that offers a seamless shopping experience. Built with Django and PostgreSQL, this platform is designed to support a wide range of products, including electronics, electronics, homeware, and special offers.  
 
 With features such as advanced search, secure checkout, product categorization, and personalized user accounts, **Dealna.de** aims to provide an intuitive and efficient marketplace for both buyers and sellers. Customers can easily browse, purchase, and track their orders, while vendors can manage their inventory and sales through a robust backend system.  
 
@@ -332,7 +332,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | | | ***Sorting & Searching*** | | 
 | 10 | Shopper | Sort the list of available products | Easily identify the best-rated, best-priced, and categorically sorted products |
 | 11 | Shopper | Sort a specific category of product | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
-| 12 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware" |
+| 12 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as "electronics" or "homeware" |
 | 13 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
 | 14 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | | | ***Purchasing & Checkout*** | | 
@@ -408,7 +408,7 @@ As part of our project requirements, we have created a dedicated Facebook busine
 
 ### **2. Product Categories**
 
-* **Shop by Category:** Products organized into categories (e.g., Clothing, Homeware, Electronics).
+* **Shop by Category:** Products organized into categories (e.g., Electronics, Homeware, Electronics).
 * **Deals & Offers:** Highlights discounted products, clearance items, and promotions.
 * **New Arrivals:** Displays the latest products added to the platform.
 

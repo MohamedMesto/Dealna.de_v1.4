@@ -239,7 +239,7 @@ As a **role** I can **capability** so that **received benefit**
 
 **As a** Shopper
 **I want to** sort multiple categories of products simultaneously
-**So that** I can find the best-priced or best-rated products across broad categories, such as “clothing” or “homeware.”
+**So that** I can find the best-priced or best-rated products across broad categories, such as “electronics” or “homeware.”
 
 **Acceptance Criteria**:
 
@@ -801,7 +801,7 @@ This makes it easier to track in GitHub Projects or Jira boards since you can fi
 12. **User Story ID**  
     
     **As a** Shopper  **I want to** sort multiple categories of products simultaneously  **So that** I can find the best-priced    
-    or best-rated products across broad categories, such as "clothing" or "homeware."  
+    or best-rated products across broad categories, such as "electronics" or "homeware."  
     
     **Acceptance Criteria**:  
     - Users can select multiple categories and apply sorting.  
@@ -1030,7 +1030,7 @@ This makes it easier to track in GitHub Projects or Jira boards since you can fi
 12. **sort multiple categories**  
     
     **As a** Shopper  **I want to** sort multiple categories of products simultaneously  **So that** I can find the best-priced    
-    or best-rated products across broad categories, such as "clothing" or "homeware."  
+    or best-rated products across broad categories, such as "electronics" or "homeware."  
     
     **Acceptance Criteria**:  
     - Users can select multiple categories and apply sorting.  
