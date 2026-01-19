@@ -226,10 +226,11 @@ STRIPE_WH_SECRET = os.environ["STRIPE_WH_SECRET"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# Email
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'tippsauseuropa@gmail.com'
+    DEFAULT_FROM_EMAIL = 'service@Dealna.de'
+
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
