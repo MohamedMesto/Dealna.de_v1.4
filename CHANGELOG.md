@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 - Footer section
 - Newsletter feature
-- WhiteNoise static file handling
+
 - Docs sections in README:
   - robots.txt
   - sitemap.xml
@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   - Stripe API (Payments Integration)
   - env.py configuration
   - Cloning & Forking instructions
+  - Configuring Gmail for e-commerce emails (Gmail API (Email Notifications))
 
 ### Changed
 - Product content and images updated
@@ -39,9 +40,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   - Special Deals: New Deals, Top Deals, Clearance, All Deals
 
 
-
 ### Fixed
 - None in this release
+
+### ToDos within Dealna.de v1.8
+- WhiteNoise static file handling
+- Cloudinary (collectstatic)
+  - CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET
+  - heroku run python manage.py migrate heroku run python manage.py collectstatic
+
 
 ---
 

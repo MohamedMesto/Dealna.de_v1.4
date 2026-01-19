@@ -1,0 +1,277 @@
+{
+    "electronics": {
+        "phone_accessories_essentials": [
+            {
+                "sku": "PH-ACC-001",
+                "name": "Fast Wireless Charging Pad",
+                "description": "Qi-compatible fast wireless charging pad with non-slip surface for smartphones.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 24.99,
+                "rating": 4.6,
+                "image": "fast_wireless_charging_pad.png"
+            },
+            {
+                "sku": "PH-ACC-002",
+                "name": "USB-C to USB-C Charging Cable",
+                "description": "Durable braided USB-C cable supporting fast charging and data transfer.",
+                "has_sizes": [
+                    "1m",
+                    "2m"
+                ],
+                "price_eur": 12.99,
+                "rating": 4.5,
+                "image": "usb_c_charging_cable.png"
+            },
+            {
+                "sku": "PH-ACC-003",
+                "name": "Shockproof Phone Case",
+                "description": "Protective phone case with reinforced corners and slim design.",
+                "has_sizes": [
+                    "iPhone",
+                    "Samsung",
+                    "Other Models"
+                ],
+                "price_eur": 14.99,
+                "rating": 4.4,
+                "image": "shockproof_phone_case.png"
+            }
+        ],
+        "laptop_accessories": [
+            {
+                "sku": "LAP-ACC-001",
+                "name": "Adjustable Laptop Stand",
+                "description": "Ergonomic aluminum laptop stand with adjustable height and angle.",
+                "has_sizes": [
+                    "Up to 15-inch",
+                    "Up to 17-inch"
+                ],
+                "price_eur": 29.99,
+                "rating": 4.7,
+                "image": "adjustable_laptop_stand.png"
+            },
+            {
+                "sku": "LAP-ACC-002",
+                "name": "Laptop Sleeve Case",
+                "description": "Water-resistant laptop sleeve with soft inner lining for protection.",
+                "has_sizes": [
+                    "13-inch",
+                    "15-inch",
+                    "17-inch"
+                ],
+                "price_eur": 19.99,
+                "rating": 4.6,
+                "image": "laptop_sleeve_case.png"
+            },
+            {
+                "sku": "LAP-ACC-003",
+                "name": "USB-C Hub Multiport Adapter",
+                "description": "USB-C hub with HDMI, USB 3.0, and SD card reader ports.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 34.99,
+                "rating": 4.5,
+                "image": "usb_c_hub_adapter.png"
+            }
+        ],
+        "computer_accessories": [
+            {
+                "sku": "PC-ACC-001",
+                "name": "Wireless Keyboard & Mouse Combo",
+                "description": "Silent wireless keyboard and mouse set for office and home use.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 39.99,
+                "rating": 4.6,
+                "image": "wireless_keyboard_mouse_combo.png"
+            },
+            {
+                "sku": "PC-ACC-002",
+                "name": "USB Desktop Microphone",
+                "description": "Plug-and-play USB microphone for calls, streaming, and recording.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 49.99,
+                "rating": 4.7,
+                "image": "usb_desktop_microphone.png"
+            },
+            {
+                "sku": "PC-ACC-003",
+                "name": "HD Webcam with Microphone",
+                "description": "Full HD webcam with built-in microphone for video conferencing.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 44.99,
+                "rating": 4.5,
+                "image": "hd_webcam_microphone.png"
+            }
+        ]
+    },
+    "home_electronics_accessories": {
+        "bed_bath": [
+            {
+                "sku": "HB-ACC-001",
+                "name": "Waterproof Bluetooth Shower Speaker",
+                "description": "Water-resistant Bluetooth speaker with suction cup for shower use.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 19.99,
+                "rating": 4.6,
+                "image": "bluetooth_shower_speaker.png"
+            },
+            {
+                "sku": "HB-ACC-002",
+                "name": "LED Bedside Lamp with USB Charging",
+                "description": "Touch-control bedside lamp with warm light and USB charging ports.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 29.99,
+                "rating": 4.7,
+                "image": "led_bedside_lamp_usb.png"
+            },
+            {
+                "sku": "HB-ACC-003",
+                "name": "Electric Heated Blanket",
+                "description": "Soft electric blanket with adjustable heat settings for comfort.",
+                "has_sizes": [
+                    "Single",
+                    "Double"
+                ],
+                "price_eur": 49.99,
+                "rating": 4.5,
+                "image": "electric_heated_blanket.png"
+            }
+        ],
+        "kitchen_dining": [
+            {
+                "sku": "KD-ACC-001",
+                "name": "Smart Digital Kitchen Scale",
+                "description": "Precision digital kitchen scale with LCD display for cooking and baking.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 24.99,
+                "rating": 4.6,
+                "image": "digital_kitchen_scale.png"
+            },
+            {
+                "sku": "KD-ACC-002",
+                "name": "Electric Coffee Grinder",
+                "description": "Compact electric coffee grinder with stainless steel blades.",
+                "has_sizes": [
+                    "Standard"
+                ],
+                "price_eur": 34.99,
+                "rating": 4.7,
+                "image": "electric_coffee_grinder.png"
+            },
+            {
+                "sku": "KD-ACC-003",
+                "name": "Smart Electric Kettle",
+                "description": "Temperature-controlled electric kettle with automatic shut-off.",
+                "has_sizes": [
+                    "1.7L"
+                ],
+                "price_eur": 59.99,
+                "rating": 4.8,
+                "image": "smart_electric_kettle.png"
+            }
+        ]
+    },
+    "Special Deals": {
+        "New Deals": [
+            {
+                "sku": "ND-001",
+                "name": "Noise Cancelling Wireless Earbuds",
+                "description": "Compact earbuds with active noise cancellation.",
+                "has_sizes": false,
+                "price": 89.99,
+                "rating": 4.7,
+                "image": "wireless_earbuds.jpg"
+            },
+            {
+                "sku": "ND-002",
+                "name": "Smart Home Security Camera",
+                "description": "Wi-Fi enabled smart camera with motion detection.",
+                "has_sizes": false,
+                "price": 74.99,
+                "rating": 4.6,
+                "image": "security_camera.jpg"
+            },
+            {
+                "sku": "ND-003",
+                "name": "Portable Power Station",
+                "description": "High-capacity portable power station for travel and emergencies.",
+                "has_sizes": false,
+                "price": 199.99,
+                "rating": 4.8,
+                "image": "power_station.jpg"
+            }
+        ],
+        "Top Deals": [
+            {
+                "sku": "TD-001",
+                "name": "Portable Bluetooth Speaker",
+                "description": "Powerful Bluetooth speaker with long battery life.",
+                "has_sizes": false,
+                "price": 49.99,
+                "rating": 4.7,
+                "image": "bluetooth_speaker.jpg"
+            },
+            {
+                "sku": "TD-002",
+                "name": "4K Streaming Media Player",
+                "description": "4K media streaming device with voice remote.",
+                "has_sizes": false,
+                "price": 59.99,
+                "rating": 4.6,
+                "image": "4k_media_player.jpg"
+            },
+            {
+                "sku": "TD-003",
+                "name": "Robot Vacuum Cleaner",
+                "description": "Smart robot vacuum with automatic room mapping.",
+                "has_sizes": false,
+                "price": 229.99,
+                "rating": 4.7,
+                "image": "robot_vacuum.jpg"
+            }
+        ],
+        "Clearance": [
+            {
+                "sku": "CL-001",
+                "name": "Wireless Gaming Mouse",
+                "description": "Ergonomic wireless gaming mouse with RGB lighting.",
+                "has_sizes": false,
+                "price": 29.99,
+                "rating": 4.5,
+                "image": "gaming_mouse.jpg"
+            },
+            {
+                "sku": "CL-002",
+                "name": "Bluetooth Over-Ear Headphones",
+                "description": "Comfortable over-ear headphones with deep bass.",
+                "has_sizes": false,
+                "price": 54.99,
+                "rating": 4.4,
+                "image": "overear_headphones.jpg"
+            },
+            {
+                "sku": "CL-003",
+                "name": "Mini Portable Projector",
+                "description": "Compact mini projector suitable for home entertainment.",
+                "has_sizes": false,
+                "price": 89.99,
+                "rating": 4.3,
+                "image": "mini_projector.jpg"
+            }
+        ]
+    }
+}
