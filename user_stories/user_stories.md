@@ -920,6 +920,50 @@ This makes it easier to track in GitHub Projects or Jira boards since you can fi
     - Deleted products are removed from the store immediately.  
     - Users are prompted to confirm before deletion.
 
+I reviewed the Dealna.de live site and GitHub repo. To add newsletter subscription functionality, we should define **new user stories** similar to your existing ones. Here's a structured update for that:
+
+---
+
+### **Newsletter User Stories**
+
+**38. Subscribe to Newsletter**
+**As a** Shopper
+**I want to** subscribe to the store’s newsletter
+**So that** I can receive updates, promotions, and new product alerts.
+
+**Acceptance Criteria:**
+
+* Subscription form is visible on homepage/footer.
+* Users provide a valid email to subscribe.
+* Confirmation message appears after subscribing.
+* Email is stored securely in the database.
+
+**39. Unsubscribe from Newsletter**
+**As a** Shopper
+**I want to** unsubscribe from the newsletter
+**So that** I no longer receive unwanted emails.
+
+**Acceptance Criteria:**
+
+* Unsubscribe link is included in all newsletter emails.
+* Users can click the link to remove themselves from the mailing list.
+* Confirmation of unsubscription is shown.
+
+**40. Admin Manage Newsletter Subscribers**
+**As a** Site Admin
+**I want to** view and manage newsletter subscribers
+**So that** I can send targeted emails and remove inactive users.
+
+**Acceptance Criteria:**
+
+* Admin dashboard lists all subscribers.
+* Admin can export subscriber emails.
+* Admin can manually remove or add subscribers.
+
+---
+
+I can integrate these into your existing **MoSCoW prioritization** with proper IDs and priorities for you next. Do you want me to do that?
+
  ⭐⭐⭐⭐⭐
  
 
