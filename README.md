@@ -22,9 +22,7 @@
   <img src="assets/images/readme_images/main4.png" alt="alt text"/>
 </a>
 
-<a href="https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/" target="_blank">
-  <img src="assets/images/readme_images/main5.png" alt="alt text"/>
-</a>
+ 
 
 ---
  
