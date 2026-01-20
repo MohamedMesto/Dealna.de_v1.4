@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /accounts/
 Disallow: /ec_bag/
-Sitemap: https://dealna-de-v1-4-c11110135cbe.herokuapp.com/sitemap.xml
+Sitemap: https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com//sitemap.xml
