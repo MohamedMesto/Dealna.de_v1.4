@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Dealna.de For E-Commerce</title>
+  <link rel="stylesheet" href="{% static 'newsletter/css/welcome_email.css' %}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://dealna-de-v1-3-bucket.s3.eu-north-1.amazonaws.com/media/Dealna_logo.png"
+        alt="Dealna.de For E-Commerce">
+      <h1>Welcome to Dealna.de For E-Commerce</h1>
+      <p>Smart Deals on Electronics & Accessories</p>
+    </div>
+
+    <div class="content">
+      <h2>Thank you for joining the Dealna community!</h2>
+      <p>
+        We’re excited to help you discover the best deals on
+        <strong>electronic accessories</strong>, smart gadgets, and everyday tech essentials —
+        from phone and laptop accessories to smart home and kitchen electronics.
+      </p>
+
+      <div class="discount">
+        Here’s your exclusive <strong>10% OFF</strong> welcome deal!<br>
+        Use code <strong>{{ discount_code }}</strong> at checkout 🎁<br>
+        <small>Valid until <strong>{{ expiry_date }}</strong> — one-time use only</small>
+      </div>
+
+      <p>As a subscriber, you’ll be the first to get access to:</p>
+      <ul>
+        <li>⚡ New deals on phones, laptops & computer accessories</li>
+        <li>🔥 Top discounts and clearance offers</li>
+        <li>🏠 Smart home, kitchen & lifestyle electronics</li>
+        <li>💡 Buying guides, tips & exclusive offers</li>
+      </ul>
+
+
+      <div class="cta">
+        <a href="https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/">Shop Now</a>
+      </div>
+
+      <p>
+        From our kitchen to your table — we’re here to make every bite memorable.
+      </p>
+      <p>With love,<br><strong>The Dealna.de Electronics Team</strong></p>
+    </div>
+
+    <div class="footer">
+      You’re receiving this email because you subscribed at Dealna.de<br>
+      © 2025 <a href="https://un2050.de/">UN2050 IT Kreativ & Handel Solutions  </a> | Berlin
+      <a href="{{ unsubscribe_link }}" class="unsubscribe">Unsubscribe</a>
+    </div>
+  </div>
+
+  <script src="{% static 'newsletter/js/welcome_email.js' %}"></script>
+</body>
+
+</html>

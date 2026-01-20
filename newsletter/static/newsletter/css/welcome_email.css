@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6; /* Light gray */
+  color: #111827;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.header, .footer {
+  text-align: center;
+  background: #0d6efd; /* Dealna primary */
+  padding: 25px 20px;
+  color: #ffffff;
+}
+
+.header img {
+  width: 70px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: #0d6efd;
+  margin: 10px 0;
+}
+
+.content {
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.discount {
+  background: #eef2ff;
+  border: 1px dashed #0d6efd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cta {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.cta a {
+  background: #0d6efd;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.cta a:hover {
+  background: #084298;
+}
+
+.footer {
+  font-size: 13px;
+  background: #f9fafb;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+a.unsubscribe {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .content { padding: 20px; }
+  .discount { font-size: 16px; }
+}

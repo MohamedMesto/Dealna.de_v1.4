@@ -1,0 +1,57 @@
+/* Newsletter styles */
+.newsletter-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.newsletter-container h2 {
+  color: #1f2937; /* Dark slate */
+  margin-bottom: 15px;
+}
+
+.newsletter-container p {
+  color: #4b5563;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.newsletter-container input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.newsletter-container button,
+.unsubscribe-button {
+  background: #0d6efd; /* Dealna blue */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.newsletter-container button:hover,
+.unsubscribe-button:hover {
+  background: #084298;
+}
+
+.unsubscribe-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.unsubscribe-page h2 {
+  color: #b91c1c;
+}

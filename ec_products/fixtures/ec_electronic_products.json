@@ -194,7 +194,7 @@
                 "has_sizes": false,
                 "price": 89.99,
                 "rating": 4.7,
-                "image": "wireless_earbuds.jpg"
+                "image": "wireless_earbuds.png"
             },
             {
                 "sku": "ND-002",
@@ -203,7 +203,7 @@
                 "has_sizes": false,
                 "price": 74.99,
                 "rating": 4.6,
-                "image": "security_camera.jpg"
+                "image": "security_camera.png"
             },
             {
                 "sku": "ND-003",
@@ -212,7 +212,7 @@
                 "has_sizes": false,
                 "price": 199.99,
                 "rating": 4.8,
-                "image": "power_station.jpg"
+                "image": "power_station.png"
             }
         ],
         "Top Deals": [
@@ -223,7 +223,7 @@
                 "has_sizes": false,
                 "price": 49.99,
                 "rating": 4.7,
-                "image": "bluetooth_speaker.jpg"
+                "image": "bluetooth_speaker.png"
             },
             {
                 "sku": "TD-002",
@@ -232,7 +232,7 @@
                 "has_sizes": false,
                 "price": 59.99,
                 "rating": 4.6,
-                "image": "4k_media_player.jpg"
+                "image": "4k_media_player.png"
             },
             {
                 "sku": "TD-003",
@@ -241,7 +241,7 @@
                 "has_sizes": false,
                 "price": 229.99,
                 "rating": 4.7,
-                "image": "robot_vacuum.jpg"
+                "image": "robot_vacuum.png"
             }
         ],
         "Clearance": [
@@ -252,7 +252,7 @@
                 "has_sizes": false,
                 "price": 29.99,
                 "rating": 4.5,
-                "image": "gaming_mouse.jpg"
+                "image": "gaming_mouse.png"
             },
             {
                 "sku": "CL-002",
@@ -261,7 +261,7 @@
                 "has_sizes": false,
                 "price": 54.99,
                 "rating": 4.4,
-                "image": "overear_headphones.jpg"
+                "image": "overear_headphones.png"
             },
             {
                 "sku": "CL-003",
@@ -270,7 +270,7 @@
                 "has_sizes": false,
                 "price": 89.99,
                 "rating": 4.3,
-                "image": "mini_projector.jpg"
+                "image": "mini_projector.png"
             }
         ]
     }

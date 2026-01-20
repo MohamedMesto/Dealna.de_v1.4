@@ -1,5 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- Home (Mobile Only) -->
         <li class="nav-item d-block d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'ec_home' %}" id="home-link">
                 Home
@@ -9,7 +10,7 @@
 
 
 
-
+        <!-- All Products -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,22 +24,25 @@
                 <a href="{% url 'ec_products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!-- Categories -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="electronics-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Electronics
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="electronics-link">
-                <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials" class="dropdown-item">Phone Accessories
+                <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials" class="dropdown-item">Phone
+                    Accessories
                     &amp; Essentials</a>
-                <a href="{% url 'ec_products' %}?ec_category=laptop_accessories" class="dropdown-item">Laptop Accessories</a>
-                <a href="{% url 'ec_products' %}?ec_category=computer_accessories" class="dropdown-item">Computer Accessories</a>
+                <a href="{% url 'ec_products' %}?ec_category=laptop_accessories" class="dropdown-item">Laptop
+                    Accessories</a>
+                <a href="{% url 'ec_products' %}?ec_category=computer_accessories" class="dropdown-item">Computer
+                    Accessories</a>
                 <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials,laptop_accessories,computer_accessories"
                     class="dropdown-item">All Electronics</a>
             </div>
         </li>
-
+        <!-- Contact -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,6 +57,7 @@
             </div>
         </li>
 
+        <!-- Special Deals -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,7 +71,13 @@
                     Specials</a>
             </div>
         </li>
-
+        <!-- Newsletter -->
+        <li class="nav-item {% if request.resolver_match.namespace == 'newsletter' %}active{% endif %}">
+            <a class="logo-font font-weight-bold nav-link mr-5 {% if request.resolver_match.namespace == 'newsletter' %} {% else %}text-black{% endif %}"
+                href="{% url 'newsletter:newsletter' %}">
+                Newsletter
+            </a>
+        </li> <!-- About -->
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}">
                 About
@@ -74,15 +85,15 @@
 
         </li>
 
-
-                <li class="nav-item">
+        <!-- Contact -->
+        <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}">
                 Contact
             </a>
 
         </li>
 
- 
+
 
 
 

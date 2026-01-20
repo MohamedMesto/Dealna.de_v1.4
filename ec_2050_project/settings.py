@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG is True if DEVELOPMENT=1, False otherwise
 DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
+# DEBUG=1
 SECRET_KEY = os.environ.get('SECRET_KEY')
 if not SECRET_KEY:
     raise ValueError("The SECRET_KEY setting must not be empty!")
@@ -62,6 +63,7 @@ INSTALLED_APPS = [
     'faq',
     'about',
     'contact',
+    'newsletter',
     # Other
     'crispy_forms',
     'storages',

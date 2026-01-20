@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container text-center py-5">
+  <h2>You’ve successfully unsubscribed 💌</h2>
+  <p>You can rejoin anytime!</p>
+  <a href="{% url 'home' %}" class="btn btn-pink mt-3">Return Home</a>
+</div>
+{% endblock %}
