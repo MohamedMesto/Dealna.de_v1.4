@@ -1975,6 +1975,7 @@ This project can be deployed on platforms such as **Heroku** using the following
    git push heroku main
    ```
 
+
 ### Sitemap & Newsletter Integration
 
 The Dealna.de website now includes a fully functional newsletter subscription feature, allowing users to subscribe and receive updates on new products, promotions, and exclusive deals. To improve SEO and enhance discoverability, an XML sitemap was generated using Crawlino XML Sitemap Generator
