@@ -129,8 +129,7 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [**Database Schema Diagram (Simplified)**](#database-schema-diagram-simplified)
     - [**Generating the ERD**](#generating-the-erd)
   - [**Email Marketing Integration**](#email-marketing-integration)
-    - [**Mailchimp**](#mailchimp)
-    - [**Screenshot of Mailchimp Pricing**](#screenshot-of-mailchimp-pricing)
+    - [**SEO \& Newsletter Integration**](#seo--newsletter-integration)
   - [**Compliance and Trust**](#compliance-and-trust)
     - [**Händlerbund Membership**](#händlerbund-membership)
     - [**Trusted Shops Seal**](#trusted-shops-seal)
@@ -1031,24 +1030,33 @@ This diagram includes **core models** and **new apps** for a complete overview o
 <details><summary><span style="font-size:1.7em; font-weight:bold;">More Details</span></summary>
 
  
+ 
 
+### **SEO & Newsletter Integration**
 
+The **Dealna.de** website now includes a fully functional **newsletter subscription** feature, powered by **Mailchimp**, allowing users to subscribe and receive updates about **new products, promotions, and exclusive deals**.
 
-### **Mailchimp**  
-Initially, we planned to integrate **Mailchimp** for email marketing to allow users to subscribe to newsletters and receive updates about new products, promotions, and exclusive deals. However, due to recent changes in Mailchimp's registration rules and pricing, this feature could not be implemented.  
+* **Newsletter Implementation:**
 
-- **Issue:**  
-  - Mailchimp no longer offers a free plan beyond a 14-day trial.  
-  - The paid plan starts at **$24/month**, which was beyond the project's budget.  
+  * Fully integrated into the website’s frontend and backend using **Mailchimp**.
+  * Users can easily enter their email to subscribe.
+  * Subscriber emails are securely stored and managed via Mailchimp for automated campaigns and analytics.
+  * Keeps users engaged with new products and special offers, building a loyal customer base.
 
-- **Alternative Solution:**  
-  - For future implementation, we recommend exploring other email marketing services that offer free or more affordable plans, such as **Sendinblue** or **MailerLite**.  
+* **XML Sitemap:**
 
-### **Screenshot of Mailchimp Pricing**  
-Below is a screenshot of Mailchimp's pricing page, highlighting the cost barrier:  
+  * To enhance SEO and ensure search engines can efficiently crawl all pages, an **XML sitemap** was generated using [Crawlino XML Sitemap Generator](https://www.crawlino.com/tools/xml-sitemap-generator?utm_source=chatgpt.com).
+  * Includes all key pages: homepage, account pages, product pages, categories, and the newsletter page.
+  * Each entry has `<lastmod>`, `<changefreq>`, and `<priority>` tags, helping search engines understand page importance and update frequency.
+  * `<lastmod>` timestamps updated to **2026-01-20**, ensuring all pages appear fresh to search engines.
 
-![Mailchimp Pricing](assets/images/readme_images/mailchimp_pricing.png)  
+* **Benefits of Sitemap & Newsletter:**
 
+  * Makes the website **SEO-ready** and ready for submission to **Google Search Console**.
+  * Combines marketing and search optimization, improving visibility and user engagement.
+
+> ✅ The newsletter is live, fully supported via **Mailchimp**, and the sitemap ensures all important pages are indexed efficiently.
+ 
 
 
 [Back to top](<#contents>)
