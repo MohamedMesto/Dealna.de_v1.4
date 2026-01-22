@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG is True if DEVELOPMENT=1, False otherwise
-DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
-# DEBUG=1
+# DEBUG = os.environ.get('DEVELOPMENT', '0') in ['1', 'True', 'true']
+DEBUG=1
 SECRET_KEY = os.environ.get('SECRET_KEY')
 if not SECRET_KEY:
     raise ValueError("The SECRET_KEY setting must not be empty!")
@@ -121,8 +121,8 @@ SITE_ID = 1
  
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
@@ -243,9 +243,11 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
-    EMAIL_TIMEOUT = 20
-    SERVER_EMAIL = DEFAULT_FROM_EMAIL
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+    # DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+    # EMAIL_TIMEOUT = 20
+    # SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 
     

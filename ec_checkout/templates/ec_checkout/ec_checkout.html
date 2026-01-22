@@ -23,6 +23,7 @@
             </div>
         </div>
         <div class="row">
+             <!-- ORDER SUMMARY -->
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ ec_product_count }})</p>
                 <div class="row">
@@ -35,7 +36,8 @@
                 </div>
 
                 {% for item in ec_bag_items %}
-                    <div class="row">
+                    <div class="row align-items-center mb-2">
+                         <!-- PRODUCT IMAGE -->
                         <div class="col-2 mb-1">
                             <a href="{% url 'ec_product_detail' item.ec_product.id %}">
                                 {% if item.ec_product.image %}
@@ -45,17 +47,20 @@
                                 {% endif %}
                             </a>
                         </div>
+
+                         <!-- PRODUCT TEXT -->
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.ec_product.name }}</strong></p>
                             <p class="my-0 small">Size: {% if item.ec_product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
+                        <!-- SUBTOTAL -->
                         <div class="col-3 text-right">
                             <p class="my-0 small text-muted">${{ item.ec_product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
-
                 {% endfor %}
+                
                 <hr class="my-0">
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">

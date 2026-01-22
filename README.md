@@ -170,7 +170,6 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [**Key Takeaways**:](#key-takeaways)
   - [Getting Started:](#getting-started)
   - [Deployment:](#deployment)
-    - [Sitemap \& Newsletter Integration](#sitemap--newsletter-integration)
   - [Credits](#credits)
 
 
@@ -1983,11 +1982,7 @@ This project can be deployed on platforms such as **Heroku** using the following
    git push heroku main
    ```
 
-
-### Sitemap & Newsletter Integration
-
-The Dealna.de website now includes a fully functional newsletter subscription feature, allowing users to subscribe and receive updates on new products, promotions, and exclusive deals. To improve SEO and enhance discoverability, an XML sitemap was generated using Crawlino XML Sitemap Generator
-. This sitemap lists all key pages, including the homepage, account pages, product pages, categories, and the newsletter page. Each entry includes <lastmod>, <changefreq>, and <priority> tags, helping search engines efficiently crawl and index the site. The <lastmod> timestamps have been updated to 2026-01-20 to reflect the latest changes, ensuring that all pages appear fresh to search engines. This setup makes the website SEO-ready and ready for submission to Google Search Console or other search engines.
+ 
 
 ## Credits  
 
