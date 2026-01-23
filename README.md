@@ -175,7 +175,7 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [🔹 Step 6: Stripe Payments \& Webhooks](#-step-6-stripe-payments--webhooks)
     - [🔹 Step 7: Gmail Notifications](#-step-7-gmail-notifications)
     - [🔹 Step 8: Access the App](#-step-8-access-the-app)
-- [Nourish (Live site)](#nourish-live-site)
+- [Dealna (Live site)](#dealna-live-site)
   - [UX](#ux)
     - [The 5 Planes of UX](#the-5-planes-of-ux)
       - [1. Strategy](#1-strategy)
@@ -230,15 +230,13 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [**Explanation**](#explanation)
     - [Social Media Marketing](#social-media-marketing)
     - [Newsletter Marketing](#newsletter-marketing)
-  - [📬 Newsletter Feature Implementation -- Nourish Website](#-newsletter-feature-implementation----nourish-website)
+  - [📬 Newsletter Feature Implementation -- Dealna Website](#-newsletter-feature-implementation----dealna-website)
     - [🔧 Step-by-Step Implementation](#-step-by-step-implementation)
       - [1. **Creating the Newsletter App**](#1-creating-the-newsletter-app)
       - [2. **Defining the Custom Model**](#2-defining-the-custom-model)
       - [3. **Admin Configuration**](#3-admin-configuration)
       - [4. **Newsletter Form \& Frontend Integration**](#4-newsletter-form--frontend-integration)
       - [5. **Sending Emails (Optional Enhancement)**](#5-sending-emails-optional-enhancement)
-  - [Testing](#testing-1)
-    - [Automated Tests](#automated-tests)
   - [Deployment](#deployment-1)
     - [Heroku Deployment](#heroku-deployment)
     - [🔧 Step-by-Step Deployment](#-step-by-step-deployment)
@@ -2304,29 +2302,29 @@ heroku run python manage.py collectstatic
 * Local and deployed versions are functionally identical
 
  
-# Nourish ([Live site](https://nourish1-cc6378c356ae.herokuapp.com))
+# Dealna ([Live site](https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com))
 
 Developer: Mairi Aissatou ([mairima](https://www.github.com/mairima))
 
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/mairima/nourish)](https://www.github.com/mairima/nourish/commits/main)
-[![GitHub last commit](https://img.shields.io/github/last-commit/mairima/nourish)](https://www.github.com/mairima/nourish/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/mairima/nourish)](https://www.github.com/mairima/nourish)
-[![badge](https://img.shields.io/badge/deployment-Heroku-purple)](https://nourish1-cc6378c356ae.herokuapp.com)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/mairima/Dealna)](https://www.github.com/mairima/Dealna/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/mairima/Dealna)](https://www.github.com/mairima/Dealna/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/mairima/Dealna)](https://www.github.com/mairima/Dealna)
+[![badge](https://img.shields.io/badge/deployment-Heroku-purple)](https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com)
 
-Nourish — Project Overview & Rationale
+Dealna — Project Overview & Rationale
 
-Nourish is an elegant and fully responsive e-commerce web application designed for a modern, health-conscious bakery brand. The project aims to provide users with a seamless online shopping experience for artisanal baked goods, catering to individuals who value convenience, quality, and transparency in what they consume.
+Dealna is an elegant and fully responsive e-commerce web application designed for a modern, health-conscious bakery brand. The project aims to provide users with a seamless online shopping experience for artisanal baked goods, catering to individuals who value convenience, quality, and transparency in what they consume.
 
-The website offers a clean and intuitive interface where users can browse through products, view detailed descriptions, add items to their shopping bag, and complete secure checkouts. Beyond shopping, Nourish integrates features such as newsletter subscriptions, FAQs, and a contact page to help build customer trust and engagement — reflecting the kind of holistic customer experience real businesses need.
+The website offers a clean and intuitive interface where users can browse through products, view detailed descriptions, add items to their shopping bag, and complete secure checkouts. Beyond shopping, Dealna integrates features such as newsletter subscriptions, FAQs, and a contact page to help build customer trust and engagement — reflecting the kind of holistic customer experience real businesses need.
 
 Project Goals
 
-The main goal of Nourish is to demonstrate the design and development of a fully functional, responsive, and user-friendly online store using Django and Bootstrap, with secure authentication, Stripe payment integration, and backend management for products and orders.
+The main goal of Dealna is to demonstrate the design and development of a fully functional, responsive, and user-friendly online store using Django and Bootstrap, with secure authentication, Stripe payment integration, and backend management for products and orders.
 It also seeks to model how small local businesses can expand their reach through digital transformation — taking a neighborhood bakery and giving it a professional online presence.
 
 Target Audience
 
-Nourish is aimed at:
+Dealna is aimed at:
 
 Everyday consumers looking for healthy, fresh, and locally made baked goods.
 
@@ -2336,20 +2334,20 @@ Students and developers interested in learning modern web development, UX design
 
 Why This Project (Rationale)
 
-I chose to create Nourish because food, particularly artisan baking, connects people on a personal and emotional level. During recent years, more consumers have shifted toward online purchasing — even for traditionally local products like bread and pastries. This inspired me to build a platform that blends the warmth of a neighborhood bakery with the convenience of modern e-commerce.
+I chose to create Dealna because food, particularly artisan baking, connects people on a personal and emotional level. During recent years, more consumers have shifted toward online purchasing — even for traditionally local products like bread and pastries. This inspired me to build a platform that blends the warmth of a neighborhood bakery with the convenience of modern e-commerce.
 
 It combines backend logic (Django), frontend design (HTML, CSS, Bootstrap), third-party integrations (Stripe, email verification), and real-world business logic — making it creatively fulfilling.
 
-Ultimately, Nourish isn’t just an online bakery — it’s a digital experience built to show how thoughtful design and solid engineering can make even the simplest daily pleasures more accessible and enjoyable.
+Ultimately, Dealna isn’t just an online bakery — it’s a digital experience built to show how thoughtful design and solid engineering can make even the simplest daily pleasures more accessible and enjoyable.
 
 
 **Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://nourish1-cc6378c356ae.herokuapp.com))*
+*([amiresponsive](https://ui.dev/amiresponsive?url=https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com))*
 
 
 ![screenshot](documentation/mockup.png)
 
-source: [nourish amiresponsive](https://ui.dev/amiresponsive?url=https://nourish1-cc6378c356ae.herokuapp.com)
+source: [Dealna amiresponsive](https://ui.dev/amiresponsive?url=https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com)
 
 > [!IMPORTANT]  
 > The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Boutique Ado".
@@ -2379,13 +2377,13 @@ source: [nourish amiresponsive](https://ui.dev/amiresponsive?url=https://nourish
 
 - Maintain an accurate, scalable inventory management system and secure payment workflow.
 
-The Strategy Plane defines the core goals of the project, the target audience, and the business and marketing foundations on which the Nourish e-commerce platform is built.
+The Strategy Plane defines the core goals of the project, the target audience, and the business and marketing foundations on which the Dealna e-commerce platform is built.
 
 
 #### 1.1 Business Model
 
 **Overview**
-- Nourish Bakery operates as a Business-to-Consumer (B2C) online store serving customers in Berlin.
+- Dealna Bakery operates as a Business-to-Consumer (B2C) online store serving customers in Berlin.
 - The website offers handmade cakes, pastries and snacks available for online purchase with secure checkout via Stripe.
 
 **Value Proposition**
@@ -2507,7 +2505,7 @@ All external links on the site use `target="_blank"` combined with
 ### Search Engine Optimization (SEO)
 <small>
 
-Nourish includes a lightweight but complete SEO setup to ensure that search engines can correctly read and understand the website structure.
+Dealna includes a lightweight but complete SEO setup to ensure that search engines can correctly read and understand the website structure.
 
 #### • Meta Tags  
 Dynamic titles, descriptions, canonical URLs, Open Graph data (for social sharing), and Twitter Card tags are included across all pages.  
@@ -2658,7 +2656,7 @@ Visuals emphasize freshness, warmth, and craftsmanship — reflecting the brand 
 
 ## Wireframes
 
-I created wireframes for the Nourish website to plan the layout, content structure, and user journey across different screen sizes (mobile, tablet, and desktop). These wireframes helped shape the responsive design and UI decisions made during development.
+I created wireframes for the Dealna website to plan the layout, content structure, and user journey across different screen sizes (mobile, tablet, and desktop). These wireframes helped shape the responsive design and UI decisions made during development.
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) and chatgpt to design my site wireframes.
@@ -2741,7 +2739,7 @@ Refer for most images for this section in the testing document under responsiven
 | Navbar Highlight | The active navigation link is highlighted to improve user awareness of the current page. | ![screenshot](documentation/features/navbarhighlight.png) |
 | Responsive Navbar & Footer | Fully responsive design ensures easy navigation and consistent layout across all device sizes. |  |
 | Footer Design | Includes quick navigation links, contact info, social media icons, and newsletter subscription. |  |
-| Heroku Deployment | The site is fully deployed to Heroku, allowing live access for users with database integration. | [Live Site – Nourish](https://nourish1-cc6378c356ae.herokuapp.com/) |
+| Heroku Deployment | The site is fully deployed to Heroku, allowing live access for users with database integration. | [Live Site – Dealna](https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/) |
 | SEO Optimization | Integrated sitemap.xml, robots.txt, and optimized meta tags improve search visibility. |  |
 | Marketing & Social Links | Footer links connect to social media platforms to boost engagement and brand reach. | Refer to Social Media Marketing section below |
 | 404 Error Page | A custom 404 page aligns with the site's branding and helps users return to the home page. |  |
@@ -2751,7 +2749,7 @@ Refer for most images for this section in the testing document under responsiven
 
 ### CRUD Functionality
 
-Nourish includes full Create, Read, Update and Delete (CRUD) functionality across several features of the site. The tables below outline how CRUD is implemented in each relevant area of the project.
+Dealna includes full Create, Read, Update and Delete (CRUD) functionality across several features of the site. The tables below outline how CRUD is implemented in each relevant area of the project.
 
 ---
 
@@ -2876,7 +2874,7 @@ Nourish includes full Create, Read, Update and Delete (CRUD) functionality acros
 
 ### Data Model
 
-The data model for Nourish was designed to support a smooth e-commerce workflow — from product browsing and user management to order processing and customer communication.
+The data model for Dealna was designed to support a smooth e-commerce workflow — from product browsing and user management to order processing and customer communication.
 The Entity Relationship Diagram (ERD) below illustrates how core components such as users, profiles, products, orders, and contact forms interact with each other to ensure an efficient and scalable system structure.
 
 Entity Relationship Diagrams (ERD) help visualize the project’s database architecture, showing how models relate to one another and simplifying both development and maintenance.
@@ -3015,18 +3013,18 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 
 ### GitHub Projects
 
-[GitHub Projects](https://www.github.com/mairima/nourish/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
+[GitHub Projects](https://www.github.com/mairima/Dealna/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
 ![screenshot](documentation/images/gh-projects.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://www.github.com/mairima/nourish/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+[GitHub Issues](https://www.github.com/mairima/Dealna/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
 
 | Link | Screenshot |
 | --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues-search/mairima/nourish?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://www.github.com/mairima/nourish/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) | ![screenshot](documentation/images/gh-issues-open.png) |
-| [![GitHub closed issues](https://img.shields.io/github/issues-search/mairima/nourish?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://www.github.com/mairima/nourish/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) | ![screenshot](documentation/images/gh-issues-closed.png) |
+| [![GitHub issues](https://img.shields.io/github/issues-search/mairima/Dealna?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://www.github.com/mairima/Dealna/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) | ![screenshot](documentation/images/gh-issues-open.png) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-search/mairima/Dealna?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://www.github.com/mairima/Dealna/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) | ![screenshot](documentation/images/gh-issues-closed.png) |
 
 ### MoSCoW Prioritization
 
@@ -3051,7 +3049,7 @@ A newsletter list can be used by the business to send regular messages to site u
 
 ### Keywords
 
-To improve **search engine visibility** and help potential customers discover the **Nourish** website, I identified relevant keywords aligned with my brand, products, and audience. These keywords include both **short-tail** and **long-tail** phrases to target general and specific search intents.
+To improve **search engine visibility** and help potential customers discover the **Dealna** website, I identified relevant keywords aligned with my brand, products, and audience. These keywords include both **short-tail** and **long-tail** phrases to target general and specific search intents.
 
 I used tools such as [Word Tracker](https://www.wordtracker.com) to check search frequency and keyword strength (during the free trial period), and also reviewed related trends from Google Search Console and manual competitor analysis.
 
@@ -3061,7 +3059,7 @@ I used tools such as [Word Tracker](https://www.wordtracker.com) to check search
 
 These help capture high-volume searches for general products and categories:
 
--   nourish cakes
+-   Dealna cakes
 
 -   healthy snacks
 
@@ -3097,7 +3095,7 @@ These phrases target more specific and conversion-ready searches:
 
 -   handmade cakes and pastries in Germany
 
--   Nourish bakery healthy dessert shop
+-   Dealna bakery healthy dessert shop
 
 * * * * *
 
@@ -3114,7 +3112,7 @@ These phrases target more specific and conversion-ready searches:
 
 ### Sitemap
 
-I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file. This was generated using my deployed site URL: https://nourish1-cc6378c356ae.herokuapp.com
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file. This was generated using my deployed site URL: https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com
 
 After it finished crawling the entire site, it created a [sitemap.xml](sitemap.xml), which I've downloaded and included in the repository.
 
@@ -3126,7 +3124,7 @@ I've created the [robots.txt](robots.txt) file at the root-level. Inside, I've i
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://nourish1-cc6378c356ae.herokuapp.com/sitemap.xml
+Sitemap: https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/sitemap.xml
 ```
 
 ### **Explanation**
@@ -3151,7 +3149,7 @@ Creating a strong social base (with participation) and linking that to the busin
 
 I've created a Facebook business account using Facebook. 
 
-[Facebook Page](https://www.facebook.com/people/Nourish-Handmade-Cakes-Snacks/61582594335574/)
+[Facebook Page](https://www.facebook.com/people/Dealna-Handmade-Cakes-Snacks/61582594335574/)
 
 
 The page includes:
@@ -3161,7 +3159,7 @@ The page includes:
 - Contact information  
 - Calls to action for online ordering  
 
-![screenshot](documentation/images/facebookpage-nourish.png)
+![screenshot](documentation/images/facebookpage-Dealna.png)
 
 
 ### Newsletter Marketing
@@ -3170,7 +3168,7 @@ I have incorporated a newsletter sign-up form on my application, to allow users 
 
 **Custom Django Model Newsletter**
 
-📬 Newsletter Feature Implementation -- Nourish Website
+📬 Newsletter Feature Implementation -- Dealna Website
 ------------------------------------------------------
 
 To fulfill the project requirement of including a **newsletter system** and implementing **at least three custom models**, a dedicated app called `newsletter` was created within the Django project.
@@ -3239,7 +3237,7 @@ def notify_subscribers(product):
         send_mail(
             subject=f"New Product: {product.name}",
             message=f"Check out our newest product: {product.name} at {product.get_absolute_url()}",
-            from_email="noreply@nourish.com",
+            from_email="noreply@Dealna.de",
             recipient_list=[subscriber.email],
             fail_silently=False,
         )`
@@ -3248,35 +3246,16 @@ def notify_subscribers(product):
 
 
 
-## Testing
-
-> [!NOTE]  
-> For all testing, please refer to the [TESTING.md](TESTING.md) file. 
-
-All functionality, forms, views, models, URLs and integrations were tested.
-Django’s automated test suite contains 22+ tests which all passed successfully.
-Responsiveness testing shows full compatibility across mobile, tablet and desktop.
-Validation was completed for HTML, CSS, JavaScript and Python.
-Full testing documentation is available in TESTING.md.
-
-### Automated Tests
-
-The full Django test suite can be executed using:
-
-"python manage.py test""
-
-All 22 tests passed successfully:
-
-
+ 
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://nourish1-cc6378c356ae.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/).
 On Heroku, static files are served using WhiteNoise and media files are served via Cloudinary. No functional differences exist between development and deployment.
 
 ### Heroku Deployment
 
 
-To deploy my **Nourish** Django website, I used [**Heroku**](https://www.heroku.com), a **cloud-based Platform as a Service (PaaS)** that simplifies deployment and hosting of web applications. It allows me to run the app entirely in the cloud without managing servers manually.
+To deploy my **Dealna** Django website, I used [**Heroku**](https://www.heroku.com), a **cloud-based Platform as a Service (PaaS)** that simplifies deployment and hosting of web applications. It allows me to run the app entirely in the cloud without managing servers manually.
 
 ### 🔧 Step-by-Step Deployment
 
@@ -3288,7 +3267,7 @@ After creating my Heroku account, here's how I deployed the project:
 
 -   I logged into the Heroku Dashboard, clicked **New** (top right), and selected **Create new app**.
 
--   I gave the app a **unique name** (`nourish1` in my case), chose **Europe (EU)** as the region (since I'm based in Germany), and clicked **Create App**.
+-   I gave the app a **unique name** (`dealna-de-v1-7` in my case), chose **Europe (EU)** as the region (since I'm based in Germany), and clicked **Create App**.
 
 * * * * *
 
@@ -3355,7 +3334,7 @@ Heroku needs some additional files in order to deploy properly.
 
 Requirements & Deployment Configuration (Steps I Took)
 
-To prepare my Nourish project for deployment on Heroku, I followed these steps:
+To prepare my Dealna project for deployment on Heroku, I followed these steps:
 
 1. ✅ Installed Project Requirements
 
@@ -3376,7 +3355,7 @@ This ensured Heroku had all the packages needed for a successful build.
 To tell Heroku how to run the app, I created a Procfile at the root of mRequirements & Deployment Configuration (Steps I Took)
 -------------------------------------------------------
 
-To prepare my Nourish project for deployment on **Heroku**, I followed these steps:
+To prepare my Dealna project for deployment on **Heroku**, I followed these steps:
 
 * * * * *
 
@@ -3398,9 +3377,9 @@ This ensured Heroku had all the packages needed for a successful build.
 
 To tell Heroku how to run the app, I created a `Procfile` at the root of my project:
 
-`echo web: gunicorn nourish.wsgi > Procfile`
+`echo web: gunicorn Dealna.wsgi > Procfile`
 
-> In my case, the main Django app is called `nourish`, so I used `nourish.wsgi`.
+> In my case, the main Django app is called `Dealna`, so I used `Dealna.wsgi`.
 
 * * * * *
 
@@ -3431,10 +3410,10 @@ heroku run python manage.py collectstatic`
 
 This completed the database setup and prepared static files for production.y project:
 
-echo web: gunicorn nourish.wsgi > Procfile
+echo web: gunicorn Dealna.wsgi > Procfile
 
 
-In my case, the main Django app is called nourish, so I used nourish.wsgi.
+In my case, the main Django app is called Dealna, so I used Dealna.wsgi.
 
 3. ✅ Specified the Python Version
 
@@ -3475,7 +3454,7 @@ To meet Code Institute requirements, `DEBUG = False` is always enforced in produ
 🖼️ Using Cloudinary to Store Media Files
 -----------------------------------------
 
-Since Heroku doesn't persist static or media files (e.g., product images), I integrated [**Cloudinary**](https://cloudinary.com) into my Nourish Django project to handle all **media asset storage and delivery**.
+Since Heroku doesn't persist static or media files (e.g., product images), I integrated [**Cloudinary**](https://cloudinary.com) into my Dealna Django project to handle all **media asset storage and delivery**.
 
 ###  How to Set It Up
 
@@ -3513,7 +3492,7 @@ Since Heroku doesn't persist static or media files (e.g., product images), I int
 
 Database – PostgreSQL (Code Institute)
 
-For the Nourish website, I used the Code Institute PostgreSQL Database
+For the Dealna website, I used the Code Institute PostgreSQL Database
  as the relational database, connected through Django.
 This database was ideal for development and deployment since it integrates smoothly with Heroku.
 
@@ -3541,7 +3520,7 @@ For future production, I plan to migrate to a personal PostgreSQL instance (e.g.
 ### Stripe API (Payments Integration)
 
 For processing secure online payments, I integrated Stripe
- into the Nourish website.
+ into the Dealna website.
 Stripe handles all transactions during checkout, ensuring encrypted and verified payment processing.
 
 Steps I Took
@@ -3564,7 +3543,7 @@ From the Stripe dashboard → Developers → Webhooks → Add Endpoint
 
 Added:
 
-https://nourish1-cc6378c356ae.herokuapp.com/checkout/wh/
+https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_checkout/wh/
 
 
 Selected “Receive all events”
@@ -3704,18 +3683,18 @@ If you'd like to backup your database models, use the following command for each
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://www.github.com/mairima/nourish).
+1. Go to the [GitHub repository](https://www.github.com/mairima/Dealna).
 2. Locate and click on the green "Code" button at the very top, above the commits and files.
 3. Select whether you prefer to clone using "HTTPS", "SSH", or "GitHub CLI", and click the "copy" button to copy the URL to your clipboard.
 4. Open "Git Bash" or "Terminal".
 5. Change the current working directory to the location where you want the cloned directory.
 6. In your IDE Terminal, type the following command to clone the repository:
-   - `git clone https://www.github.com/mairima/nourish.git`
+   - `git clone https://www.github.com/mairima/Dealna.git`
 7. Press "Enter" to create your local clone.
 
 Alternatively, if using Ona (formerly Gitpod), you can click below to create your own workspace using this repository.
 
-[![Open in Ona-Gitpod](https://ona.com/run-in-ona.svg)](https://gitpod.io/#https://www.github.com/mairima/nourish)
+[![Open in Ona-Gitpod](https://ona.com/run-in-ona.svg)](https://gitpod.io/#https://www.github.com/mairima/Dealna)
 
 **Please Note**: in order to directly open the project in Ona (Gitpod), you should have the browser extension installed. A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
@@ -3723,7 +3702,7 @@ Alternatively, if using Ona (formerly Gitpod), you can click below to create you
 
 By forking the GitHub Repository, you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://www.github.com/mairima/nourish).
+1. Log in to GitHub and locate the [GitHub Repository](https://www.github.com/mairima/Dealna).
 2. At the top of the Repository, just below the "Settings" button on the menu, locate and click the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
@@ -3735,13 +3714,13 @@ There are no remaining major differences between the local version when compared
 
 ### Project Idea & Design
 
--   The overall concept for the **Nourish** website --- an online store for cakes, snacks, and drinks --- was **inspired by real-world artisanal bakeries** and food brands, as well as personal interest in African and homemade baked goods.
+-   The overall concept for the **Dealna** website --- an online store for cakes, snacks, and drinks --- was **inspired by real-world artisanal bakeries** and food brands, as well as personal interest in African and homemade baked goods.
 
 -   The design and UX structure, some code were inspired by the [Code Institute's Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) e-commerce walkthrough project, but heavily customized in visuals, layout, and content.
 
 ### Content
 
-This section lists all third-party resources, libraries, tools, and support I used while building the Nourish website. Every effort has been made to ensure correct attribution for code, media, and guidance received throughout the project.
+This section lists all third-party resources, libraries, tools, and support I used while building the Dealna website. Every effort has been made to ensure correct attribution for code, media, and guidance received throughout the project.
 
 | Source | Notes |
 | --- | --- |
@@ -3758,7 +3737,7 @@ This section lists all third-party resources, libraries, tools, and support I us
 
 ### Media
 
-This section lists all third-party resources, libraries, tools, and support I used while building the Nourish website. Every effort has been made to ensure correct attribution for code, media, and guidance received throughout the project
+This section lists all third-party resources, libraries, tools, and support I used while building the Dealna website. Every effort has been made to ensure correct attribution for code, media, and guidance received throughout the project
 
 - Images
 | [Pexels](https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg) | Hero image |
@@ -3770,11 +3749,11 @@ This section lists all third-party resources, libraries, tools, and support I us
 | [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
 | [Cloudinary](https://cloudinary.com) | Hosts and delivers all uploaded product images and media assets |
 | [ChatGPT Image Generator](https://chat.openai.com) | colors |
-
+| [Noris Readme](https://github.com/mairima/nourish) | Readme |
 
 ### Acknowledgements
 
-Throughout the development of the Nourish project, I received support, encouragement, and guidance from various people and platforms — all of which played a valuable role in helping me grow as a developer.
+Throughout the development of the Dealna project, I received support, encouragement, and guidance from various people and platforms — all of which played a valuable role in helping me grow as a developer.
 
 This section is dedicated to recognizing and appreciating that support:
 
