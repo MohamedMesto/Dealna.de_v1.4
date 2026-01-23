@@ -98,7 +98,7 @@ def unsubscribe(request, token):
             subscription.save()
             messages.success(
                 request,
-                "You have been unsubscribed from the Nourish newsletter.",
+                "You have been unsubscribed from the Dealna.de newsletter.",
             )
         else:
             messages.info(request, "You are already unsubscribed.")
