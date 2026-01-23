@@ -104,4 +104,4 @@ def unsubscribe(request, token):
             messages.info(request, "You are already unsubscribed.")
     except NewsletterSubscription.DoesNotExist:
         messages.error(request, "Invalid unsubscribe link.")
-    return redirect("home")
+    return redirect("ec_home")
