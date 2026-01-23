@@ -56,4 +56,8 @@
   color: #b91c1c;
 }
 
+.bg-cream {
+  background-color: #fff8f0;
+  padding: 3rem 0; /* top-bottom padding */
+}
 
