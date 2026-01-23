@@ -3762,7 +3762,7 @@ This section is dedicated to recognizing and appreciating that support:
 - I would like to thank all Code Institute mentors,for the support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) and [Code Institute Discord community](https://discord-portal.codeinstitute.net) for the moral support.
-- I would like to thank my family.
+- I would like to thank God (Allah), my family.
 
 
 
