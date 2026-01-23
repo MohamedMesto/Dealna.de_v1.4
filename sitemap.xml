@@ -1,188 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/accounts/signup/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/accounts/signup/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_bag/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_bag/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/newsletter/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/about/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/about/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/contact/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/contact/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/177/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/177/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/6/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/6/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/12/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/12/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/13/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/13/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/4/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/4/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/3/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/3/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/9/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/9/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/10/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/10/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/8/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/8/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/180/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/180/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/178/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/178/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/181/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/181/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/15/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/15/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/16/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/16/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/23/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/23/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/179/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/179/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/182/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/182/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/30/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/30/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/183/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/183/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/184/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/184/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/185/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/185/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/72/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/72/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/35/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/35/</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/ec_products/ec_products/14/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://dealna-de-v1-4-c11110135cbe.herokuapp.com/ec_products/ec_products/14/</loc>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
