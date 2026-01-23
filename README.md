@@ -1505,9 +1505,9 @@ During validation of the project with the **Nu Html Checker**, several errors an
 
   **Solution:** Wrap all `<li>` items inside a proper `<ul>` or `<ol>` element within the navigation bar.
 
-   ![html_validation](assets/images/readme_images/html_validation.png)
-
-
+   ![html_validation](assets/images/readme_images/html_validation1.png)
+![html_validation](assets/images/readme_images/html_validation2.png)
+![html_validation](assets/images/readme_images/html_validation3.png)
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
 
 [Back to top](<#contents>)
