@@ -42,6 +42,7 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path("newsletter/", include("newsletter.urls")),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
+    
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -167,19 +167,150 @@
     {% endblock %}
 
 
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------- Footer Section ------------------------- -->
+    <footer class="footer bg-dark text-light mt-5 pt-5 pb-3">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About Dealna -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning text-uppercase mb-3">About Dealna</h5>
+                    <p>
+                        Dealna.de is your go-to platform for the latest deals, tech insights, and e-commerce solutions.
+                        We aim to bring quality, affordability, and convenience to our users. Our team is dedicated to
+                        providing top-notch service and cutting-edge digital experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning text-uppercase mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'ec_home' %}" class="text-light">Home</a></li>
+                        <li><a href="{% url 'ec_products' %}" class="text-light">Products</a></li>
+                        <li><a href="{% url 'about' %}" class="text-light">About Us</a></li>
+                        <li><a href="{% url 'newsletter:newsletter' %}" class="text-light">Newsletter</a></li>
+                        <li>
+                            <a href="{% url 'impressum' %}" class="text-warning font-weight-bold">
+                                Impressum
+                            </a>
+                        </li>
+                        <li><a href="{% url 'contact' %}" class="text-light">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Social & Contact -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning text-uppercase mb-3">Connect with Us</h5>
+
+                    <!-- Social Links -->
+                    <div class="mb-3">
+
+
+                        <!-- Business LinkedIn -->
+                        <a href="https://www.linkedin.com/company/un2050-it-kreativ-handel-solutions/" target="_blank"
+                            class="text-light mx-2" title="Business LinkedIn">
+
+                            <i class="fa text-warning fa-briefcase " style="font-size: 20px; "></i>
+                        </a>
+
+                        <!-- Private LinkedIn -->
+                        <a href="https://www.linkedin.com/in/mohamedmesto/" target="_blank" class="text-light mx-2"
+                            title="Private LinkedIn">
+                            <i class="fab text-warning fa-linkedin fa-lg"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/MohamedMesto" target="_blank" class="text-light mx-2"
+                            title="GitHub">
+                            <i class="fab text-warning fa-github fa-lg"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1GDzJ7AiSi/" target="_blank" class="text-light mx-2">
+                            <i class="fab text-warning fa-facebook fa-lg"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/c/TippsausEuropa" target="_blank" class="text-light mx-2"
+                            title="YouTube">
+                            <i class="fab text-warning fa-youtube fa-lg"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/muingmo?igsh=cTZ2ODRhdGVqbjdu" target="_blank"
+                            class="text-light mx-2" title="Instagram">
+                            <i class="fab text-warning fa-instagram fa-lg"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="https://t.me/IngMoMst" target="_blank" class="text-light mx-2" title="Telegram">
+                            <i class="fab text-warning fa-telegram fa-lg"></i>
+                        </a>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="mb-2 ">
+                        <p class="mb-1"><i class="fas text-warning fa-map-marker-alt"></i> Charlottenburg-Nord, Berlin,
+                            Germany, EU
+                        </p>
+                        <p class="mb-1"><i class="fas text-warning fa-envelope"></i> service@un2050.de</p>
+                        <p class="mb-1"><i class="fas text-warning fa-phone"></i> +49 157 178 78 521</p>
+                    </div>
+
+                    <!-- Händlerbund Badge (like un2050.de) -->
+                    <div class="row  mt-4">
+                        <div class="col-auto text-center">
+                            <a href="https://logo.haendlerbund.de/show.php?uuid=ea7bf7e1-5e26-11ef-a43e-0242ac130003-3112389951"
+                                target="_blank" rel="noopener">
+                                <img loading="lazy" decoding="async" src="https://un2050.de/assets/hb/hb_member.png"
+                                    alt="Händlerbund Mitglied" width="200" height="150"
+                                    class="img-fluid rounded-border">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center  border-top pt-3 small">
+                &copy; {% now "Y" %} <a href="https://un2050.de/ " target="_blank" class="text-light mx-2"><i
+                        class=" text-danger font-weight-bold"> Un2050 IT Kreativ & Handel Solutions</i>
+                </a> | All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top">&#8679;</button>
+
+
+
     <!-- JS: placed just before closing body tag for faster page load -->
 
     {% block corejs %}
-     <!-- FontAwesome -->
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/895cc74687.js" crossorigin="anonymous"></script>
-   
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-   
+
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -211,10 +342,6 @@
     </script>
     {% endblock %}
 
-
-
-    <!-- Back to Top Button -->
-    <button id="backToTopBtn" title="Go to top">&#8679;</button>
 
 
 </body>

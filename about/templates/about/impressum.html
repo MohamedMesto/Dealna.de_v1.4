@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Impressum | Dealna.de{% endblock %}
+
+{% block content %}
+
+<section class="container my-5">
+    <div class="text-center mb-4">
+        <img src="{% static 'images/un2050_logo_bg-180x100.webp' %}"
+             alt="UN2050 Logo" width="120" class="mb-3">
+        <h1 class="text-warning">Impressum</h1>
+    </div>
+
+    <div class="card shadow-sm p-4">
+        <h4>Gesetzliche Anbieterkennung</h4>
+        <p>
+            <strong>UN2050 IT Kreativ & Handel Solutions</strong><br>
+            Inhaber: Mohamed Mesto<br><br>
+
+            <a href="https://un2050.de" target="_blank">https://un2050.de</a><br>
+            <a href="https://dealna.de" target="_blank">https://dealna.de</a><br><br>
+
+            Reichweindamm 31<br>
+            13627 Berlin<br>
+            Deutschland<br><br>
+
+            Telefon:
+            <a href="tel:+4915782178521">+49 157 821 78 521</a><br>
+            E-Mail:
+            <a href="mailto:service@un2050.de">service@un2050.de</a><br><br>
+
+            Umsatzsteuer-ID:
+            <strong>DE450662780</strong>
+        </p>
+
+        <hr>
+
+        <p class="text-muted small">
+            Dieses Impressum gilt auch für unsere Online-Präsenzen auf sozialen Netzwerken
+            und Plattformen.
+        </p>
+
+        <a href="{% url 'ec_home' %}" class="btn btn-outline-warning mt-3">
+            <i class="fa fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</section>
+
+{% endblock %}
