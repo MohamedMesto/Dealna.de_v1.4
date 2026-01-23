@@ -100,6 +100,7 @@ MIDDLEWARE = [
 ]
 ROOT_URLCONF = "ec_2050_project.urls"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_FAIL_SILENTLY = False
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
