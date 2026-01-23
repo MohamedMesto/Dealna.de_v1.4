@@ -75,19 +75,22 @@
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button type="button" class="decrement-qty btn btn-black rounded-0"
-                                            data-item_id="{{ ec_product.id }}" id="decrement-qty_{{ ec_product.id }}" aria-label="Decrease quantity">
+                                            data-item_id="{{ ec_product.id }}" id="decrement-qty_{{ ec_product.id }}"
+                                            aria-label="Decrease quantity">
                                             <span class="icon">
                                                 <i class="fas fa-minus" aria-hidden="true"></i>
                                             </span>
-                                            <span class="sr-only">Decrease quantity</span>
+
                                         </button>
                                     </div>
+                                    <label for="id_qty_3" class="sr-only">Quantity</label>
                                     <input class="form-control qty_input" type="number" name="quantity" value="1"
                                         min="1" max="99" data-item_id="{{ ec_product.id }}"
                                         id="id_qty_{{ ec_product.id }}">
                                     <div class="input-group-append">
                                         <button type="button" class="increment-qty btn btn-black rounded-0"
-                                            data-item_id="{{ ec_product.id }}" id="increment-qty_{{ ec_product.id }}" aria-label="Increase quantity">
+                                            data-item_id="{{ ec_product.id }}" id="increment-qty_{{ ec_product.id }}"
+                                            aria-label="Increase quantity">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -214,10 +217,10 @@
 
 
         {% else %}
-        <p><a href="{% url 'account_login' %}">Log in</a> to leave a review.</p>
+        <p><a href="{% url 'account_login' %}" class="text-primary font-weight-bold">Log in</a> to leave a review.</p>
         {% endif %}
     </div>
 </div>
 
-
+    
 {% endblock %}

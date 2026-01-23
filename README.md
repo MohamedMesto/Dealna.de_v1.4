@@ -1224,6 +1224,13 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
+![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator2.png)
+
+
+
+
+
+![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator3.png)
 
 
 
@@ -1238,6 +1245,7 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
+![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator4.png)
 
 
 
@@ -1245,7 +1253,34 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
 
 
 
- 
+![WAVE Web Accessibility Evaluation Tool Testing](assets/images/readme_images/WAVE_Web_color_accessibility_validator5.png)
+
+
+
+
+
+
+
+
+
+
+ ![WAVE_Web_color_accessibility_validator_allright](assets/images/readme_images/WAVE_Web_color_accessibility_validator_allright.png)
+
+
+
+
+
+
+
+
+ ![WAVE_Web_color_accessibility_validator_allright2](assets/images/readme_images/WAVE_Web_color_accessibility_validator_allright2.png)
+
+
+
+
+
+
+ ![WAVE_Web_color_accessibility_validator_allright2](assets/images/readme_images/WAVE_Web_color_accessibility_validator_allright3.png)
 
 
 
