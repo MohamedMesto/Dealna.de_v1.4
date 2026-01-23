@@ -25,11 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don"t run with debug turned on in production!
 # DEBUG is True if DEVELOPMENT=1, False otherwise
 
-# Debug mode
-DEBUG = os.getenv("DJANGO_DEBUG", "0").strip().lower() in {
-    "1", "true", "yes", "on"
-}
-
+# # Debug mode
+# DEBUG = os.getenv("DJANGO_DEBUG", "0").strip().lower() in {
+#     "1", "true", "yes", "on"
+# }
+DEBUG=1
 # DEBUG = os.environ.get("DEVELOPMENT", "0") in ["1", "True", "true"]
 # SECRET_KEY = os.environ.get("SECRET_KEY")
 
