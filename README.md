@@ -141,8 +141,8 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
       - [Performance](#performance)
         - [Desktop lighthouse Performance](#desktop-lighthouse-performance)
         - [Mobile lighthouse Performance](#mobile-lighthouse-performance)
-      - [Accessibility Testing](#accessibility-testing)
         - [Lighthouse Accessibility Testing](#lighthouse-accessibility-testing)
+        - [Lighthouse Best Practices Testing](#lighthouse-best-practices-testing)
         - [Lighthouse SEO Testing](#lighthouse-seo-testing)
         - [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     - [Fixing Accessibility issues:](#fixing-accessibility-issues)
@@ -1016,7 +1016,7 @@ Contact
 To create a visual diagram of the models, use **Django Extensions**:
 
 ```bash
-./manage.py graph_models -a -g -o Dealna_de_v1_3_diagram.png
+./manage.py graph_models -a -g -o Dealna_de_v1_7_diagram.png
 ```
 
 * `-a`: Include all apps
@@ -1024,11 +1024,11 @@ To create a visual diagram of the models, use **Django Extensions**:
 * `-o`: Output file name
 
 The generated **ERD** will be saved as:
-**[Dealna\_de\_v1\_3\_diagram.png](Dealna_de_v1_3_diagram.png)**
+**[Dealna\_de\_v1\_7\_diagram.png](Dealna_de_v1_7_diagram.png)**
 
 This diagram includes **core models** and **new apps** for a complete overview of your project schema.
 
-![Dealna_de_v1_3_diagram](assets/images/readme_images/Dealna_de_v1_3_diagram.png)  
+![Dealna_de_v1_7_diagram](assets/images/readme_images/Dealna_de_v1_7_diagram.png)  
 
 
 [Back to top](<#contents>)
@@ -1190,15 +1190,18 @@ The website was also put through Lighthouse testing via Chrome Devtools which te
  
  
 
-
-
-#### Accessibility Testing 
-
 ##### Lighthouse Accessibility Testing 
 ![Lighthouse Accessibility Testing](assets/images/readme_images/lighthouse_accessibility.png)
 
+
+
+##### Lighthouse Best Practices Testing 
+![lighthouse_best_practices](assets/images/readme_images/lighthouse_best_practices.png)
+
+
+
 ##### Lighthouse SEO Testing 
-![seo](assets/images/readme_images/seo.png)
+![seo](assets/images/readme_images/lighthouse_seo.png)
  
 
 ##### WAVE Web Accessibility Evaluation Tool
