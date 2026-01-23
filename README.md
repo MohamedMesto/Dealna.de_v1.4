@@ -79,7 +79,7 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
 
 ---
 
-[![devices](assets/images/readme_images/devices_ec_platform_v1.png)]( https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/)
+[![devices](assets/images/readme_images/devices_ec_platform_v1.7_2.png)]( https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/)
 
 --- 
 
@@ -392,6 +392,20 @@ As part of our project requirements, we have created a dedicated Facebook busine
 | 43            | Site Owner | Receive collaboration requests                | Explore opportunities with potential partners                 |
 | 44            | Site Owner | Mark collaboration requests as “read”         | Track which requests I still need to process                  |
 | 45            | Site Owner | Store collaboration requests in the database  | Review them later                                             |
+
+
+
+| User Story ID | AS A / AN  | I WANT TO BE ABLE TO...                | SO THAT I CAN...                                    |
+| ------------- | ---------- | -------------------------------------- | --------------------------------------------------- |
+|               |            | ***Newsletter App***                   |                                                     |
+| 46            | Shopper    | Subscribe to the newsletter            | Receive updates, promotions, and new product alerts |
+| 47            | Shopper    | Unsubscribe from the newsletter        | Stop receiving unwanted emails                      |
+| 48            | Site Admin | View newsletter subscribers            | Manage and target email campaigns                   |
+| 49            | Site Admin | Export subscriber email addresses      | Use them in email marketing tools like Mailchimp    |
+| 50            | Site Admin | Remove inactive or invalid subscribers | Keep the mailing list clean and up to date          |
+
+
+
 
 [Back to top](<#contents>)
 
