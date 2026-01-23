@@ -1,28 +1,32 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
+
 <head>
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Meta Description -->
-    <meta name="description" content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
+    <meta name="description"
+        content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
     <!-- Keywords (Optional) -->
     <meta name="keywords" content="e-commerce, online shopping, Dealna.de, secure payments, modern shopping">
     <!-- Author -->
     <meta name="author" content="Dealna.de Team">
     <!-- Open Graph Meta Tags (for Social Media) -->
     <meta property="og:title" content="Dealna.de - Modern E-Commerce Solution">
-    <meta property="og:description" content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
+    <meta property="og:description"
+        content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
     <meta property="og:image" content="https://Dealna.de/static/images/og_image.png">
     <meta property="og:url" content="https://Dealna.de">
     <!-- Twitter Card Meta Tags (for Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dealna.de - Modern E-Commerce Solution">
-    <meta name="twitter:description" content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
+    <meta name="twitter:description"
+        content="Dealna.de is a modern e-commerce platform offering a seamless shopping experience with secure payments, user-friendly navigation, and a wide range of products.">
     <meta name="twitter:image" content="https://Dealna.de/static/images/twitter_image.png">
-      
+
     {% endblock %}
 
     {% block extra_meta %}
@@ -34,7 +38,7 @@
 
     <!-- FAQ SECTION Flush/ .accordion-flush Bootstrab Css requirments , https://getbootstrap.com/docs/5.3/components/accordion/ -->
 
- 
+
 
 
 
@@ -53,10 +57,10 @@
 
     {% block corejs %}
     <script src="https://kit.fontawesome.com/895cc74687.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -77,6 +81,7 @@
     {% endblock %}
     <title>E-Commerce Dealna.de {% block extra_title %}{% endblock %}</title>
 </head>
+
 <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -86,12 +91,12 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'ec_products' %}" >
+                <form method="GET" action="{% url 'ec_products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
                             placeholder="Search our site" aria-label="Search the site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit" >
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -110,7 +115,8 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options-desktop">
+                        <div class="dropdown-menu border-0" role="menu" aria-labelledby="user-options-desktop">
+
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_ec_product' %}" class="dropdown-item">Product Management</a>
@@ -153,7 +159,7 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                <h3 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h3>
             </div>
         </div>
     </header>
@@ -161,17 +167,17 @@
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
