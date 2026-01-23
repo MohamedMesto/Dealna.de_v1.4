@@ -5,6 +5,17 @@
  * Handles toast notifications positioning and display.
  * Ensures they appear below the fixed navbar.
  */
+
+/* base.js for Dealna.de
+ *
+ * This file contains core JavaScript for navigation, back buttons,
+ * toast notifications, fixed header handling, and scroll-to-top functionality.
+ * Each section is commented for clarity.
+ */
+
+/* ------------------------- Toast Notifications Handling ------------------------- */
+/* Positions toast messages below the fixed header and shows them */
+
 (function () {
   'use strict';
   function placeToast() {
@@ -50,10 +61,8 @@
   window.addEventListener('resize', placeToast);
 })();
 
-/**
- * Keep a CSS variable in sync with the current fixed header height
- * so content/pages can offset correctly.
- */
+/* ------------------------- Fixed Header Height CSS Variable ------------------------- */
+/* Keeps CSS variable --header-height in sync with the current header height */
 (function () {
   function setHeaderVar() {
     const header = document.querySelector('header.container-fluid.fixed-top');
@@ -69,10 +78,10 @@
   window.addEventListener('resize', setHeaderVar, { passive: true });
 })();
 
-/**
- * Scroll-to-top button.
- * Shows after some scroll, smooth-scrolls to top on click.
- */
+
+/* ------------------------- Scroll-to-Top Button ------------------------- */
+/* Shows a button when user scrolls down, scrolls smoothly to top when clicked */
+ 
 (function () {
   const btn = document.getElementById('scrollToTopBtn');
   if (!btn) {

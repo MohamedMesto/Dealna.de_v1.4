@@ -201,12 +201,21 @@
     {% block extra_js %}
     {% endblock %}
 
+    <!-- Project JS -->
+    <script src="{% static 'js/backtotop.js' %}"></script>
+    <script src="{% static 'js/navigation.js' %}"></script>
 
     {% block postloadjs %}
     <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
+
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top">&#8679;</button>
+
 
 </body>
 
