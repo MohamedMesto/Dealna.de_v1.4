@@ -14,14 +14,21 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='NewsletterSubscription',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('email', models.EmailField(max_length=254, unique=True)),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
+                ('email', models.EmailField(
+                    max_length=254, unique=True)),
                 ('date_subscribed', models.DateTimeField(auto_now_add=True)),
                 ('is_active', models.BooleanField(default=True)),
-                ('unsubscribe_token', models.CharField(blank=True, max_length=50)),
-                ('discount_code', models.CharField(default='WELCOME10', max_length=20)),
-                ('discount_expires', models.DateTimeField(blank=True, null=True)),
-                ('discount_used', models.BooleanField(default=False)),
+                ('unsubscribe_token', models.CharField(
+                    blank=True, max_length=50)),
+                ('discount_code', models.CharField(
+                    default='WELCOME10', max_length=20)),
+                ('discount_expires', models.DateTimeField(
+                    blank=True, null=True)),
+                ('discount_used', models.BooleanField(
+                    default=False)),
             ],
         ),
     ]

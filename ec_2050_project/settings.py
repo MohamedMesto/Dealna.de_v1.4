@@ -7,11 +7,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
 import os
 import dj_database_url
 import logging
 logging.getLogger("django.server").setLevel(logging.ERROR)
-from django.core.management.utils import get_random_secret_key
+
 
 if os.path.isfile("env.py"):
     import env  # noqa: F401
@@ -85,7 +86,7 @@ INSTALLED_APPS = [
     "storages",
     "django_extensions",
     "crispy_bootstrap4",  # For Bootstrap 4 support
-       "core", # sitemap.xml
+    "core",  # sitemap.xml
     ]
 
 MIDDLEWARE = [
@@ -133,7 +134,6 @@ AUTHENTICATION_BACKENDS = [
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
 SITE_ID = 1
- 
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_REQUIRED = True
 # ACCOUNT_EMAIL_VERIFICATION = "mandatory"
@@ -165,16 +165,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": "django.contrib.auth.password_validation."
+        "UserAttributeSimilarityValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "NAME": "django.contrib.auth.password_validation."
+        "MinimumLengthValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation."
+        "CommonPasswordValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation."
+        "NumericPasswordValidator",
     },
 ]
 
@@ -207,7 +211,10 @@ if "USE_AWS" in os.environ:
     AWS_S3_REGION_NAME = "eu-north-1"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com"
+    AWS_S3_CUSTOM_DOMAIN = (
+        f"{AWS_STORAGE_BUCKET_NAME}.s3."
+        f"{AWS_S3_REGION_NAME}.amazonaws.com"
+                            )
 
     # Static and media files
     STATICFILES_STORAGE = "custom_storages.StaticStorage"
@@ -259,7 +266,7 @@ else:
     )
     EMAIL_USE_TLS = True
     EMAIL_USE_SSL = False
-    EMAIL_PORT= 587 # Gmail → TLS → 587
+    EMAIL_PORT = 587  # Gmail → TLS → 587
     # EMAIL_PORT = 465
 
     EMAIL_HOST = "smtp.gmail.com"
@@ -270,10 +277,6 @@ else:
     # DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
     EMAIL_TIMEOUT = 20
     SERVER_EMAIL = DEFAULT_FROM_EMAIL
-
-
-    
- 
 
 # Logging
 LOGGING = {

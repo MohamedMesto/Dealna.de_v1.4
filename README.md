@@ -1915,7 +1915,46 @@ python3 -m flake8
 ./review/migrations/0001_initial.py:25:80: E501 line too long (148 > 79 characters)
 ./review/migrations/0001_initial.py:26:80: E501 line too long (118 > 79 characters)
 ./review/models.py:17:5: E301 expected 1 blank line, found 0
+python3 -m flake8
+./core/admin.py:1:1: F401 'django.contrib.admin' imported but unused
+./core/models.py:1:1: F401 'django.db.models' imported but unused
+./core/sitemaps.py:4:1: E302 expected 2 blank lines, found 1
+./core/tests.py:1:1: F401 'django.test.TestCase' imported but unused
+./core/views.py:1:1: F401 'django.shortcuts.render' imported but unused
+./ec_2050_project/settings.py:14:1: E402 module level import not at top of file
+./ec_2050_project/settings.py:88:8: E131 continuation line unaligned for hanging indent
+./ec_2050_project/settings.py:88:15: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:136:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:168:80: E501 line too long (91 > 79 characters)
+./ec_2050_project/settings.py:171:80: E501 line too long (81 > 79 characters)
+./ec_2050_project/settings.py:174:80: E501 line too long (82 > 79 characters)
+./ec_2050_project/settings.py:177:80: E501 line too long (83 > 79 characters)
+./ec_2050_project/settings.py:210:80: E501 line too long (93 > 79 characters)
+./ec_2050_project/settings.py:262:15: E225 missing whitespace around operator
+./ec_2050_project/settings.py:262:20: E261 at least two spaces before inline comment
+./ec_2050_project/settings.py:275:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:276:1: W293 blank line contains whitespace
+./ec_2050_project/settings.py:278:1: E303 too many blank lines (5)
+./ec_home/sitemaps.py:4:1: E302 expected 2 blank lines, found 1
+./ec_home/sitemaps.py:16:29: W292 no newline at end of file
+./ec_products/sitemaps.py:4:1: E302 expected 2 blank lines, found 1
+./ec_products/sitemaps.py:15:1: W293 blank line contains whitespace
+./ec_products/sitemaps.py:18:1: E303 too many blank lines (5)
+./env.py:4:80: E501 line too long (133 > 79 characters)
+./env.py:11:80: E501 line too long (114 > 79 characters)
+./env.py:12:80: E501 line too long (129 > 79 characters)
+./env.py:28:80: E501 line too long (82 > 79 characters)
+./env.py:34:45: W292 no newline at end of file
+./newsletter/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)
+./newsletter/migrations/0001_initial.py:21:80: E501 line too long (83 > 79 characters)
+./newsletter/migrations/0001_initial.py:22:80: E501 line too long (88 > 79 characters)
+./newsletter/migrations/0001_initial.py:23:80: E501 line too long (82 > 79 characters)
+./newsletter/views.py:52:80: E501 line too long (84 > 79 characters)
 ```
+
+![py_errors.png](assets/images/readme_images/py_errors.png)
+
+
 
 All issues were subsequently resolved, and a final validation confirmed that the project passed `flake8` checks with **no remaining Python errors**.
 

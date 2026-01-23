@@ -49,7 +49,8 @@ def newsletter(request):
             message = (
                 "Hello!\n\n"
                 "Thank you for subscribing to Dealna.de 🎉\n"
-                "You’re now part of our community where we share the best deals on "
+                "You’re now part of our community where we share \n"
+                "the best deals on"
                 "electronics, accessories, and smart home essentials.\n\n"
                 "As a welcome gift, here’s your exclusive 10% discount code:\n"
                 f"👉 {subscription.discount_code}\n\n"
