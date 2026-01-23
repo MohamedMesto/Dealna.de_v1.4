@@ -16,11 +16,11 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'ec_products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'ec_products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'ec_products' %}?sort=ec_category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{%  url 'ec_products' %}?sort=sku&direction=asc" class="dropdown-item ">By Sku</a>
+            <div class="dropdown-menu border-0" role="menu"  aria-labelledby="all-products-link">
+                <a href="{% url 'ec_products' %}?sort=price&direction=asc" class="dropdown-item" role="menuitem" >By Price</a>
+                <a href="{% url 'ec_products' %}?sort=rating&direction=desc" class="dropdown-item " role="menuitem">By Rating</a>
+                <a href="{% url 'ec_products' %}?sort=ec_category&direction=asc" class="dropdown-item " role="menuitem">By Category</a>
+                <a href="{%  url 'ec_products' %}?sort=sku&direction=asc" class="dropdown-item " role="menuitem">By Sku</a>
                 <a href="{% url 'ec_products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -30,13 +30,13 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Electronics
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="electronics-link">
-                <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials" class="dropdown-item">Phone
+            <div class="dropdown-menu border-0"  role="menu" aria-labelledby="electronics-link">
+                <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials" class="dropdown-item" role="menuitem">Phone
                     Accessories
                     &amp; Essentials</a>
-                <a href="{% url 'ec_products' %}?ec_category=laptop_accessories" class="dropdown-item">Laptop
+                <a href="{% url 'ec_products' %}?ec_category=laptop_accessories" class="dropdown-item" role="menuitem">Laptop
                     Accessories</a>
-                <a href="{% url 'ec_products' %}?ec_category=computer_accessories" class="dropdown-item">Computer
+                <a href="{% url 'ec_products' %}?ec_category=computer_accessories" class="dropdown-item" role="menuitem">Computer
                     Accessories</a>
                 <a href="{% url 'ec_products' %}?ec_category=phone_accessories,essentials,laptop_accessories,computer_accessories"
                     class="dropdown-item">All Electronics</a>
@@ -48,11 +48,11 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'ec_products' %}?ec_category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="{% url 'ec_products' %}?ec_category=kitchen_dining" class="dropdown-item">Kitchen &amp;
+            <div class="dropdown-menu border-0" role="menu"  aria-labelledby="homeware-link">
+                <a href="{% url 'ec_products' %}?ec_category=bed_bath" class="dropdown-item" role="menuitem">Bed &amp; Bath</a>
+                <a href="{% url 'ec_products' %}?ec_category=kitchen_dining" class="dropdown-item" role="menuitem">Kitchen &amp;
                     Dining</a>
-                <a href="{% url 'ec_products' %}?ec_category=bed_bath,kitchen_dining" class="dropdown-item">All
+                <a href="{% url 'ec_products' %}?ec_category=bed_bath,kitchen_dining" class="dropdown-item" role="menuitem">All
                     Home Accessories</a>
             </div>
         </li>
@@ -63,11 +63,11 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Deals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'ec_products' %}?ec_category=new_deals" class="dropdown-item">New Deals</a>
-                <a href="{% url 'ec_products' %}?ec_category=top_deals" class="dropdown-item">Top Deals</a>
-                <a href="{% url 'ec_products' %}?ec_category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'ec_products' %}?ec_category=new_deals,top_deals,clearance" class="dropdown-item">All
+            <div class="dropdown-menu border-0"  role="menu"  aria-labelledby="specials-link">
+                <a href="{% url 'ec_products' %}?ec_category=new_deals" class="dropdown-item" role="menuitem">New Deals</a>
+                <a href="{% url 'ec_products' %}?ec_category=top_deals" class="dropdown-item" role="menuitem">Top Deals</a>
+                <a href="{% url 'ec_products' %}?ec_category=clearance" class="dropdown-item" role="menuitem">Clearance</a>
+                <a href="{% url 'ec_products' %}?ec_category=new_deals,top_deals,clearance" class="dropdown-item" role="menuitem">All
                     Specials</a>
             </div>
         </li>

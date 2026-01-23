@@ -1509,6 +1509,8 @@ During validation of the project with the **Nu Html Checker**, several errors an
 ![html_validation](assets/images/readme_images/html_validation1.png)
 
 ![html_validation](assets/images/readme_images/html_validation3.png)
+
+![html_validation4](assets/images/readme_images/html_validation4.png)
 By fixing these issues, the code becomes more **standards-compliant**, **accessible**, and easier to maintain.
 
 [Back to top](<#contents>)
