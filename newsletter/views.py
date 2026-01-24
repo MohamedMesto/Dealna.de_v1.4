@@ -44,19 +44,19 @@ def newsletter(request):
             )
 
             # Build welcome message
-            subject = "Welcome to Dealna.de – Smart Deals Await!"
+            subject = "Welcome to Dealna.de - Smart Deals Await!"
 
             message = (
                 "Hello!\n\n"
                 "Thank you for subscribing to Dealna.de 🎉\n"
-                "You’re now part of our community where we share \n"
+                "You're now part of our community where we share \n"
                 "the best deals on"
                 "electronics, accessories, and smart home essentials.\n\n"
-                "As a welcome gift, here’s your exclusive 10% discount code:\n"
+                "As a welcome gift, here's your exclusive 10% discount code:\n"
                 f"👉 {subscription.discount_code}\n\n"
                 "Use it on your next purchase before "
                 f"{subscription.discount_expires.strftime('%B %d, %Y')}.\n\n"
-                "As a subscriber, you’ll receive:\n"
+                "As a subscriber, you'll receive:\n"
                 "- ⚡ New and trending tech deals\n"
                 "- 🔥 Top discounts and clearance offers\n"
                 "- 🏠 Smart home and lifestyle electronics\n"
