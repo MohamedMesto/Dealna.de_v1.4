@@ -123,7 +123,6 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [**New App Models**](#new-app-models)
     - [**Relational Model**](#relational-model)
     - [**Example Relationships**](#example-relationships)
-    - [**Database Schema Diagram (Simplified)**](#database-schema-diagram-simplified)
     - [**Generating the ERD**](#generating-the-erd)
   - [**Email Marketing Integration**](#email-marketing-integration)
     - [**SEO \& Newsletter Integration**](#seo--newsletter-integration)
@@ -191,7 +190,6 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [FAQs (Admin Only)](#faqs-admin-only)
   - [| Delete | Admin users can delete FAQs. | Admin |](#-delete--admin-users-can-delete-faqs--admin-)
     - [Future Features](#future-features-1)
-  - [Tools \& Technologies](#tools--technologies-1)
     - [MoSCoW Prioritization](#moscow-prioritization)
   - [Ecommerce Business Model](#ecommerce-business-model)
     - [Robots](#robots)
@@ -215,9 +213,6 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [2. ✅ Created the Procfile](#2--created-the-procfile)
     - [3. ✅ Specified the Python Version](#3--specified-the-python-version)
     - [4. 🚀 Deployed to Heroku](#4--deployed-to-heroku)
-    - [Cloudinary API](#cloudinary-api)
-  - [🖼️ Using Cloudinary to Store Media Files](#️-using-cloudinary-to-store-media-files)
-    - [How to Set It Up](#how-to-set-it-up)
     - [PostgreSQL](#postgresql)
     - [Stripe API (Payments Integration)](#stripe-api-payments-integration)
     - [Gmail API (Email Notifications)](#gmail-api-email-notifications)
@@ -920,7 +915,6 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 | [![badge](https://img.shields.io/badge/Adobe_XD-grey?logo=adobe&logoColor=FF0000)](https://www.adobe.com/ie/products/xd.html) | Design wireframes, UI prototypes, and user flows. |
 | [![badge](https://img.shields.io/badge/GIMP-grey?logo=gimp&logoColor=5C5546)](https://www.gimp.org/) | Image editing, resizing, and optimization for web. |
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
-|  
 
 
 
@@ -1039,22 +1033,7 @@ This project uses Django’s **Object-Relational Mapping (ORM)** to manage inter
    * Each message is stored for admin review.
 
 ---
-
-### **Database Schema Diagram (Simplified)**
-
-```
-User
-├── Order
-│   ├── OrderLineItem
-│   │   └── Product
-│   │       └── Category
-└── Review
-    └── Product
-FAQ
-└── Product
-About
-Contact
-```
+ 
 
 ---
 
@@ -2527,32 +2506,7 @@ Dealna includes full Create, Read, Update and Delete (CRUD) functionality across
 -   **Admin Analytics Dashboard**: Provide the store owner with an overview of sales data, top-performing products, and user engagement metrics.
 
  -   **Wishlist Reminder Emails**: Send gentle reminders to users when their wishlist items go on sale or are back in stock.
-
-## Tools & Technologies
-
-| Tool / Tech | Use |
-| --- | --- |
-| [![badge](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://markdown.2bn.dev) | Generate README and TESTING templates. |
-| [![badge](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) | Version control. (`git add`, `git commit`, `git push`) |
-| [![badge](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) | Secure online code storage. |
-| [![badge](https://img.shields.io/badge/VSCode-grey?logo=htmx&logoColor=007ACC)](https://code.visualstudio.com) | Local IDE for development. |
-| [![badge](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) | Main site content and layout. |
-| [![badge](https://img.shields.io/badge/CSS-grey?logo=css&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) | Design and layout. |
-| [![badge](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) | User interaction on the site. |
-| [![badge](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) | Back-end programming language. |
-| [![badge](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) | Hosting the deployed back-end site. |
-| [![badge](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) | Front-end CSS framework for modern responsiveness and pre-built components. |
-| [![badge](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) | Python framework for the site. |
-| [![badge](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) | Relational database management. |
-| [![badge](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) | Online static file storage. |
-| [![badge](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) | Serving static files with Heroku. |
-| [![badge](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) | Online secure payments of e-commerce products/services. |
-| [![badge](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) | Sending emails in my application. |
-| [![badge](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) | Icons. |
-| [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
-| [![badge](https://img.shields.io/badge/Mermaid-grey?logo=mermaid&logoColor=FF3670)](https://mermaid.live) | Generate an interactive diagram for the data/schema. |
-
-
+ 
  
 
 ### MoSCoW Prioritization
@@ -2877,45 +2831,7 @@ The project could now be connected and deployed to Heroku!
 
 To meet Code Institute requirements, `DEBUG = False` is always enforced in production.  
 
-
-### Cloudinary API
-
-🖼️ Using Cloudinary to Store Media Files
------------------------------------------
-
-Since Heroku doesn't persist static or media files (e.g., product images), I integrated [**Cloudinary**](https://cloudinary.com) into my Dealna Django project to handle all **media asset storage and delivery**.
-
-###  How to Set It Up
-
-1.  **I created a free Cloudinary account** and logged into the dashboard.
-
-    -   For "Primary Interest", I selected **Programmable Media for image and video API**.
-
-2.  In my dashboard, I copied my **Cloudinary API Environment Variable**.
-
-    -   It looks like:
-
-        `CLOUDINARY_URL=cloudinary://123456789012345:AbCdEfGhIjKlMnOpQrStuVwXyZa@your-cloud-name`
-
-    -   I removed the leading `CLOUDINARY_URL=` and used the rest as the **value** for the key `CLOUDINARY_URL`.
-
-3.  I added this to my local `env.py` like this:
-
-    `os.environ["CLOUDINARY_URL"] = "cloudinary://123456789012345:AbCdEfGhIjKlMnOpQrStuVwXyZa@your-cloud-name"`
-
-4.  I also added the same key and value to **Heroku Config Vars** in the dashboard:
-
-    -   **Key**: `CLOUDINARY_URL`
-
-    -   **Value**: `cloudinary://...@your-cloud-name`
-
-5.  Finally, I updated the Django settings and installed the necessary packages:
-
-    `pip install cloudinary django-cloudinary-storage`
-
-    In `settings.py`, I added:
-
-    `DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
+ 
 
 ### PostgreSQL
 
