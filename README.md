@@ -924,8 +924,6 @@ The **Dealna.de v1** offers a range of features designed to enhance the user exp
 
 ---
 
-
-
 ## **Data Model**
 
  

@@ -255,7 +255,7 @@ STRIPE_WH_SECRET = os.environ["STRIPE_WH_SECRET"]
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Email
-if "DEVELOPMENT" in os.environ:
+if os.environ.get("DEVELOPMENT") == "True":
     EMAIL_BACKEND = (
         "django.core.mail.backends.console.EmailBackend"
         )
