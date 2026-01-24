@@ -1094,9 +1094,6 @@ The **Dealna.de** website now includes a fully functional **newsletter subscript
   * Makes the website **SEO-ready** and ready for submission to **Google Search Console**.
   * Combines marketing and search optimization, improving visibility and user engagement.
 
-> ✅ The newsletter is live, fully supported via **Mailchimp**, and the sitemap ensures all important pages are indexed efficiently.
- 
-
 
 [Back to top](<#contents>)
 
