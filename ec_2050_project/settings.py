@@ -25,14 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don"t run with debug turned on in production!
 # DEBUG is True if DEVELOPMENT=1, False otherwise
 
-# # Debug mode
-# DEBUG = os.getenv("DJANGO_DEBUG", "0").strip().lower() in {
-#     "1", "true", "yes", "on"
-# }
-DEBUG=1
-# DEBUG = os.environ.get("DEVELOPMENT", "0") in ["1", "True", "true"]
-# SECRET_KEY = os.environ.get("SECRET_KEY")
+# Debug mode (controlled via DEVELOPMENT env var)
+DEBUG = os.getenv("DEVELOPMENT", "0").strip().lower() in {
+    "1", "true", "yes", "on"
+}
 
+# SECRET_KEY = os.environ.get("SECRET_KEY")
 # Secret key
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY", get_random_secret_key()
@@ -257,7 +255,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Email
 if os.environ.get("DEVELOPMENT") == "True":
     EMAIL_BACKEND = (
-        "django.core.mail.backends.console.EmailBackend"
+        "django.core.mail.backends.smtp.EmailBackend"
+        # "django.core.mail.backends.console.EmailBackend"
         )
     DEFAULT_FROM_EMAIL = "service@Dealna.de"
 

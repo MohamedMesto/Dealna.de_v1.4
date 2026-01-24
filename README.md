@@ -209,10 +209,10 @@ In an era of rapid digital transformation, **Dealna.de v1.7** stands out as a re
     - [3. **Prepare for Deployment**](#3-prepare-for-deployment)
     - [4. **Final Touches**](#4-final-touches)
   - [To tell Heroku how to run the app, I created a Procfile at the root of mRequirements \& Deployment Configuration (Steps I Took)](#to-tell-heroku-how-to-run-the-app-i-created-a-procfile-at-the-root-of-mrequirements--deployment-configuration-steps-i-took)
-    - [1. ✅ Installed Project Requirements](#1--installed-project-requirements)
-    - [2. ✅ Created the Procfile](#2--created-the-procfile)
-    - [3. ✅ Specified the Python Version](#3--specified-the-python-version)
-    - [4. 🚀 Deployed to Heroku](#4--deployed-to-heroku)
+    - [1. Installed Project Requirements](#1-installed-project-requirements)
+    - [2. Created the Procfile](#2-created-the-procfile)
+    - [3. Specified the Python Version](#3-specified-the-python-version)
+    - [4. Deployed to Heroku](#4-deployed-to-heroku)
     - [PostgreSQL](#postgresql)
     - [Stripe API (Payments Integration)](#stripe-api-payments-integration)
     - [Gmail API (Email Notifications)](#gmail-api-email-notifications)
@@ -2714,7 +2714,7 @@ Requirements & Deployment Configuration (Steps I Took)
 
 To prepare my Dealna project for deployment on Heroku, I followed these steps:
 
-1. ✅ Installed Project Requirements
+1.  Installed Project Requirements
 
 I used the provided requirements.txt file to install all necessary dependencies locally:
 
@@ -2728,7 +2728,7 @@ pip3 freeze --local > requirements.txt
 
 This ensured Heroku had all the packages needed for a successful build.
 
-2. ✅ Created the Procfile
+2.  Created the Procfile
 
 To tell Heroku how to run the app, I created a Procfile at the root of mRequirements & Deployment Configuration (Steps I Took)
 -------------------------------------------------------
@@ -2737,7 +2737,7 @@ To prepare my Dealna project for deployment on **Heroku**, I followed these step
 
 * * * * *
 
-### 1\. ✅ Installed Project Requirements
+### 1\. Installed Project Requirements
 
 I used the provided `requirements.txt` file to install all necessary dependencies locally:
 
@@ -2751,7 +2751,7 @@ This ensured Heroku had all the packages needed for a successful build.
 
 * * * * *
 
-### 2\. ✅ Created the Procfile
+### 2\. Created the Procfile
 
 To tell Heroku how to run the app, I created a `Procfile` at the root of my project:
 
@@ -2761,7 +2761,7 @@ To tell Heroku how to run the app, I created a `Procfile` at the root of my proj
 
 * * * * *
 
-### 3\. ✅ Specified the Python Version
+### 3\. Specified the Python Version
 
 To ensure Heroku used the correct Python version, I created a file called `.python-version` with the following:
 
@@ -2771,7 +2771,7 @@ This matches the Python version I used locally and helps avoid compatibility iss
 
 * * * * *
 
-### 4\. 🚀 Deployed to Heroku
+### 4\. Deployed to Heroku
 
 After pushing my code to GitHub, I went to my Heroku app dashboard and:
 
@@ -2793,7 +2793,7 @@ echo web: gunicorn Dealna.wsgi > Procfile
 
 In my case, the main Django app is called Dealna, so I used Dealna.wsgi.
 
-3. ✅ Specified the Python Version
+3. Specified the Python Version
 
 To ensure Heroku used the correct Python version, I created a file called .python-version with the following:
 
@@ -2802,7 +2802,7 @@ To ensure Heroku used the correct Python version, I created a file called .pytho
 
 This matches the Python version I used locally and helps avoid compatibility issues.
 
-4. 🚀 Deployed to Heroku
+4. Deployed to Heroku
 
 After pushing my code to GitHub, I went to my Heroku app dashboard and:
 
@@ -2927,7 +2927,7 @@ Future newsletter subscription confirmations
 Since Heroku doesn’t persist static files, I used WhiteNoise
  to serve static assets (CSS, JS) efficiently during deployment.
 
-✅ Steps I Followed
+ Steps I Followed
 
 Installed WhiteNoise:
 
@@ -2971,7 +2971,7 @@ I created a file called env.py in the project root to store my environment varia
 Note:
 The values in env.py (Stripe keys, Cloudinary URL, Database URL, etc.) are unique to my project and must be replaced with your own if you clone this repository.
 
-✅ Summary of Environment Variables Used
+ Summary of Environment Variables Used
 
 Variable	Description
 SECRET_KEY	Django secret key

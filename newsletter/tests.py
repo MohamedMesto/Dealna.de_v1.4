@@ -5,7 +5,7 @@ from newsletter.models import NewsletterSubscription
 
 class NewsletterSubscriptionTests(TestCase):
     def setUp(self):
-        self.email = "test@example.com"
+        self.email = "Service@Dealna.de"
         self.sub = NewsletterSubscription.objects.create(
             email=self.email,
             is_active=True
