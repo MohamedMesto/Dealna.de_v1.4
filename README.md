@@ -3031,20 +3031,16 @@ You can clone the repository by following these steps:
 4. Open "Git Bash" or "Terminal".
 5. Change the current working directory to the location where you want the cloned directory.
 6. In your IDE Terminal, type the following command to clone the repository:
-   - `git clone https://www.github.com/mairima/Dealna.git`
+   - `git clone https://github.com/MohamedMesto/Dealna.de_v1.4.git`
 7. Press "Enter" to create your local clone.
 
-Alternatively, if using Ona (formerly Gitpod), you can click below to create your own workspace using this repository.
-
-[![Open in Ona-Gitpod](https://ona.com/run-in-ona.svg)](https://gitpod.io/#https://www.github.com/mairima/Dealna)
-
-**Please Note**: in order to directly open the project in Ona (Gitpod), you should have the browser extension installed. A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+ 
 
 #### Forking
 
 By forking the GitHub Repository, you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://www.github.com/mairima/Dealna).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MohamedMesto/Dealna.de_v1.4).
 2. At the top of the Repository, just below the "Settings" button on the menu, locate and click the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
@@ -3099,12 +3095,14 @@ Throughout the development of the Dealna project, I received support, encouragem
 
 This section is dedicated to recognizing and appreciating that support:
 
+- I would like to thank God (Allah)
 -  I would like to thank Code Institute, for the course structure, walkthrough projects (especially Boutique Ado), mentorship, and Slack community support throughout my Full Stack Software Developer journey.
+- I would like to thank the the kind irish people.
 
 - I would like to thank all Code Institute mentors,for the support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) and [Code Institute Discord community](https://discord-portal.codeinstitute.net) for the moral support.
-- I would like to thank God (Allah), my family.
+- I would like to thank my family.
 
 
 
