@@ -43,7 +43,7 @@ if not SECRET_KEY:
 ALLOWED_HOSTS = [
                 "127.0.0.1",   # Local preview,
                 "localhost",   # listen for stripe webhooks
-                "dealna-de-v1-7-48a0c9a14b06.herokuapp.com",  # herokuapp App
+                "dealna-de-v1-7-574cf202aa90.herokuapp.com",  # herokuapp App
                 ]
 # MMM Extra
 # RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
