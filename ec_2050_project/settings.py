@@ -51,7 +51,7 @@ ALLOWED_HOSTS = [
 #   ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://dealna-de-v1-7-48a0c9a14b06.herokuapp.com/",
+    "https://dealna-de-v1-7-574cf202aa90.herokuapp.com/",
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com"
 ]
